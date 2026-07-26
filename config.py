@@ -397,26 +397,6 @@ _default_groups: dict[str, list[str]] = {
         "hopeposting",
         "Lightbulb"
     ],
-    "👽 Reddit Meta": [
-        "4CHR",
-        "announcements",
-        "answers",
-        "beta",
-        "findareddit",
-        "ListOfSubreddits",
-        "NewToReddit",
-        "reddit",
-        "reddit.com",
-        "RedditForGrownups",
-        "subredditoftheday",
-        "trendingsubreddits",
-        "tipofmytongue",
-        "todayilearned",
-        "UpliftingNews",
-        "WatchandLearn",
-        "whatisthisthing",
-        "wikipedia"
-    ],
     "🧩 Hobbies & Misc": [
         "15minutefood",
         "cookingforbeginners",
@@ -444,7 +424,16 @@ _default_groups: dict[str, list[str]] = {
         "nosurf",
         "unknownvideos",
         "videos",
-        "ZenHabits"
+        "ZenHabits",
+        "RedditForGrownups",
+        "subredditoftheday",
+        "trendingsubreddits",
+        "tipofmytongue",
+        "todayilearned",
+        "UpliftingNews",
+        "WatchandLearn",
+        "whatisthisthing",
+        "wikipedia"
     ],
 }
 SUBREDDIT_GROUPS: dict[str, list[str]] = json.loads(

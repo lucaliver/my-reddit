@@ -66,20 +66,26 @@
       day: "numeric",
       month: "short",
       year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
     });
   }
 
   function extractEmoji(name) {
-    const match = name.match(
-      /^(\p{Emoji_Presentation}|\p{Emoji}\uFE0F)/u
-    );
-    return match ? match[0] : "📌";
+    const match = name.match(/^(\S+)\s+(.+)/);
+    // If the first word contains no ASCII letters, treat it as an emoji prefix
+    if (match && !/[a-zA-Z]/.test(match[1])) {
+      return match[1];
+    }
+    return "📌";
   }
 
   function stripEmoji(name) {
-    return name
-      .replace(/^(\p{Emoji_Presentation}|\p{Emoji}\uFE0F)\s*/u, "")
-      .trim();
+    const match = name.match(/^(\S+)\s+(.+)/);
+    if (match && !/[a-zA-Z]/.test(match[1])) {
+      return match[2];
+    }
+    return name;
   }
 
   function escapeHtml(str) {
@@ -100,7 +106,7 @@
   function renderStats(data) {
     statsBar.innerHTML = `
       <span class="stat-chip">
-        <span class="stat-chip__value">${data.total_posts}</span> posts
+        <span class="stat-chip__value" id="global-unread-count">0</span> unread
       </span>
       <span class="stat-chip">
         <span class="stat-chip__value">${data.total_groups}</span> groups
@@ -161,7 +167,7 @@
             </div>
           </div>
           <div class="group-card__right">
-            <span class="group-card__count">${postCount} post${postCount !== 1 ? "s" : ""}</span>
+            <span class="group-card__count"></span>
             <span class="group-card__chevron">▼</span>
           </div>
         </div>
@@ -191,7 +197,33 @@
 
     digestEl.innerHTML = data.groups.map(renderGroup).join("");
     toolbarEl.style.display = "flex";
+    updateUnreadCounts();
     attachListeners();
+  }
+
+  function updateUnreadCounts() {
+    let globalUnread = 0;
+    
+    document.querySelectorAll(".group-card").forEach(card => {
+      const unreadCount = card.querySelectorAll(".post-item:not(.is-read)").length;
+      globalUnread += unreadCount;
+      
+      const countEl = card.querySelector(".group-card__count");
+      if (countEl) {
+        if (unreadCount === 0) {
+          countEl.textContent = "All read";
+          countEl.classList.add("is-empty");
+        } else {
+          countEl.textContent = `${unreadCount} unread`;
+          countEl.classList.remove("is-empty");
+        }
+      }
+    });
+
+    const globalCountEl = document.getElementById("global-unread-count");
+    if (globalCountEl) {
+      globalCountEl.textContent = globalUnread;
+    }
   }
 
   function renderError(message) {
@@ -231,9 +263,12 @@
     document.querySelectorAll(".post-item__title").forEach((link) => {
       link.addEventListener("click", () => {
         const postItem = link.closest(".post-item");
-        const url = postItem.dataset.url;
-        markAsRead(url);
-        postItem.classList.add("is-read");
+        if (!postItem.classList.contains("is-read")) {
+          const url = postItem.dataset.url;
+          markAsRead(url);
+          postItem.classList.add("is-read");
+          updateUnreadCounts();
+        }
       });
     });
   }

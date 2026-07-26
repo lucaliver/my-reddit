@@ -8,33 +8,33 @@
 /* ── Design Tokens ─────────────────────────────────────────────── */
 :root {
   /* Background */
-  --bg-primary: #0a0a0f;
-  --bg-secondary: #12121a;
-  --bg-card: rgba(255, 255, 255, 0.03);
-  --bg-card-hover: rgba(255, 255, 255, 0.06);
-  --bg-glass: rgba(255, 255, 255, 0.04);
+  --bg-primary: #030303;
+  --bg-secondary: #1a1a1b;
+  --bg-card: #1a1a1b;
+  --bg-card-hover: #272729;
+  --bg-glass: #1a1a1b;
 
   /* Text */
-  --text-primary: #e8e6f0;
-  --text-secondary: #9994b8;
-  --text-muted: #6b6585;
-  --text-accent: #c4b5fd;
+  --text-primary: #d7dadc;
+  --text-secondary: #a0a2a4;
+  --text-muted: #828587;
+  --text-accent: #ff4500;
 
   /* Accent palette */
-  --accent-purple: #a78bfa;
-  --accent-blue: #60a5fa;
-  --accent-teal: #2dd4bf;
-  --accent-pink: #f472b6;
-  --accent-orange: #fb923c;
+  --accent-purple: #ff4500;
+  --accent-blue: #ff4500;
+  --accent-teal: #ff4500;
+  --accent-pink: #ff4500;
+  --accent-orange: #ff4500;
   --accent-green: #4ade80;
-  --accent-red: #f87171;
-  --accent-yellow: #facc15;
+  --accent-red: #ea0027;
+  --accent-yellow: #ffd635;
 
   /* Borders & shadows */
-  --border-subtle: rgba(255, 255, 255, 0.06);
-  --border-hover: rgba(255, 255, 255, 0.12);
-  --shadow-glow: 0 0 80px -20px rgba(167, 139, 250, 0.15);
-  --shadow-card: 0 4px 24px -4px rgba(0, 0, 0, 0.4);
+  --border-subtle: #343536;
+  --border-hover: #474748;
+  --shadow-glow: none;
+  --shadow-card: none;
 
   /* Sizing */
   --radius-sm: 8px;
@@ -84,17 +84,7 @@ body {
 }
 
 /* ── Ambient Background ────────────────────────────────────────── */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background:
-    radial-gradient(ellipse 800px 600px at 20% 10%, rgba(167, 139, 250, 0.06), transparent),
-    radial-gradient(ellipse 600px 500px at 80% 80%, rgba(96, 165, 250, 0.04), transparent),
-    radial-gradient(ellipse 400px 400px at 50% 50%, rgba(244, 114, 182, 0.03), transparent);
-  pointer-events: none;
-  z-index: 0;
-}
+/* Removed for flat design */
 
 /* ── Container ─────────────────────────────────────────────────── */
 .container {
@@ -234,10 +224,16 @@ body::before {
   font-size: 0.7rem;
   font-weight: 600;
   color: var(--accent-purple);
-  background: rgba(167, 139, 250, 0.1);
+  background: rgba(255, 69, 0, 0.15);
   padding: 2px 8px;
   border-radius: 100px;
   white-space: nowrap;
+  transition: all var(--duration-normal);
+}
+
+.group-card__count.is-empty {
+  color: var(--text-muted);
+  background: var(--bg-glass);
 }
 
 .group-card__chevron {
