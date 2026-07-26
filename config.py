@@ -27,7 +27,7 @@ OUTPUT_DIR: str = os.environ.get("OUTPUT_DIR", "site")
 # ---------------------------------------------------------------------------
 _default_subs: list[str] = []
 SUBREDDITS: list[str] = json.loads(
-    os.environ.get("SUBREDDITS", json.dumps(_default_subs))
+    os.environ.get("SUBREDDITS") or json.dumps(_default_subs)
 )
 
 # ---------------------------------------------------------------------------
@@ -448,7 +448,7 @@ _default_groups: dict[str, list[str]] = {
     ],
 }
 SUBREDDIT_GROUPS: dict[str, list[str]] = json.loads(
-    os.environ.get("SUBREDDIT_GROUPS", json.dumps(_default_groups))
+    os.environ.get("SUBREDDIT_GROUPS") or json.dumps(_default_groups)
 )
 
 # ---------------------------------------------------------------------------
