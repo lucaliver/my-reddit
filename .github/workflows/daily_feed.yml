@@ -1,0 +1,35 @@
+name: Daily Reddit Digest
+
+on:
+  schedule:
+    # Every day at 16:00 UTC (18:00 CEST)
+    - cron: "0 16 * * *"
+  # Manual trigger for testing
+  workflow_dispatch:
+
+jobs:
+  send-digest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run digest pipeline
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SUBREDDITS: ${{ vars.SUBREDDITS }}
+          SUBREDDIT_GROUPS: ${{ vars.SUBREDDIT_GROUPS }}
+          # Optional overrides — set as repository variables if needed
+          # FEED_SORT: ${{ vars.FEED_SORT }}
+          # BLOCKED_KEYWORDS: ${{ vars.BLOCKED_KEYWORDS }}
+        run: python main.py
