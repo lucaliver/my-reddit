@@ -1,0 +1,61 @@
+name: Weekly Reddit Digest
+
+on:
+  schedule:
+    # Every Sunday at 16:00 UTC (18:00 CEST)
+    - cron: "0 16 * * 0"
+  # Manual trigger for testing
+  workflow_dispatch:
+
+# Grant GITHUB_TOKEN the permissions needed to deploy to Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run digest pipeline
+        env:
+          SUBREDDITS: ${{ vars.SUBREDDITS }}
+          SUBREDDIT_GROUPS: ${{ vars.SUBREDDIT_GROUPS }}
+          OUTPUT_DIR: site
+          # Optional overrides — set as repository variables if needed
+          # FEED_SORT: ${{ vars.FEED_SORT }}
+          # BLOCKED_KEYWORDS: ${{ vars.BLOCKED_KEYWORDS }}
+          # MAX_POSTS_PER_GROUP: ${{ vars.MAX_POSTS_PER_GROUP }}
+        run: python main.py
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -15,10 +15,9 @@ load_dotenv()  # loads .env from the working directory, if present
 
 
 # ---------------------------------------------------------------------------
-# Telegram credentials (required — set via env or GitHub Secrets)
+# Output directory for the generated site
 # ---------------------------------------------------------------------------
-TELEGRAM_BOT_TOKEN: str = os.environ.get("TELEGRAM_BOT_TOKEN", "")
-TELEGRAM_CHAT_ID: str = os.environ.get("TELEGRAM_CHAT_ID", "")
+OUTPUT_DIR: str = os.environ.get("OUTPUT_DIR", "site")
 
 # ---------------------------------------------------------------------------
 # Subreddits to follow (required — at least one source needed)
@@ -467,10 +466,10 @@ FETCH_LIMIT: int = int(os.environ.get("FETCH_LIMIT", "100"))
 # Filtering thresholds
 # ---------------------------------------------------------------------------
 # Discard posts younger than this (hours)
-MIN_AGE_HOURS: int = int(os.environ.get("MIN_AGE_HOURS", "24"))
+MIN_AGE_HOURS: int = int(os.environ.get("MIN_AGE_HOURS", "0"))
 
-# Discard posts older than this (hours)
-MAX_AGE_HOURS: int = int(os.environ.get("MAX_AGE_HOURS", "48"))
+# Discard posts older than this (hours) — 168 = 7 days for weekly digest
+MAX_AGE_HOURS: int = int(os.environ.get("MAX_AGE_HOURS", "168"))
 
 # ---------------------------------------------------------------------------
 # Blocked keywords — posts whose title contains any of these are dropped.
@@ -482,4 +481,4 @@ BLOCKED_KEYWORDS: list[str] = json.loads(
 )
 
 # Maximum posts shown per group in the final digest
-MAX_POSTS_PER_GROUP: int = int(os.environ.get("MAX_POSTS_PER_GROUP", "5"))
+MAX_POSTS_PER_GROUP: int = int(os.environ.get("MAX_POSTS_PER_GROUP", "10"))

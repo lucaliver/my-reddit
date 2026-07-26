@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """
-my-reddit — personalised Reddit digest delivered to Telegram.
+my-reddit — personalised Reddit digest as a static landing page.
 
-Entry point: fetches the home feed, filters it, groups posts by subreddit,
-and sends the result as a formatted Telegram message.
+Entry point: fetches Reddit posts via RSS, filters and groups them,
+then generates a JSON digest consumed by the static site on GitHub Pages.
 """
 
 import logging
 import sys
 import time
 
-from src import reddit_client, filter as post_filter, grouper, telegram_sender
+from src import reddit_client, filter as post_filter, grouper, site_generator
 
 logging.basicConfig(
     level=logging.INFO,
@@ -33,19 +33,19 @@ def main() -> None:
     # 2. Filter
     posts = post_filter.apply_filters(posts)
     if not posts:
-        logger.warning("All posts filtered out — nothing to send.")
+        logger.warning("All posts filtered out — nothing to generate.")
         return
 
     # 3. Group
     groups = grouper.group_posts(posts)
 
-    # 4. Format & send
-    telegram_sender.send_digest(groups)
+    # 4. Generate static digest JSON
+    site_generator.generate_digest_json(groups)
 
     total_posts = sum(len(g.posts) for g in groups)
     elapsed = time.time() - start_time
     logger.info(
-        "Done — sent %d posts across %d groups in %.1f seconds.", 
+        "Done — generated %d posts across %d groups in %.1f seconds.",
         total_posts, len(groups), elapsed
     )
 

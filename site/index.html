@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>my-reddit — Weekly Reddit Digest</title>
+  <meta name="description" content="A curated weekly digest of the best Reddit posts, auto-generated and beautifully presented.">
+  <meta name="theme-color" content="#0a0a0f">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Compact top bar -->
+    <header class="top-bar" id="top-bar">
+      <div class="top-bar__left" id="header-meta">
+        <!-- Populated by JS -->
+      </div>
+      <div class="top-bar__right" id="stats-bar">
+        <!-- Populated by JS -->
+      </div>
+    </header>
+
+    <!-- Toolbar -->
+    <div class="toolbar" id="toolbar" style="display: none;">
+      <button class="toolbar__btn" id="btn-expand-all">Expand all</button>
+      <button class="toolbar__btn" id="btn-collapse-all">Collapse all</button>
+    </div>
+
+    <!-- Main content -->
+    <main id="digest-content">
+      <div class="loading" id="loading-state">
+        <div class="loading__spinner"></div>
+        <p class="loading__text">Loading digest…</p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>
+        Auto-generated with ❤️ by
+        <a href="https://github.com/lucaliver/my-reddit" target="_blank" rel="noopener">my-reddit</a>
+      </p>
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
