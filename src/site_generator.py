@@ -10,6 +10,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import shutil
 from datetime import datetime, timezone
 
 import config
@@ -30,10 +31,9 @@ def _serialize_post(post: dict) -> dict:
         "title": post["title"],
         "url": post["permalink"],
         "subreddit": post["subreddit_display"],
-        "num_comments": post.get("num_comments", 0),
         "created_utc": created_iso,
         "thumbnail": post.get("thumbnail"),
-        "excerpt": post.get("excerpt"),
+        "media_type": post.get("media_type", "text"),
     }
 
 
@@ -48,17 +48,10 @@ def _serialize_group(group: PostGroup) -> dict:
     }
 
 
-def generate_digest_json(groups: list[PostGroup]) -> None:
+def generate_digest_json(groups: list[PostGroup], stats: dict) -> None:
     """
-    Write ``digest.json`` into the configured output directory.
-
-    The JSON structure:
-    {
-        "generated_at": "2026-07-26T16:00:00+00:00",
-        "total_posts": 123,
-        "total_groups": 18,
-        "groups": [ ... ]
-    }
+    Write ``digest.json`` into the configured output directory,
+    and archive a copy into ``site/archive/``.
     """
     output_dir = config.OUTPUT_DIR
     os.makedirs(output_dir, exist_ok=True)
@@ -70,12 +63,45 @@ def generate_digest_json(groups: list[PostGroup]) -> None:
         "generated_at": now.isoformat(),
         "total_posts": total_posts,
         "total_groups": len(groups),
+        "stats": stats,
         "groups": [_serialize_group(g) for g in groups],
     }
 
     output_path = os.path.join(output_dir, "digest.json")
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(digest, f, ensure_ascii=False, indent=2)
+
+    # Archiving logic
+    archive_dir = os.path.join(output_dir, "archive")
+    os.makedirs(archive_dir, exist_ok=True)
+    
+    date_str = now.strftime("%Y-%m-%d")
+    archive_filename = f"digest_{date_str}.json"
+    archive_path = os.path.join(archive_dir, archive_filename)
+    
+    shutil.copy2(output_path, archive_path)
+    
+    index_path = os.path.join(archive_dir, "index.json")
+    archive_index = []
+    if os.path.exists(index_path):
+        try:
+            with open(index_path, "r", encoding="utf-8") as f:
+                archive_index = json.load(f)
+        except Exception:
+            pass
+            
+    # Remove existing entry for same date if present
+    archive_index = [entry for entry in archive_index if entry["date"] != date_str]
+    
+    # Insert at the beginning
+    archive_index.insert(0, {
+        "date": date_str,
+        "filename": archive_filename,
+        "generated_at": now.isoformat()
+    })
+    
+    with open(index_path, "w", encoding="utf-8") as f:
+        json.dump(archive_index, f, ensure_ascii=False, indent=2)
 
     logger.info(
         "Wrote digest.json — %d posts across %d groups → %s",

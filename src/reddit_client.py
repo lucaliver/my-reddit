@@ -24,6 +24,8 @@ from email.utils import parsedate_to_datetime
 from typing import Any
 
 import requests
+from bs4 import BeautifulSoup
+from tenacity import retry, wait_exponential, retry_if_exception_type, stop_after_attempt
 
 import config
 
@@ -42,45 +44,41 @@ _MAX_SUBS_PER_REQUEST = 50
 
 # Retry settings for 429 (Too Many Requests)
 _MAX_RETRIES = 5
-_RETRY_BASE_DELAY = 30.0  # seconds, doubles on each retry
+_RETRY_BASE_DELAY = 45.0  # seconds, long cooldown if we hit a limit
 
 # Delay between batch requests when subreddits are split into chunks
-_BATCH_DELAY_SECONDS = 45.0
+_BATCH_DELAY_SECONDS = 20.0
+
+
+@retry(
+    stop=stop_after_attempt(_MAX_RETRIES),
+    wait=wait_exponential(multiplier=_RETRY_BASE_DELAY, max=300),
+    retry=retry_if_exception_type(requests.HTTPError),
+    reraise=True
+)
+def _do_request(url: str, params: dict, headers: dict) -> str:
+    resp = requests.get(url, params=params, headers=headers, timeout=30)
+    if resp.status_code == 429:
+        logger.info("Rate-limited (429), tenacity will retry...")
+    resp.raise_for_status()
+    return resp.text
 
 
 def _fetch_rss(subreddits_str: str, sort: str, limit: int) -> str | None:
     """
     Download the RSS XML for a multi-subreddit feed.
 
-    Retries with exponential backoff on 429 responses.
+    Retries with exponential backoff on HTTP errors.
     """
     url = _RSS_URL.format(subreddits=subreddits_str, sort=sort)
     params = {"limit": str(limit), "t": "week"}
     headers = {"User-Agent": _USER_AGENT}
 
-    for attempt in range(_MAX_RETRIES):
-        try:
-            resp = requests.get(url, params=params, headers=headers, timeout=30)
-            resp.raise_for_status()
-            return resp.text
-        except requests.HTTPError:
-            if resp.status_code == 429 and attempt < _MAX_RETRIES - 1:
-                wait = _RETRY_BASE_DELAY * (2 ** attempt)
-                logger.info(
-                    "Rate-limited (429), retrying in %.0fs …", wait
-                )
-                time.sleep(wait)
-                continue
-            logger.warning(
-                "Failed to fetch RSS (HTTP %d): %s",
-                resp.status_code, subreddits_str[:80],
-            )
-            return None
-        except requests.RequestException as exc:
-            logger.warning("Failed to fetch RSS: %s", exc)
-            return None
-
-    return None
+    try:
+        return _do_request(url, params, headers)
+    except requests.RequestException as exc:
+        logger.warning("Failed to fetch RSS: %s", exc)
+        return None
 
 
 def _parse_rss(xml_text: str) -> list[Post]:
@@ -131,28 +129,33 @@ def _parse_rss(xml_text: str) -> list[Post]:
                 except (ValueError, TypeError):
                     pass
 
-        # Try to extract comment count and thumbnails from content HTML
-        num_comments = 0
+        # Try to extract thumbnails and external URL from content HTML
         thumbnail = None
-        excerpt = None
+        external_url = permalink
+        
         if content_el is not None and content_el.text:
             raw_html = html_module.unescape(content_el.text)
+            soup = BeautifulSoup(raw_html, "html.parser")
             
-            m_com = re.search(r"\[(\d+)\s+comments?\]", raw_html)
-            if m_com:
-                num_comments = int(m_com.group(1))
+            img_tag = soup.find("img")
+            if img_tag and img_tag.get("src"):
+                thumbnail = img_tag["src"]
                 
-            m_img = re.search(r'<img[^>]+src="([^">]+)"', raw_html)
-            if m_img:
-                thumbnail = m_img.group(1)
-                
-            # Remove HTML tags to get raw text for excerpt
-            text_only = re.sub(r'<[^>]+>', ' ', raw_html)
-            text_only = re.sub(r'\s+', ' ', text_only).strip()
-            # Remove boilerplate from Reddit RSS
-            text_only = re.sub(r'submitted by /u/[^\s]+\s+\[link\] \[comments\]', '', text_only).strip()
-            if text_only and len(text_only) > 5:
-                excerpt = text_only[:140] + "..." if len(text_only) > 140 else text_only
+            link_tag = soup.find("a", string="[link]")
+            if link_tag and link_tag.get("href"):
+                external_url = link_tag["href"]
+
+        # Determine media type
+        media_type = "text"
+        url_for_check = external_url.lower()
+        if "v.redd.it" in url_for_check or "youtu.be" in url_for_check or "youtube.com" in url_for_check or url_for_check.endswith((".mp4", ".gif", ".gifv", ".webm")):
+            media_type = "video"
+        elif "/gallery/" in url_for_check or "reddit.com/gallery/" in permalink.lower():
+            media_type = "gallery"
+        elif url_for_check.endswith((".jpg", ".jpeg", ".png", ".webp")):
+            media_type = "image"
+        elif thumbnail:
+            media_type = "image"
 
         # Extract post ID from the <id> element (format: t3_xxxxx)
         id_el = entry.find(f"{{{_ATOM_NS}}}id")
@@ -162,16 +165,16 @@ def _parse_rss(xml_text: str) -> list[Post]:
             {
                 "id": post_id,
                 "title": title,
-                "num_comments": num_comments,
                 "subreddit": subreddit.lower(),
                 "subreddit_display": subreddit_display,
-                "url": permalink,
+                "url": external_url,
+                "external_url": external_url,
                 "permalink": permalink,
                 "created_utc": created_utc,
                 "is_self": "/comments/" in permalink,
                 "over_18": False,
                 "thumbnail": thumbnail,
-                "excerpt": excerpt,
+                "media_type": media_type,
             }
         )
 
@@ -221,7 +224,10 @@ def fetch_feed() -> list[Post]:
         clean_chunk = [sub.lower() for sub in chunk]
         subs_str = "+".join(clean_chunk)
         
-        xml_text = _fetch_rss(subs_str, config.FEED_SORT, config.FETCH_LIMIT)
+        # limit proportional to chunk size, capped at FETCH_LIMIT
+        chunk_limit = min(config.FETCH_LIMIT, len(clean_chunk) * 15)
+        
+        xml_text = _fetch_rss(subs_str, config.FEED_SORT, chunk_limit)
         if xml_text is None:
             continue
 

@@ -22,12 +22,28 @@
   const filterCarousel = document.getElementById("filter-carousel");
   const btnViewGrouped = document.getElementById("btn-view-grouped");
   const btnViewFeed = document.getElementById("btn-view-feed");
+  const btnHideRead = document.getElementById("btn-hide-read");
+
+  const archiveContainer = document.getElementById("archive-container");
+  const archiveSelect = document.getElementById("archive-select");
+  
+  const lightboxModal = document.getElementById("lightbox-modal");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const lightboxLink = document.getElementById("lightbox-link");
+  const lightboxClose = document.getElementById("lightbox-close");
+  const lightboxBackdrop = document.getElementById("lightbox-backdrop");
+  
+  const statsModal = document.getElementById("stats-modal");
+  const statsBody = document.getElementById("stats-body");
+  const statsClose = document.getElementById("stats-close");
+  const statsBackdrop = document.getElementById("stats-backdrop");
 
   // ── State ─────────────────────────────────────────────────────
   let currentView = "grouped"; // 'grouped' | 'feed'
   let activeFilters = new Set();
   let digestData = null;
   let entranceDone = false; // after first reveal, skip entrance animations
+  let hideReadState = false;
 
   // ── Read-tracking (localStorage) ──────────────────────────────
   const STORAGE_KEY = "myreddit_read";
@@ -49,9 +65,29 @@
     } catch { /* storage full — ignore */ }
   }
 
+  function unmarkAsRead(url) {
+    const readSet = getReadSet();
+    readSet.delete(url);
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify([...readSet]));
+    } catch { /* storage full — ignore */ }
+  }
+
   function isRead(url) {
     return getReadSet().has(url);
   }
+
+  function getSavedGroupOrder() {
+    try {
+      const saved = localStorage.getItem("myreddit_group_order");
+      return saved ? JSON.parse(saved) : null;
+    } catch { return null; }
+  }
+  
+  function saveGroupOrder(order) {
+    try { localStorage.setItem("myreddit_group_order", JSON.stringify(order)); } catch {}
+  }
+  let groupOrder = getSavedGroupOrder();
 
   // ── Helpers ───────────────────────────────────────────────────
 
@@ -142,7 +178,7 @@
 
   function renderMeta(data) {
     headerMeta.innerHTML = `
-      <span>my-reddit</span>
+      <a href="https://github.com/lucaliver/my-reddit" target="_blank" rel="noopener" class="site-logo">my-reddit</a>
     `;
     const footerTime = document.getElementById("footer-time");
     if (footerTime) {
@@ -152,25 +188,35 @@
 
   function renderStats(data) {
     statsBar.innerHTML = `
-      <span class="stat-text">
-        <span class="stat-text__value" id="global-unread-count">0</span> unread
-      </span>
+      <div style="display: flex; gap: 12px; align-items: center;">
+        <span class="stat-text">
+          <span class="stat-text__value" id="global-unread-count">0</span> unread
+        </span>
+        <button class="toolbar__btn" id="btn-show-stats" style="margin: 0;">Stats 📊</button>
+      </div>
     `;
+    const btn = document.getElementById("btn-show-stats");
+    if (btn) btn.addEventListener("click", showStatsModal);
   }
 
   function renderPost(post, index) {
     const title = escapeHtml(post.title);
     const sub = escapeHtml(post.subreddit);
     const age = timeAgo(post.created_utc);
-    const comments = post.num_comments || 0;
     const url = escapeHtml(post.url);
     const read = isRead(post.url);
     
     let previewHtml = "";
     if (post.thumbnail) {
-      previewHtml = `<div class="post-item__thumb"><img src="${escapeHtml(post.thumbnail)}" alt="Thumbnail" loading="lazy"></div>`;
-    } else if (post.excerpt) {
-      previewHtml = `<p class="post-item__excerpt">${escapeHtml(post.excerpt)}</p>`;
+      let badgeHtml = "";
+      if (post.media_type === "video") badgeHtml = '<span class="media-badge">▶ Video</span>';
+      else if (post.media_type === "gallery") badgeHtml = '<span class="media-badge">🖼 Gallery</span>';
+      
+      previewHtml = `
+        <div class="post-item__thumb is-clickable" data-img="${escapeHtml(post.thumbnail)}" data-link="${url}">
+          <img src="${escapeHtml(post.thumbnail)}" alt="Thumbnail" loading="lazy" onerror="this.parentElement.style.display='none'">
+          ${badgeHtml}
+        </div>`;
     }
 
     return `
@@ -183,17 +229,13 @@
           ${previewHtml}
           <div class="post-item__meta">
             <span class="post-item__sub">r/${sub}</span>
-            ${comments > 0
-              ? `<span class="post-item__separator">·</span>
-                 <span>${comments} comment${comments !== 1 ? "s" : ""}</span>`
-              : ""}
             ${age
               ? `<span class="post-item__separator">·</span>
                  <span>${age}</span>`
               : ""}
           </div>
         </div>
-        <span class="post-item__check">✓</span>
+        <button class="post-item__check" aria-label="Toggle read status" title="Mark as read">✓</button>
       </li>
     `;
   }
@@ -209,7 +251,7 @@
 
     return `
       <article class="group-card" data-group-name="${escapeHtml(group.name).toLowerCase()}">
-        <div class="group-card__header" role="button" tabindex="0" aria-expanded="false">
+        <div class="group-card__header" role="button" tabindex="0" aria-expanded="false" draggable="true" data-group="${escapeHtml(group.name)}">
           <div class="group-card__left">
             <span class="group-card__emoji">${emoji}</span>
             <div class="group-card__info">
@@ -232,7 +274,17 @@
   }
 
   function renderGroupedView() {
-    digestEl.innerHTML = digestData.groups.map(renderGroup).join("");
+    let sortedGroups = digestData.groups.slice();
+    if (groupOrder) {
+      sortedGroups.sort((a, b) => {
+        let ia = groupOrder.indexOf(a.name);
+        let ib = groupOrder.indexOf(b.name);
+        if (ia === -1) ia = 999;
+        if (ib === -1) ib = 999;
+        return ia - ib;
+      });
+    }
+    digestEl.innerHTML = sortedGroups.map(renderGroup).join("");
     toolbarEl.style.display = "flex";
     filterCarousel.style.display = "none";
 
@@ -243,6 +295,7 @@
 
     updateUnreadCounts();
     attachListeners();
+    attachDragAndDrop();
     updateToggleAllButton();
   }
 
@@ -314,8 +367,44 @@
     }).join("");
 
     filterCarousel.querySelectorAll(".filter-tile").forEach(btn => {
+      let pressTimer = null;
+      let isLongPress = false;
+      const grp = btn.dataset.group;
+
+      // Handle long press
+      btn.addEventListener("pointerdown", (e) => {
+        isLongPress = false;
+        if (e.pointerType === "mouse" && e.button !== 0) return;
+        
+        pressTimer = setTimeout(() => {
+          isLongPress = true;
+          activeFilters.clear();
+          activeFilters.add(grp);
+          try { if (navigator.vibrate) navigator.vibrate(30); } catch(err){}
+          
+          renderFilters();
+          if (currentView === "feed") {
+            renderFeedView();
+          }
+        }, 400); // 400ms per un long press reattivo
+      });
+
+      btn.addEventListener("pointerup", () => {
+        if (pressTimer) clearTimeout(pressTimer);
+      });
+      
+      btn.addEventListener("pointerleave", () => {
+        if (pressTimer) clearTimeout(pressTimer);
+      });
+      
+      // Prevent default context menu on mobile long press
+      btn.addEventListener("contextmenu", (e) => {
+        e.preventDefault();
+      });
+
       btn.addEventListener("click", () => {
-        const grp = btn.dataset.group;
+        if (isLongPress) return; // ignore click if long press fired
+
         if (activeFilters.has(grp)) {
           activeFilters.delete(grp);
         } else {
@@ -342,9 +431,12 @@
           if (unreadCount === 0) {
             countEl.textContent = "All read";
             countEl.classList.add("is-empty");
+            if (hideReadState) card.style.display = "none";
+            else card.style.display = "";
           } else {
             countEl.textContent = `${unreadCount} unread`;
             countEl.classList.remove("is-empty");
+            card.style.display = "";
           }
         }
       });
@@ -389,7 +481,47 @@
     }
   }
 
+  function attachDragAndDrop() {
+    let draggedCard = null;
+    document.querySelectorAll(".group-card").forEach(card => {
+      const header = card.querySelector(".group-card__header");
+      header.addEventListener("dragstart", (e) => {
+        draggedCard = card;
+        card.classList.add("is-dragging");
+        e.dataTransfer.effectAllowed = "move";
+        e.dataTransfer.setData("text/plain", "");
+      });
+      header.addEventListener("dragend", () => {
+        card.classList.remove("is-dragging");
+        draggedCard = null;
+        const newOrder = Array.from(digestEl.querySelectorAll(".group-card")).map(c => c.querySelector(".group-card__header").dataset.group);
+        saveGroupOrder(newOrder);
+        groupOrder = newOrder;
+      });
+      card.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = "move";
+        if (draggedCard && draggedCard !== card) {
+          const rect = card.getBoundingClientRect();
+          const next = (e.clientY - rect.top)/(rect.bottom - rect.top) > 0.5;
+          digestEl.insertBefore(draggedCard, next ? card.nextSibling : card);
+        }
+      });
+    });
+  }
+
   function attachListeners() {
+    // Lightbox
+    document.querySelectorAll(".post-item__thumb.is-clickable").forEach(thumb => {
+      thumb.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        lightboxImg.src = thumb.dataset.img;
+        lightboxLink.href = thumb.dataset.link;
+        lightboxModal.showModal();
+      });
+    });
+
     // Card expand/collapse
     document.querySelectorAll(".group-card__header").forEach((header) => {
       header.addEventListener("click", () => {
@@ -415,7 +547,82 @@
         }
       });
     });
+
+    // Manual mark read toggle
+    document.querySelectorAll(".post-item__check").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const postItem = btn.closest(".post-item");
+        const url = postItem.dataset.url;
+        
+        if (postItem.classList.contains("is-read")) {
+          unmarkAsRead(url);
+          postItem.classList.remove("is-read");
+        } else {
+          markAsRead(url);
+          postItem.classList.add("is-read");
+        }
+        
+        updateUnreadCounts();
+      });
+    });
   }
+
+  function showStatsModal() {
+    if (!digestData) return;
+    let stats = digestData.stats || {};
+    let droppedAge = stats.dropped_age || 0;
+    let droppedDup = stats.dropped_duplicates || 0;
+    let droppedKw = stats.dropped_keywords || {};
+    
+    let kwRows = Object.entries(droppedKw)
+        .sort((a,b) => b[1] - a[1])
+        .map(([kw, c]) => `<tr><td>${escapeHtml(kw)}</td><td>${c}</td></tr>`).join("");
+    
+    let readSet = getReadSet();
+    let groupCounts = {};
+    if (digestData.groups) {
+      digestData.groups.forEach(g => {
+        let readInGroup = g.posts.filter(p => readSet.has(p.url)).length;
+        if (readInGroup > 0) groupCounts[g.name] = readInGroup;
+      });
+    }
+    let readRows = Object.entries(groupCounts)
+        .sort((a,b) => b[1] - a[1])
+        .map(([g, c]) => `<tr><td>${escapeHtml(stripEmoji(g))}</td><td>${c}</td></tr>`).join("");
+
+    statsBody.innerHTML = `
+      <h3 style="margin-bottom:8px">Dropped Posts</h3>
+      <table class="stats-table">
+        <tr><th>Reason</th><th>Count</th></tr>
+        <tr><td>Too Old / Too New</td><td>${droppedAge}</td></tr>
+        <tr><td>Duplicates (Crossposts)</td><td>${droppedDup}</td></tr>
+      </table>
+      
+      ${kwRows ? `
+      <h3 style="margin-bottom:8px">Dropped by Keyword</h3>
+      <table class="stats-table">
+        <tr><th>Keyword</th><th>Count</th></tr>
+        ${kwRows}
+      </table>` : ""}
+      
+      ${readRows ? `
+      <h3 style="margin-bottom:8px">Read Links by Group</h3>
+      <table class="stats-table">
+        <tr><th>Group</th><th>Read Count</th></tr>
+        ${readRows}
+      </table>` : ""}
+    `;
+    statsModal.showModal();
+  }
+  
+  if (statsClose) statsClose.addEventListener("click", () => statsModal.close());
+  if (statsBackdrop) statsBackdrop.addEventListener("click", () => statsModal.close());
+  
+  if (lightboxClose) lightboxClose.addEventListener("click", () => lightboxModal.close());
+  if (lightboxBackdrop) lightboxBackdrop.addEventListener("click", () => lightboxModal.close());
 
   // Smart Toggle All (Grouped View only)
   if (btnToggleAll) {
@@ -447,36 +654,106 @@
     renderActiveView();
   });
 
+  if (btnHideRead) {
+    btnHideRead.addEventListener("click", () => {
+      hideReadState = !hideReadState;
+      if (hideReadState) {
+        document.body.classList.add("hide-read");
+        btnHideRead.classList.add("is-active");
+        btnHideRead.setAttribute("aria-checked", "true");
+      } else {
+        document.body.classList.remove("hide-read");
+        btnHideRead.classList.remove("is-active");
+        btnHideRead.setAttribute("aria-checked", "false");
+      }
+      try {
+        localStorage.setItem("myreddit_hide_read", hideReadState ? "1" : "0");
+      } catch {}
+      updateUnreadCounts();
+    });
+  }
+
   // ── Boot ──────────────────────────────────────────────────────
+
+  async function loadDigest(url) {
+    const resp = await fetch(url);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    digestData = await resp.json();
+    
+    activeFilters.clear();
+    if (digestData.groups) {
+      digestData.groups.forEach(g => activeFilters.add(g.name));
+    }
+    
+    renderMeta(digestData);
+    renderStats(digestData);
+    renderFilters();
+    renderActiveView();
+  }
 
   async function init() {
     try {
-      const resp = await fetch(`digest.json?t=${new Date().getTime()}`);
-      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-
-      digestData = await resp.json();
+      // 1. Fetch Archive index
+      let archiveList = [];
+      try {
+        const archResp = await fetch(`archive/index.json?t=${new Date().getTime()}`);
+        if (archResp.ok) {
+          archiveList = await archResp.json();
+        }
+      } catch {}
       
+      if (archiveList.length > 0) {
+        archiveContainer.style.display = "block";
+        archiveSelect.innerHTML = `<option value="digest.json">Latest Digest</option>` + 
+          archiveList.map(a => `<option value="archive/${a.filename}">${a.date}</option>`).join("");
+          
+        archiveSelect.addEventListener("change", (e) => {
+          entranceDone = false;
+          topBar.classList.remove("is-revealed");
+          viewControls.classList.remove("is-revealed");
+          siteFooter.classList.remove("is-revealed");
+          
+          digestEl.innerHTML = "";
+          digestEl.appendChild(loadingEl);
+          loadingEl.classList.remove("is-leaving");
+          
+          loadDigest(e.target.value + `?t=${new Date().getTime()}`).then(() => {
+            loadingEl.remove();
+            requestAnimationFrame(() => {
+              revealEntrance();
+              setTimeout(() => { entranceDone = true; }, 600);
+            });
+          }).catch(err => {
+            console.error(err);
+            renderError("Could not load selected archive.");
+          });
+        });
+      }
+
       // Smooth crossfade: loading → content
       loadingEl.classList.add("is-leaving");
       await new Promise(r => setTimeout(r, 250));
       loadingEl.remove();
-      
-      // Init filters
-      if (digestData.groups) {
-        digestData.groups.forEach(g => activeFilters.add(g.name));
-      }
-      
-      renderMeta(digestData);
-      renderStats(digestData);
-      renderFilters();
-      renderActiveView();
 
-      // Trigger entrance animation sequence
+      // Init hide read state
+      try {
+        if (localStorage.getItem("myreddit_hide_read") === "1") {
+          hideReadState = true;
+          document.body.classList.add("hide-read");
+          if (btnHideRead) {
+            btnHideRead.classList.add("is-active");
+            btnHideRead.setAttribute("aria-checked", "true");
+          }
+        }
+      } catch {}
+
+      await loadDigest(`digest.json?t=${new Date().getTime()}`);
+      
       requestAnimationFrame(() => {
         revealEntrance();
-        // Mark entrance as done after animations settle
         setTimeout(() => { entranceDone = true; }, 600);
       });
+      
     } catch (err) {
       console.error("Failed to load digest:", err);
       renderError(

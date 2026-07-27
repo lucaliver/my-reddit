@@ -28,8 +28,15 @@ class PostGroup:
 
     @property
     def subreddits_label(self) -> str:
-        """Human-readable list of subreddits, e.g. 'r/python, r/webdev'."""
-        return ", ".join(f"r/{s}" for s in sorted(self.subreddits))
+        """Human-readable list of subreddits, ordered by post count descending."""
+        counts = {s: 0 for s in self.subreddits}
+        for p in self.posts:
+            if p["subreddit"] in counts:
+                counts[p["subreddit"]] += 1
+                
+        # Sort by post count (descending), then alphabetically
+        ordered = sorted(self.subreddits, key=lambda s: (-counts.get(s, 0), s.lower()))
+        return ", ".join(f"r/{s}" for s in ordered)
 
 
 def _build_subreddit_to_group() -> dict[str, str]:
@@ -77,8 +84,16 @@ def group_posts(posts: list[Post]) -> list[PostGroup]:
                 break
         group.posts = filtered_posts
 
-    # Sort groups by post count (most posts first)
-    result = sorted(buckets.values(), key=lambda g: len(g.posts), reverse=True)
+    # Sort groups matching the order defined in config.SUBREDDIT_GROUPS
+    config_order = list(config.SUBREDDIT_GROUPS.keys())
+    
+    def group_sort_key(g: PostGroup) -> int:
+        try:
+            return config_order.index(g.name)
+        except ValueError:
+            return 999  # Put unknown standalone groups at the end
+            
+    result = sorted(buckets.values(), key=group_sort_key)
 
     logger.info(
         "Grouped into %d groups (cap %d posts/group).",

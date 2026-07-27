@@ -31,7 +31,7 @@ def main() -> None:
         return
 
     # 2. Filter
-    posts = post_filter.apply_filters(posts)
+    posts, stats = post_filter.apply_filters(posts)
     if not posts:
         logger.warning("All posts filtered out — nothing to generate.")
         return
@@ -40,7 +40,7 @@ def main() -> None:
     groups = grouper.group_posts(posts)
 
     # 4. Generate static digest JSON
-    site_generator.generate_digest_json(groups)
+    site_generator.generate_digest_json(groups, stats)
 
     total_posts = sum(len(g.posts) for g in groups)
     elapsed = time.time() - start_time

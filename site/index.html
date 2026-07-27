@@ -20,6 +20,9 @@
       <div class="top-bar__left" id="header-meta">
         <!-- Populated by JS -->
       </div>
+      <div class="top-bar__center" id="archive-container" style="display: none;">
+        <select id="archive-select" class="archive-select" aria-label="Select archive date"></select>
+      </div>
       <div class="top-bar__right" id="stats-bar">
         <!-- Populated by JS -->
       </div>
@@ -27,9 +30,17 @@
 
     <!-- View Switcher & Filters -->
     <div class="view-controls" id="view-controls">
-      <div class="view-toggle">
-        <button class="view-toggle__btn is-active" id="btn-view-grouped">Grouped</button>
-        <button class="view-toggle__btn" id="btn-view-feed">Feed</button>
+      <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+        <div class="view-toggle">
+          <button class="view-toggle__btn is-active" id="btn-view-grouped">Grouped</button>
+          <button class="view-toggle__btn" id="btn-view-feed">Feed</button>
+        </div>
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <button class="switch-toggle" id="btn-hide-read" role="switch" aria-checked="false">
+            <span class="switch-toggle__label">Hide read</span>
+            <div class="switch-toggle__track"></div>
+          </button>
+        </div>
       </div>
       
       <!-- Horizontal carousel for groups (Feed View) -->
@@ -61,6 +72,30 @@
     </footer>
 
   </div>
+
+  <!-- Lightbox Modal -->
+  <dialog id="lightbox-modal" class="modal lightbox-modal">
+    <div class="modal__backdrop" id="lightbox-backdrop"></div>
+    <div class="modal__content lightbox__content">
+      <button class="modal__close" id="lightbox-close" aria-label="Close lightbox">✕</button>
+      <img id="lightbox-img" src="" alt="Full size preview">
+      <a id="lightbox-link" href="#" target="_blank" rel="noopener" class="lightbox__link">Open external link ↗</a>
+    </div>
+  </dialog>
+
+  <!-- Stats Modal -->
+  <dialog id="stats-modal" class="modal">
+    <div class="modal__backdrop" id="stats-backdrop"></div>
+    <div class="modal__content stats__content">
+      <div class="modal__header">
+        <h2>Digest Statistics</h2>
+        <button class="modal__close" id="stats-close" aria-label="Close stats">✕</button>
+      </div>
+      <div class="modal__body" id="stats-body">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </dialog>
 
   <script src="app.js"></script>
 </body>
