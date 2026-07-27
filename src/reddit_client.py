@@ -7,9 +7,9 @@ All subreddits are fetched in a single multi-subreddit request
 
 Returns a list of normalised post dicts consumed by the filter/grouper.
 
-Note: Reddit's RSS/Atom feeds do **not** expose post scores or comment
-counts. We rely on Reddit's own ``top`` sorting to surface high-quality
-posts and use age filtering to keep only mature posts (24-48h by default).
+Note: Reddit's RSS/Atom feeds do **not** expose post scores. We rely on 
+Reddit's own ``top`` sorting to surface high-quality posts and use age 
+filtering to keep only mature posts (24-48h by default).
 """
 
 from __future__ import annotations
@@ -17,6 +17,7 @@ from __future__ import annotations
 import html as html_module
 import logging
 import re
+import time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
@@ -57,8 +58,6 @@ def _fetch_rss(subreddits_str: str, sort: str, limit: int) -> str | None:
     params = {"limit": str(limit), "t": "week"}
     headers = {"User-Agent": _USER_AGENT}
 
-    import time
-
     for attempt in range(_MAX_RETRIES):
         try:
             resp = requests.get(url, params=params, headers=headers, timeout=30)
@@ -87,9 +86,7 @@ def _fetch_rss(subreddits_str: str, sort: str, limit: int) -> str | None:
 def _parse_rss(xml_text: str) -> list[Post]:
     """
     Parse Reddit's Atom feed into normalised Post dicts.
-
-    The ``<category>`` element tells us which subreddit each entry belongs to.
-    Score and comment counts are not available in RSS — we set them to 0.
+    Extracts thumbnail and excerpt from HTML payload where possible.
     """
     posts: list[Post] = []
 
@@ -134,13 +131,28 @@ def _parse_rss(xml_text: str) -> list[Post]:
                 except (ValueError, TypeError):
                     pass
 
-        # Try to extract comment count from content HTML
+        # Try to extract comment count and thumbnails from content HTML
         num_comments = 0
+        thumbnail = None
+        excerpt = None
         if content_el is not None and content_el.text:
             raw_html = html_module.unescape(content_el.text)
-            m = re.search(r"\[(\d+)\s+comments?\]", raw_html)
-            if m:
-                num_comments = int(m.group(1))
+            
+            m_com = re.search(r"\[(\d+)\s+comments?\]", raw_html)
+            if m_com:
+                num_comments = int(m_com.group(1))
+                
+            m_img = re.search(r'<img[^>]+src="([^">]+)"', raw_html)
+            if m_img:
+                thumbnail = m_img.group(1)
+                
+            # Remove HTML tags to get raw text for excerpt
+            text_only = re.sub(r'<[^>]+>', ' ', raw_html)
+            text_only = re.sub(r'\s+', ' ', text_only).strip()
+            # Remove boilerplate from Reddit RSS
+            text_only = re.sub(r'submitted by /u/[^\s]+\s+\[link\] \[comments\]', '', text_only).strip()
+            if text_only and len(text_only) > 5:
+                excerpt = text_only[:140] + "..." if len(text_only) > 140 else text_only
 
         # Extract post ID from the <id> element (format: t3_xxxxx)
         id_el = entry.find(f"{{{_ATOM_NS}}}id")
@@ -150,7 +162,6 @@ def _parse_rss(xml_text: str) -> list[Post]:
             {
                 "id": post_id,
                 "title": title,
-                "score": 0,  # not available via RSS
                 "num_comments": num_comments,
                 "subreddit": subreddit.lower(),
                 "subreddit_display": subreddit_display,
@@ -159,28 +170,13 @@ def _parse_rss(xml_text: str) -> list[Post]:
                 "created_utc": created_utc,
                 "is_self": "/comments/" in permalink,
                 "over_18": False,
+                "thumbnail": thumbnail,
+                "excerpt": excerpt,
             }
         )
 
     return posts
 
-
-def _collect_subreddits() -> list[str]:
-    """
-    Build the full de-duplicated list of subreddits from config.
-
-    Merges SUBREDDITS and all subs mentioned in SUBREDDIT_GROUPS.
-    """
-    subs: set[str] = set()
-
-    for sub in config.SUBREDDITS:
-        subs.add(sub.lower())
-
-    for group_subs in config.SUBREDDIT_GROUPS.values():
-        for sub in group_subs:
-            subs.add(sub.lower())
-
-    return sorted(subs)
 
 
 def _chunk_list(items: list[str], chunk_size: int) -> list[list[str]]:
@@ -195,8 +191,6 @@ def fetch_feed() -> list[Post]:
     Fetches each group separately so that high-traffic subreddits in one group
     don't saturate the 100-post limit and drown out smaller subreddits.
     """
-    import time
-
     logger.info("Starting RSS fetch (sort=%s, limit=%d) …", config.FEED_SORT, config.FETCH_LIMIT)
 
     seen_ids: set[str] = set()

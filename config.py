@@ -40,8 +40,7 @@ SUBREDDITS: list[str] = json.loads(
 # Supply as a JSON object string via env to override.
 #
 # Omitted from defaults (low signal for a daily digest):
-#   4CHR, announcements, beta, Daylio, dayliomoods,
-#   CompetitiveHS, AlanParsonsProject
+#   4CHR, announcements, beta
 # ---------------------------------------------------------------------------
 _default_groups: dict[str, list[str]] = {
     "🤖 AI": [
@@ -72,9 +71,7 @@ _default_groups: dict[str, list[str]] = {
         "commandline",
         "computerscience",
         "bioinformatics",
-        "aigamedev",
         "cscareerquestionsEU",
-        "godot",
         "howdidtheycodeit",
         "learnprogramming",
         "programming",
@@ -99,8 +96,7 @@ _default_groups: dict[str, list[str]] = {
         "automation",
         "futurology",
         "robotics",
-        "macapps",
-        "Instander"
+        "macapps"
     ],
     "📊 Data": [
         "datascience",
@@ -143,8 +139,7 @@ _default_groups: dict[str, list[str]] = {
         "TrekkingItaly",
         "xxitaly",
         "xyitaly",
-        "ViaggiITA",
-        "LucaSocialClub"
+        "ViaggiITA"
     ],
     "🇪🇺 Europe": [
         "budapest",
@@ -392,7 +387,6 @@ _default_groups: dict[str, list[str]] = {
         "tifu",
         "UnethicalLifeProTips",
         "Foodforthought",
-        "Futurology",
         "geography",
         "hopeposting",
         "Lightbulb"
@@ -411,8 +405,6 @@ _default_groups: dict[str, list[str]] = {
         "outside",
         "thatnightfeeling",
         "Anki",
-        "Daylio",
-        "dayliomoods",
         "Defcon",
         "degoogle",
         "Design",
@@ -424,7 +416,6 @@ _default_groups: dict[str, list[str]] = {
         "nosurf",
         "unknownvideos",
         "videos",
-        "ZenHabits",
         "RedditForGrownups",
         "subredditoftheday",
         "trendingsubreddits",
@@ -455,7 +446,7 @@ FETCH_LIMIT: int = int(os.environ.get("FETCH_LIMIT", "100"))
 # Filtering thresholds
 # ---------------------------------------------------------------------------
 # Discard posts younger than this (hours)
-MIN_AGE_HOURS: int = int(os.environ.get("MIN_AGE_HOURS", "0"))
+MIN_AGE_HOURS: int = int(os.environ.get("MIN_AGE_HOURS", "12"))
 
 # Discard posts older than this (hours) — 168 = 7 days for weekly digest
 MAX_AGE_HOURS: int = int(os.environ.get("MAX_AGE_HOURS", "168"))
@@ -471,3 +462,6 @@ BLOCKED_KEYWORDS: list[str] = json.loads(
 
 # Maximum posts shown per group in the final digest
 MAX_POSTS_PER_GROUP: int = int(os.environ.get("MAX_POSTS_PER_GROUP", "10"))
+
+# Maximum posts shown per individual subreddit in the final digest
+MAX_POSTS_PER_SUBREDDIT: int = int(os.environ.get("MAX_POSTS_PER_SUBREDDIT", "3"))

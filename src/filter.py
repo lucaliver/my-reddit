@@ -56,10 +56,6 @@ def apply_filters(posts: list[Post]) -> list[Post]:
     Run every filter in sequence.
 
     Order matters: age first (cheapest), then keywords.
-
-    Note: score filtering is not available because Reddit's RSS feeds don't
-    expose post scores. Use ``FEED_SORT=top`` to let Reddit's own ranking
-    surface high-quality posts.
     """
     logger.info("Starting filters on %d posts …", len(posts))
     posts = _filter_by_age(posts)

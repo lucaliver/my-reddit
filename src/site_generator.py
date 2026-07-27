@@ -32,6 +32,8 @@ def _serialize_post(post: dict) -> dict:
         "subreddit": post["subreddit_display"],
         "num_comments": post.get("num_comments", 0),
         "created_utc": created_iso,
+        "thumbnail": post.get("thumbnail"),
+        "excerpt": post.get("excerpt"),
     }
 
 

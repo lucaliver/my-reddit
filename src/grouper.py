@@ -1,8 +1,8 @@
 """
-Group posts by subreddit (or custom subreddit group) and sort them.
+Group posts by subreddit (or custom subreddit group) and cap them.
 
-Groups are ordered by average score (highest first); posts within each
-group are ordered by score descending and capped at MAX_POSTS_PER_GROUP.
+Posts within each group are ordered by recency (newest first) and
+capped at MAX_POSTS_PER_GROUP / MAX_POSTS_PER_SUBREDDIT.
 """
 
 from __future__ import annotations
@@ -25,11 +25,6 @@ class PostGroup:
     subreddits: set[str] = field(default_factory=set)
     posts: list[Post] = field(default_factory=list)
 
-    @property
-    def avg_score(self) -> float:
-        if not self.posts:
-            return 0.0
-        return sum(p["score"] for p in self.posts) / len(self.posts)
 
     @property
     def subreddits_label(self) -> str:
@@ -54,7 +49,7 @@ def group_posts(posts: list[Post]) -> list[PostGroup]:
     """
     Assign each post to a group, sort, and cap per-group count.
 
-    Returns the groups ordered by average score (descending).
+    Returns the groups ordered by post count (descending).
     """
     sub_to_group = _build_subreddit_to_group()
     buckets: dict[str, PostGroup] = defaultdict(lambda: PostGroup(name=""))
@@ -68,13 +63,22 @@ def group_posts(posts: list[Post]) -> list[PostGroup]:
         group.subreddits.add(sub)
         group.posts.append(post)
 
-    # Sort posts inside each group by score (desc) and cap
+    # Sort posts inside each group by recency (newest first) and cap
     for group in buckets.values():
-        group.posts.sort(key=lambda p: p["score"], reverse=True)
-        group.posts = group.posts[: config.MAX_POSTS_PER_GROUP]
+        group.posts.sort(key=lambda p: p["created_utc"], reverse=True)
+        
+        filtered_posts = []
+        sub_counts = defaultdict(int)
+        for p in group.posts:
+            if sub_counts[p["subreddit"]] < config.MAX_POSTS_PER_SUBREDDIT:
+                filtered_posts.append(p)
+                sub_counts[p["subreddit"]] += 1
+            if len(filtered_posts) == config.MAX_POSTS_PER_GROUP:
+                break
+        group.posts = filtered_posts
 
-    # Sort groups by average score (desc)
-    result = sorted(buckets.values(), key=lambda g: g.avg_score, reverse=True)
+    # Sort groups by post count (most posts first)
+    result = sorted(buckets.values(), key=lambda g: len(g.posts), reverse=True)
 
     logger.info(
         "Grouped into %d groups (cap %d posts/group).",
