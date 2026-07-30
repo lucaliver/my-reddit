@@ -1,0 +1,2010 @@
+{
+  "generated_at": "2026-07-27T22:08:21.504543+00:00",
+  "total_posts": 206,
+  "total_groups": 21,
+  "stats": {
+    "dropped_age": 175,
+    "dropped_duplicates": 31,
+    "dropped_keywords": {
+      "trump": 19
+    }
+  },
+  "groups": [
+    {
+      "name": "🤖 AI",
+      "subreddits": [
+        "artificialinteligence",
+        "chatgpt",
+        "claudeai",
+        "geminiai",
+        "openai",
+        "vibecoding"
+      ],
+      "subreddits_label": "r/artificialinteligence, r/chatgpt, r/claudeai, r/geminiai, r/openai, r/vibecoding",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "Differences Between Fable 5 and Opus 5 on MineBench.ai",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1v7i49g/differences_between_fable_5_and_opus_5_on/",
+          "subreddit": "ClaudeAI",
+          "created_utc": "2026-07-26T22:24:07+00:00",
+          "thumbnail": "https://preview.redd.it/wva19c9dfnfh1.gif?frame=1&width=140&height=140&crop=1:1,smart&auto=webp&s=ca6c4793c106bef790442289f2a946f4afd2b2ac",
+          "media_type": "gallery"
+        },
+        {
+          "title": "I built a procedural desert explorer with Claude Code (Opus 5) and Three.js",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1v7h5e3/i_built_a_procedural_desert_explorer_with_claude/",
+          "subreddit": "ClaudeAI",
+          "created_utc": "2026-07-26T21:45:29+00:00",
+          "thumbnail": "https://external-preview.redd.it/dmNjcTE3ams5bmZoMUF8V9P7Oy-a-LuRDdf0Sl-M2gtjBYOMj_NcPcLttagh.png?width=640&crop=smart&auto=webp&s=d255864262cb65ab6bff32966accb5bd08cf2199",
+          "media_type": "video"
+        },
+        {
+          "title": "ChatGPT saved me from sleeping at the airport...",
+          "url": "https://www.reddit.com/r/ChatGPT/comments/1v7h294/chatgpt_saved_me_from_sleeping_at_the_airport/",
+          "subreddit": "ChatGPT",
+          "created_utc": "2026-07-26T21:42:07+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Claude ran mock interviews for a job I badly wanted. The real one felt like a rerun. I got it.",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1v7fo9i/claude_ran_mock_interviews_for_a_job_i_badly/",
+          "subreddit": "ClaudeAI",
+          "created_utc": "2026-07-26T20:49:06+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "FreakyGPT",
+          "url": "https://www.reddit.com/r/ChatGPT/comments/1v6zsbr/freakygpt/",
+          "subreddit": "ChatGPT",
+          "created_utc": "2026-07-26T10:10:19+00:00",
+          "thumbnail": "https://preview.redd.it/7vbhxc4ptjfh1.jpeg?width=640&crop=smart&auto=webp&s=4d36a996ea73f5eced7f0b244c422666acaf2932",
+          "media_type": "image"
+        },
+        {
+          "title": "Developers vs Users in 26 seconds 😂",
+          "url": "https://www.reddit.com/r/vibecoding/comments/1v6yp1t/developers_vs_users_in_26_seconds/",
+          "subreddit": "vibecoding",
+          "created_utc": "2026-07-26T09:09:42+00:00",
+          "thumbnail": "https://external-preview.redd.it/bHgxZ2ZzNXZpamZoMUSOtXkUEdSHRQhlRmW3eTdLVwPuuqfKaSOJejiOEV3N.png?width=640&crop=smart&auto=webp&s=90cad00265a75c28340c4611c4f5f90feaac209f",
+          "media_type": "video"
+        },
+        {
+          "title": "Claaude security flaw leaks its customer's conversations on Google",
+          "url": "https://www.reddit.com/r/ChatGPT/comments/1v6w630/claaude_security_flaw_leaks_its_customers/",
+          "subreddit": "ChatGPT",
+          "created_utc": "2026-07-26T06:47:36+00:00",
+          "thumbnail": "https://preview.redd.it/oel3qdictifh1.jpeg?width=640&crop=smart&auto=webp&s=9284c09cd1e6bc0be319e61e879deeb6c3fb93f5",
+          "media_type": "image"
+        },
+        {
+          "title": "currentStateOfAiRelevancy",
+          "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1v6hbvf/currentstateofairelevancy/",
+          "subreddit": "ArtificialInteligence",
+          "created_utc": "2026-07-25T19:21:02+00:00",
+          "thumbnail": null,
+          "media_type": "image"
+        },
+        {
+          "title": "Vibecoders: is StackOverflow dead?",
+          "url": "https://www.reddit.com/r/vibecoding/comments/1v66rqz/vibecoders_is_stackoverflow_dead/",
+          "subreddit": "vibecoding",
+          "created_utc": "2026-07-25T12:13:08+00:00",
+          "thumbnail": "https://preview.redd.it/a2e1l46jadfh1.png?width=320&crop=smart&auto=webp&s=393cdd281743aa5a902c5ec5db7ae47bb92281b8",
+          "media_type": "image"
+        },
+        {
+          "title": "Opus 5 starts to make \"weight\" related references when this Youtuber tried to make a wedding website",
+          "url": "https://www.reddit.com/r/vibecoding/comments/1v61dif/opus_5_starts_to_make_weight_related_references/",
+          "subreddit": "vibecoding",
+          "created_utc": "2026-07-25T07:19:06+00:00",
+          "thumbnail": "https://external-preview.redd.it/aTlleXVnaDd1YmZoMRhn9NCxNtUkSUGmFaFkG5xEBd4_95qbpFj5rOm9YGHy.png?width=640&crop=smart&auto=webp&s=3e37fe5397576597effefa0541a6b87dcdda8b69",
+          "media_type": "video"
+        }
+      ]
+    },
+    {
+      "name": "💻 Programming",
+      "subreddits": [
+        "bioinformatics",
+        "coding",
+        "commandline",
+        "computerscience",
+        "cscareerquestionseu",
+        "learnprogramming",
+        "n8n",
+        "programming",
+        "python",
+        "sideproject"
+      ],
+      "subreddits_label": "r/bioinformatics, r/coding, r/commandline, r/computerscience, r/cscareerquestionseu, r/learnprogramming, r/n8n, r/programming, r/python, r/sideproject",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "Python automations are so much better than AI Agents and LLMs",
+          "url": "https://www.reddit.com/r/Python/comments/1v7tfx9/python_automations_are_so_much_better_than_ai/",
+          "subreddit": "Python",
+          "created_utc": "2026-07-27T07:32:18+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "my python script that searches your files to find things for you",
+          "url": "https://www.reddit.com/r/learnprogramming/comments/1v7klwh/my_python_script_that_searches_your_files_to_find/",
+          "subreddit": "learnprogramming",
+          "created_utc": "2026-07-27T00:09:56+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "TiHole: I couldn't find a decent Pihole TUI so I made and open sourced one",
+          "url": "https://www.reddit.com/r/commandline/comments/1v7iy5l/tihole_i_couldnt_find_a_decent_pihole_tui_so_i/",
+          "subreddit": "commandline",
+          "created_utc": "2026-07-26T22:58:38+00:00",
+          "thumbnail": "https://preview.redd.it/pnmrggzbmnfh1.jpeg?width=640&crop=smart&auto=webp&s=a9258fb288e962b953b553943acc86c17ba5710f",
+          "media_type": "image"
+        },
+        {
+          "title": "I built a free tool that tracks stats and monthly trends across 100,000+ subreddits",
+          "url": "https://www.reddit.com/r/SideProject/comments/1v7cyw1/i_built_a_free_tool_that_tracks_stats_and_monthly/",
+          "subreddit": "SideProject",
+          "created_utc": "2026-07-26T19:07:43+00:00",
+          "thumbnail": "https://external-preview.redd.it/bXA2cWppZHhlbWZoMVvBT_2-r7E_jJZAv6wfv9GJVAjKtDS1EWV4X9aUwL2R.png?width=640&crop=smart&auto=webp&s=5f89e0a38518a43fb4387d476103722d61819fb4",
+          "media_type": "video"
+        },
+        {
+          "title": "What way did you learn Javascript?",
+          "url": "https://www.reddit.com/r/learnprogramming/comments/1v77tvq/what_way_did_you_learn_javascript/",
+          "subreddit": "learnprogramming",
+          "created_utc": "2026-07-26T15:59:50+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "What's the biggest reason side projects never get finished?",
+          "url": "https://www.reddit.com/r/SideProject/comments/1v767kj/whats_the_biggest_reason_side_projects_never_get/",
+          "subreddit": "SideProject",
+          "created_utc": "2026-07-26T14:59:14+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Is learning n8n still worth it if AI can already build automations?",
+          "url": "https://www.reddit.com/r/n8n/comments/1v74y2v/is_learning_n8n_still_worth_it_if_ai_can_already/",
+          "subreddit": "n8n",
+          "created_utc": "2026-07-26T14:10:22+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "I am not growing out of beginner phase",
+          "url": "https://www.reddit.com/r/learnprogramming/comments/1v70ymb/i_am_not_growing_out_of_beginner_phase/",
+          "subreddit": "learnprogramming",
+          "created_utc": "2026-07-26T11:12:01+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "How an accidental viral trend in Uzbekistan gave my side-project 1k+ downloads and its first paid user",
+          "url": "https://www.reddit.com/r/SideProject/comments/1v704ok/how_an_accidental_viral_trend_in_uzbekistan_gave/",
+          "subreddit": "SideProject",
+          "created_utc": "2026-07-26T10:28:43+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Modeling Facts and Reactions with Domain Events",
+          "url": "https://www.reddit.com/r/programming/comments/1v6xuqc/modeling_facts_and_reactions_with_domain_events/",
+          "subreddit": "programming",
+          "created_utc": "2026-07-26T08:21:51+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        }
+      ]
+    },
+    {
+      "name": "🔧 Tech",
+      "subreddits": [
+        "futurology",
+        "gadgets",
+        "technology"
+      ],
+      "subreddits_label": "r/futurology, r/gadgets, r/technology",
+      "post_count": 7,
+      "posts": [
+        {
+          "title": "Why does everything feel so joyless? Welcome to the age of decadence without pleasure",
+          "url": "https://www.reddit.com/r/technology/comments/1v7n74f/why_does_everything_feel_so_joyless_welcome_to/",
+          "subreddit": "technology",
+          "created_utc": "2026-07-27T02:08:11+00:00",
+          "thumbnail": "https://external-preview.redd.it/OzOoQknPYsu4T_W1yRE19kXVwJEIZ75ZU5A5ijeSaXU.jpeg?width=640&crop=smart&auto=webp&s=437abb7c55a27757b208491d3238b561e65be9e0",
+          "media_type": "image"
+        },
+        {
+          "title": "Massie Bill Would Bar Funding for Police Using Flock License Plate Readers",
+          "url": "https://www.reddit.com/r/technology/comments/1v7hw9x/massie_bill_would_bar_funding_for_police_using/",
+          "subreddit": "technology",
+          "created_utc": "2026-07-26T22:15:04+00:00",
+          "thumbnail": "https://external-preview.redd.it/oPxc1De3hSy7mmGrxJ0xMgNjUdR_3Wjvi0OsYWGtmss.jpeg?width=640&crop=smart&auto=webp&s=8895e987c50bfed2d8b2d1097a37a6742965933b",
+          "media_type": "image"
+        },
+        {
+          "title": "James Cameron tried to warn us: 'Skynet Day' is now shorthand for OpenAI's agent going rogue and hacking into a startup",
+          "url": "https://www.reddit.com/r/Futurology/comments/1v7gaen/james_cameron_tried_to_warn_us_skynet_day_is_now/",
+          "subreddit": "Futurology",
+          "created_utc": "2026-07-26T21:12:26+00:00",
+          "thumbnail": "https://external-preview.redd.it/dHMcbY0ZjT62fPHsPeasUzdRC2K_sB3AoHq2KPLIeEQ.jpeg?width=640&crop=smart&auto=webp&s=112441c76840a17ef7e8929e180bb232f83ac04a",
+          "media_type": "image"
+        },
+        {
+          "title": "US prosecutors charge Atlanta man after GrapheneOS phone wipes itself during airport search",
+          "url": "https://www.reddit.com/r/technology/comments/1v7emqr/us_prosecutors_charge_atlanta_man_after/",
+          "subreddit": "technology",
+          "created_utc": "2026-07-26T20:10:04+00:00",
+          "thumbnail": "https://external-preview.redd.it/A0mZoq9q7953mQhQg0TtvCbsmW_97nrF-xAeg6JNk6A.jpeg?width=640&crop=smart&auto=webp&s=41d83e7f1bda36ee5ad9c5326ec74f5440cf36ac",
+          "media_type": "image"
+        },
+        {
+          "title": "Spotify Deleted 75 Million AI-Generated Tracks – and It’s Not Done Yet",
+          "url": "https://www.reddit.com/r/Futurology/comments/1v72yxx/spotify_deleted_75_million_aigenerated_tracks_and/",
+          "subreddit": "Futurology",
+          "created_utc": "2026-07-26T12:47:24+00:00",
+          "thumbnail": "https://external-preview.redd.it/WFArBV29X8q6jNH7ccwqAeN_X4LmqsrTgULyXzLnm4A.jpeg?width=640&crop=smart&auto=webp&s=a5999935ea95c14821f6fc46027c5390ae6de598",
+          "media_type": "image"
+        },
+        {
+          "title": "America has 3.9 million abandoned oil and gas wells, and researchers found the heat inside could turn them into underground batteries for wind and solar",
+          "url": "https://www.reddit.com/r/Futurology/comments/1v6ivh0/america_has_39_million_abandoned_oil_and_gas/",
+          "subreddit": "Futurology",
+          "created_utc": "2026-07-25T20:22:03+00:00",
+          "thumbnail": "https://external-preview.redd.it/4FxftjJtg-v58kvGLYZ0ndhbnxNEslZEizCKcKRnvT4.jpeg?width=640&crop=smart&auto=webp&s=6e2f53c98fb19671872ec9550775a2df58e85e29",
+          "media_type": "image"
+        },
+        {
+          "title": "‘Really inappropriate’: teachers decry plan for humanoid robot in New York high school",
+          "url": "https://www.reddit.com/r/gadgets/comments/1v6b7q4/really_inappropriate_teachers_decry_plan_for/",
+          "subreddit": "gadgets",
+          "created_utc": "2026-07-25T15:24:20+00:00",
+          "thumbnail": "https://external-preview.redd.it/x_dkrCUpUzWBv09tsAE79Yp71ChJqcq_MzVfm-8zIfY.jpeg?width=640&crop=smart&auto=webp&s=d248c72b3eb73b43466d564a490e48fc4fab5ed9",
+          "media_type": "image"
+        }
+      ]
+    },
+    {
+      "name": "📊 Data",
+      "subreddits": [
+        "computervision",
+        "dataisbeautiful",
+        "infographics",
+        "mapporn"
+      ],
+      "subreddits_label": "r/computervision, r/dataisbeautiful, r/infographics, r/mapporn",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "The Name “John” in Different European Languages",
+          "url": "https://www.reddit.com/r/MapPorn/comments/1v7dsg6/the_name_john_in_different_european_languages/",
+          "subreddit": "MapPorn",
+          "created_utc": "2026-07-26T19:38:26+00:00",
+          "thumbnail": "https://preview.redd.it/jegxf0w1nmfh1.jpeg?width=640&crop=smart&auto=webp&s=9ae7b6954548f4c57e8d2666b5a96370d250345a",
+          "media_type": "image"
+        },
+        {
+          "title": "Home Prices Since 2022 Peak",
+          "url": "https://www.reddit.com/r/MapPorn/comments/1v7d8x8/home_prices_since_2022_peak/",
+          "subreddit": "MapPorn",
+          "created_utc": "2026-07-26T19:17:52+00:00",
+          "thumbnail": "https://preview.redd.it/oqkw7adbjmfh1.jpeg?width=640&crop=smart&auto=webp&s=9d0754b71e50c2d5da8be4cb7cda587a4b759928",
+          "media_type": "image"
+        },
+        {
+          "title": "First European Settlements of Canada and USA",
+          "url": "https://www.reddit.com/r/MapPorn/comments/1v79q2e/first_european_settlements_of_canada_and_usa/",
+          "subreddit": "MapPorn",
+          "created_utc": "2026-07-26T17:08:40+00:00",
+          "thumbnail": "https://preview.redd.it/yrbxft4cwlfh1.jpeg?width=640&crop=smart&auto=webp&s=8a25f0e04c6a4bf379e802a3d30bc55be7add747",
+          "media_type": "image"
+        },
+        {
+          "title": "[OC] European Heatwave June 2026",
+          "url": "https://www.reddit.com/r/dataisbeautiful/comments/1v6l8r1/oc_european_heatwave_june_2026/",
+          "subreddit": "dataisbeautiful",
+          "created_utc": "2026-07-25T21:59:14+00:00",
+          "thumbnail": "https://external-preview.redd.it/5-P7r0TrrOqS19rT2atGwLRBtEEyr1tF7FqYPfjXELw.jpeg?width=640&crop=smart&auto=webp&s=3826c8ea89ae7df6e1f2caffdc6532a3fd612aff",
+          "media_type": "image"
+        },
+        {
+          "title": "I recorded every Sydney radio station for 2 days straight to find out who plays the most ads",
+          "url": "https://www.reddit.com/r/dataisbeautiful/comments/1v5z1at/i_recorded_every_sydney_radio_station_for_2_days/",
+          "subreddit": "dataisbeautiful",
+          "created_utc": "2026-07-25T05:15:40+00:00",
+          "thumbnail": "https://preview.redd.it/p12j55nk7bfh1.png?width=140&height=90&auto=webp&s=8c4a8671a1d2999ce39152afa748abbc7fe9f666",
+          "media_type": "gallery"
+        },
+        {
+          "title": "[OC] Miroslav Klose's all-time World Cup goal record stood for 12 years. It was broken twice in the same tournament.",
+          "url": "https://www.reddit.com/r/dataisbeautiful/comments/1v5eax1/oc_miroslav_kloses_alltime_world_cup_goal_record/",
+          "subreddit": "dataisbeautiful",
+          "created_utc": "2026-07-24T15:16:52+00:00",
+          "thumbnail": "https://preview.redd.it/10nky4sf27fh1.png?width=640&crop=smart&auto=webp&s=0a62cdaa8b940d8250ed51dcf90f017560b94a67",
+          "media_type": "image"
+        },
+        {
+          "title": "How long each EU Candidate country has been waiting for Accession & Membership 🇪🇺",
+          "url": "https://www.reddit.com/r/Infographics/comments/1v4xnf7/how_long_each_eu_candidate_country_has_been/",
+          "subreddit": "Infographics",
+          "created_utc": "2026-07-24T01:52:50+00:00",
+          "thumbnail": "https://preview.redd.it/y1gekd9433fh1.jpeg?width=640&crop=smart&auto=webp&s=9beb2a8c12e465ac1f91db0ff5706ed25a242ad6",
+          "media_type": "image"
+        },
+        {
+          "title": "Global Attitudes Towards the U.S. and China 2026",
+          "url": "https://www.reddit.com/r/Infographics/comments/1v4uo7s/global_attitudes_towards_the_us_and_china_2026/",
+          "subreddit": "Infographics",
+          "created_utc": "2026-07-23T23:41:12+00:00",
+          "thumbnail": "https://preview.redd.it/cuu631tmf2fh1.jpeg?width=640&crop=smart&auto=webp&s=a00f41f70e717ecf752dd6ac01ca8914325c0b56",
+          "media_type": "image"
+        },
+        {
+          "title": "in Texas, 62% of operating and under-construction data-center capacity is located in areas facing high or extremely high water stress from Bloomberg Intelligence",
+          "url": "https://www.reddit.com/r/Infographics/comments/1v4rdpd/in_texas_62_of_operating_and_underconstruction/",
+          "subreddit": "Infographics",
+          "created_utc": "2026-07-23T21:29:46+00:00",
+          "thumbnail": "https://preview.redd.it/q8jf3s16s1fh1.jpeg?width=320&crop=smart&auto=webp&s=ac14eafdb5f9e20cf342c1889e543b370c5fbabf",
+          "media_type": "image"
+        },
+        {
+          "title": "China open-sourced a model that reconstructs any scene in 3D from a regular video, in real-time",
+          "url": "https://www.reddit.com/r/computervision/comments/1v45uno/china_opensourced_a_model_that_reconstructs_any/",
+          "subreddit": "computervision",
+          "created_utc": "2026-07-23T06:36:38+00:00",
+          "thumbnail": null,
+          "media_type": "video"
+        }
+      ]
+    },
+    {
+      "name": "💼 Business",
+      "subreddits": [
+        "appbusiness",
+        "big4",
+        "careerguidance",
+        "consulting",
+        "fluentinfinance",
+        "startup_ideas",
+        "startups",
+        "workfromhome"
+      ],
+      "subreddits_label": "r/appbusiness, r/big4, r/careerguidance, r/consulting, r/fluentinfinance, r/startup_ideas, r/startups, r/workfromhome",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "Highest pay to stress ratio careers?",
+          "url": "https://www.reddit.com/r/careerguidance/comments/1v7olrw/highest_pay_to_stress_ratio_careers/",
+          "subreddit": "careerguidance",
+          "created_utc": "2026-07-27T03:14:51+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Losing a $500k home you’ve owned for 30 years because you couldn’t pay $4k in property taxes shouldn’t be legal",
+          "url": "https://www.reddit.com/r/FluentInFinance/comments/1v71dnc/losing_a_500k_home_youve_owned_for_30_years/",
+          "subreddit": "FluentInFinance",
+          "created_utc": "2026-07-26T11:33:04+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Title: Did anyone else accidentally get pigeonholed into a niche they never actually chose?",
+          "url": "https://www.reddit.com/r/careerguidance/comments/1v6xove/title_did_anyone_else_accidentally_get/",
+          "subreddit": "careerguidance",
+          "created_utc": "2026-07-26T08:12:51+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "A promotion was forced upon me that I do not want, how do I get out of this situation?",
+          "url": "https://www.reddit.com/r/careerguidance/comments/1v6vhjr/a_promotion_was_forced_upon_me_that_i_do_not_want/",
+          "subreddit": "careerguidance",
+          "created_utc": "2026-07-26T06:09:41+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Is YC losing prestige with all of the AI Wrappers it invests in? I will not promote",
+          "url": "https://www.reddit.com/r/startups/comments/1v6qf5i/is_yc_losing_prestige_with_all_of_the_ai_wrappers/",
+          "subreddit": "startups",
+          "created_utc": "2026-07-26T01:53:11+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Why is there a higher percentage of single women compared to married men in Big 4 upper management",
+          "url": "https://www.reddit.com/r/Big4/comments/1v6q4ag/why_is_there_a_higher_percentage_of_single_women/",
+          "subreddit": "Big4",
+          "created_utc": "2026-07-26T01:38:55+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "$100,000 a year is the new $39,000.",
+          "url": "https://www.reddit.com/r/FluentInFinance/comments/1v6o46s/100000_a_year_is_the_new_39000/",
+          "subreddit": "FluentInFinance",
+          "created_utc": "2026-07-26T00:04:46+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "It’s absolutely wild that the U.S. prints trillions of dollars out of thin air, dilutes the value of every dollar you earn, and most people have no clue.",
+          "url": "https://www.reddit.com/r/FluentInFinance/comments/1v6ma4o/its_absolutely_wild_that_the_us_prints_trillions/",
+          "subreddit": "FluentInFinance",
+          "created_utc": "2026-07-25T22:43:09+00:00",
+          "thumbnail": "https://external-preview.redd.it/cnZjMXBmaDNmZ2ZoMaFYuSV55qGS118qLu1q7f6UORh3YWtUR9RsVn32aN3A.png?width=640&crop=smart&auto=webp&s=59138438522ada0639696cc3a739f48e53eb26f9",
+          "media_type": "video"
+        },
+        {
+          "title": "I’m finally free",
+          "url": "https://www.reddit.com/r/Big4/comments/1v6efmx/im_finally_free/",
+          "subreddit": "Big4",
+          "created_utc": "2026-07-25T17:30:30+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Spouses who work from home together: what do you talk about/how do you connect?",
+          "url": "https://www.reddit.com/r/workfromhome/comments/1v68x53/spouses_who_work_from_home_together_what_do_you/",
+          "subreddit": "workfromhome",
+          "created_utc": "2026-07-25T13:49:07+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        }
+      ]
+    },
+    {
+      "name": "🍕 Italy",
+      "subreddits": [
+        "italia",
+        "italiacareeradvice",
+        "italiapersonalfinance",
+        "italy",
+        "viaggiita"
+      ],
+      "subreddits_label": "r/italia, r/italiacareeradvice, r/italiapersonalfinance, r/italy, r/viaggiita",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "Val Brembana, i turisti contro i campanacci delle mucche: «Non si dorme». Il sindaco: «Non posso metterle in modalità silenzioso»",
+          "url": "https://www.reddit.com/r/Italia/comments/1v7pmtn/val_brembana_i_turisti_contro_i_campanacci_delle/",
+          "subreddit": "Italia",
+          "created_utc": "2026-07-27T04:05:39+00:00",
+          "thumbnail": "https://external-preview.redd.it/8ACgLlG9wMsSTDyYDQnTnG6CKb2-hTRYiryrX97Wr9I.jpeg?width=640&crop=smart&auto=webp&s=fd775b1e006041ca08fbb611af6b66fc99a3bace",
+          "media_type": "image"
+        },
+        {
+          "title": "Brindisi, maxi truffa alle banche: tra i 145 indagati c'è Nicola Didonna, capogruppo in consiglio comunale a Brindisi, di Futuro Nazionale. E`accusato di truffa, malversazione di erogazione pubbliche e indebita percezione pubblica",
+          "url": "https://www.reddit.com/r/italy/comments/1v7pizm/brindisi_maxi_truffa_alle_banche_tra_i_145/",
+          "subreddit": "italy",
+          "created_utc": "2026-07-27T04:00:37+00:00",
+          "thumbnail": "https://external-preview.redd.it/FChN9Ic62mGnI8BmI3CVU0orPvDfwFmDl3jt8fjcTGw.jpeg?width=640&crop=smart&auto=webp&s=1f541b08e6fe076ceeaad433764f4ba8f82ebcce",
+          "media_type": "image"
+        },
+        {
+          "title": "Fornero: “La mia riforma salvò i conti ma mancò il tempo di spiegarla”",
+          "url": "https://www.reddit.com/r/italy/comments/1v7hbai/fornero_la_mia_riforma_salvò_i_conti_ma_mancò_il/",
+          "subreddit": "italy",
+          "created_utc": "2026-07-26T21:52:03+00:00",
+          "thumbnail": "https://external-preview.redd.it/Nfa_cXh5ACWpGQGSTtflJ-biukJwUF6IGz6Rlpo3th0.jpeg?width=640&crop=smart&auto=webp&s=7e9bb3ae3b9e06303c4f39315b71f1d1b8e04c37",
+          "media_type": "image"
+        },
+        {
+          "title": "L’ascensore sociale del Conte Mazzanti Vien dal Mare",
+          "url": "https://www.reddit.com/r/Italia/comments/1v7cgxr/lascensore_sociale_del_conte_mazzanti_vien_dal/",
+          "subreddit": "Italia",
+          "created_utc": "2026-07-26T18:49:38+00:00",
+          "thumbnail": "https://preview.redd.it/w4h3knhcemfh1.jpeg?width=640&crop=smart&auto=webp&s=33d83ff0ff4f7e4d5b92b367bce57a6d82640b34",
+          "media_type": "image"
+        },
+        {
+          "title": "E io pago...",
+          "url": "https://www.reddit.com/r/Italia/comments/1v798ak/e_io_pago/",
+          "subreddit": "Italia",
+          "created_utc": "2026-07-26T16:51:03+00:00",
+          "thumbnail": "https://preview.redd.it/tz47sou6tlfh1.jpeg?width=640&crop=smart&auto=webp&s=b0c38353d0af09ee0ca88b8e15339bcbe8000813",
+          "media_type": "image"
+        },
+        {
+          "title": "Why is Rome so dirty/decaying?",
+          "url": "https://www.reddit.com/r/italy/comments/1v78lx7/why_is_rome_so_dirtydecaying/",
+          "subreddit": "italy",
+          "created_utc": "2026-07-26T16:28:07+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Insegnanti e studenti italiani sono stati portati via dalla polizia in Thailandia e si sono scusati con la signora thailandese che li aveva rimproverati per aver fatto baccano.",
+          "url": "https://www.reddit.com/r/ViaggiITA/comments/1v6wepz/insegnanti_e_studenti_italiani_sono_stati_portati/",
+          "subreddit": "ViaggiITA",
+          "created_utc": "2026-07-26T07:00:45+00:00",
+          "thumbnail": "https://external-preview.redd.it/bGlkdXVsNnZ2aWZoMd7rHjA3UB59bc94hF-6FCcuTjdpuBvXVuIKWZBw_Gmu.png?width=640&crop=smart&auto=webp&s=f227e24be97381ec8d72921ccd787536ac77f5de",
+          "media_type": "video"
+        },
+        {
+          "title": "[Consiglio] La mia ragazza mi ha chiesto di scegliere tra lei e il PAC. Non sto scherzando.",
+          "url": "https://www.reddit.com/r/ItaliaPersonalFinance/comments/1v6h6jz/consiglio_la_mia_ragazza_mi_ha_chiesto_di/",
+          "subreddit": "ItaliaPersonalFinance",
+          "created_utc": "2026-07-25T19:15:14+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "I thailandesi stanno aspettando davanti all'hotel dove alloggiano gli studenti italiani. Hanno anche rimproverato gli studenti.",
+          "url": "https://www.reddit.com/r/ViaggiITA/comments/1v62vkj/i_thailandesi_stanno_aspettando_davanti_allhotel/",
+          "subreddit": "ViaggiITA",
+          "created_utc": "2026-07-25T08:45:40+00:00",
+          "thumbnail": "https://external-preview.redd.it/dWQzdWhna2s5Y2ZoMQuYbBxJBHhiuFvEY4DrdtQSO88kMi3r2GuRBCmdFCjF.png?width=320&crop=smart&auto=webp&s=c21af3d7d3526aad12c3ff56b47c767b5d49a2b8",
+          "media_type": "video"
+        },
+        {
+          "title": "Mi conviene fare HODL?",
+          "url": "https://www.reddit.com/r/ItaliaPersonalFinance/comments/1v5ghxm/mi_conviene_fare_hodl/",
+          "subreddit": "ItaliaPersonalFinance",
+          "created_utc": "2026-07-24T16:35:39+00:00",
+          "thumbnail": "https://preview.redd.it/ik144celg7fh1.jpeg?width=640&crop=smart&auto=webp&s=caffd385bfb894db91f1551f9f460c89f4d4d834",
+          "media_type": "image"
+        }
+      ]
+    },
+    {
+      "name": "🇪🇺 Europe",
+      "subreddits": [
+        "belgium",
+        "budapest",
+        "europe",
+        "finland",
+        "france",
+        "ireland"
+      ],
+      "subreddits_label": "r/belgium, r/budapest, r/europe, r/finland, r/france, r/ireland",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "Quelques unes récentes de la presse française",
+          "url": "https://www.reddit.com/r/france/comments/1v7tolq/quelques_unes_récentes_de_la_presse_française/",
+          "subreddit": "france",
+          "created_utc": "2026-07-27T07:46:42+00:00",
+          "thumbnail": "https://preview.redd.it/ohr6exfy8qfh1.jpeg?width=640&crop=smart&auto=webp&s=608df9ca763cb905db5ed50516909b7604d548b8",
+          "media_type": "image"
+        },
+        {
+          "title": "Scenes in Castlebar tonight",
+          "url": "https://www.reddit.com/r/ireland/comments/1v7kc7y/scenes_in_castlebar_tonight/",
+          "subreddit": "ireland",
+          "created_utc": "2026-07-26T23:58:47+00:00",
+          "thumbnail": "https://preview.redd.it/au2iwbmhxnfh1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=d50a78478f3e8187d91d53ba64d8432f845d44fb",
+          "media_type": "gallery"
+        },
+        {
+          "title": "Joe Biden congratulates Mayo on All-Ireland victory",
+          "url": "https://www.reddit.com/r/ireland/comments/1v7clm9/joe_biden_congratulates_mayo_on_allireland_victory/",
+          "subreddit": "ireland",
+          "created_utc": "2026-07-26T18:54:23+00:00",
+          "thumbnail": "https://preview.redd.it/v644g8f6fmfh1.png?width=640&crop=smart&auto=webp&s=ab93140403fc6f30a47b77ca2223ba4d75790b7c",
+          "media_type": "image"
+        },
+        {
+          "title": "The only Mayo man going to work tomorrow..",
+          "url": "https://www.reddit.com/r/ireland/comments/1v7b9h9/the_only_mayo_man_going_to_work_tomorrow/",
+          "subreddit": "ireland",
+          "created_utc": "2026-07-26T18:05:31+00:00",
+          "thumbnail": "https://preview.redd.it/pn76n77h6mfh1.jpeg?width=320&crop=smart&auto=webp&s=12acc045a894f9d18ce4b8ff739742dd4858f88e",
+          "media_type": "image"
+        },
+        {
+          "title": "UNESCO adds France’s D-Day landing beaches, Greece’s Mount Olympus to World Heritage List",
+          "url": "https://www.reddit.com/r/europe/comments/1v7ayrc/unesco_adds_frances_dday_landing_beaches_greeces/",
+          "subreddit": "europe",
+          "created_utc": "2026-07-26T17:54:37+00:00",
+          "thumbnail": "https://external-preview.redd.it/cSa5-J6BC-0--EsBFnNCjQnxTtnApTJ-s2G008CiIdY.jpeg?width=640&crop=smart&auto=webp&s=3e5f2d9a98310fa6f4f0eba4d802ab696e07c703",
+          "media_type": "image"
+        },
+        {
+          "title": "New 1000 euro note from Finland",
+          "url": "https://www.reddit.com/r/europe/comments/1v7ayd6/new_1000_euro_note_from_finland/",
+          "subreddit": "europe",
+          "created_utc": "2026-07-26T17:54:13+00:00",
+          "thumbnail": "https://preview.redd.it/awji7xsd4mfh1.jpeg?width=640&crop=smart&auto=webp&s=3f0b948498d14d5e356f061ab2affab2847503b9",
+          "media_type": "image"
+        },
+        {
+          "title": "Suspect in Berlin Pride attack shot dead by police in Berlin suburb, broadcaster says",
+          "url": "https://www.reddit.com/r/europe/comments/1v7a6kr/suspect_in_berlin_pride_attack_shot_dead_by/",
+          "subreddit": "europe",
+          "created_utc": "2026-07-26T17:25:42+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Près de Lacanau, 24/07/2026, photo de Maximilien Lamy (AFP)",
+          "url": "https://www.reddit.com/r/france/comments/1v71gbk/près_de_lacanau_24072026_photo_de_maximilien_lamy/",
+          "subreddit": "france",
+          "created_utc": "2026-07-26T11:36:45+00:00",
+          "thumbnail": "https://preview.redd.it/zjqfe4749kfh1.jpeg?width=640&crop=smart&auto=webp&s=bd0e9d4961e5e35986e965a68d19f00c8ecf7014",
+          "media_type": "image"
+        },
+        {
+          "title": "Qualité de l'air ce matin en France. Mes amis Bordelais, mettez des masques. L'odeur est présente ici à Béziers.",
+          "url": "https://www.reddit.com/r/france/comments/1v6xnsw/qualité_de_lair_ce_matin_en_france_mes_amis/",
+          "subreddit": "france",
+          "created_utc": "2026-07-26T08:11:13+00:00",
+          "thumbnail": "https://preview.redd.it/uhpouv3g8jfh1.png?width=640&crop=smart&auto=webp&s=b7e8c86e2b62da6b08cb1dfa66202e0887d4cafa",
+          "media_type": "image"
+        },
+        {
+          "title": "Got married a few weeks back at the cathedral in Helsinki.",
+          "url": "https://www.reddit.com/r/Finland/comments/1v6sgyd/got_married_a_few_weeks_back_at_the_cathedral_in/",
+          "subreddit": "Finland",
+          "created_utc": "2026-07-26T03:34:14+00:00",
+          "thumbnail": "https://preview.redd.it/porzb361vhfh1.jpeg?width=640&crop=smart&auto=webp&s=214b6b8a09be0fc9c34cc07f9f185572aa9f50e8",
+          "media_type": "image"
+        }
+      ]
+    },
+    {
+      "name": "🔬 Science & Academia",
+      "subreddits": [
+        "anthropology",
+        "askscience",
+        "phd",
+        "phdproductivity",
+        "science"
+      ],
+      "subreddits_label": "r/anthropology, r/askscience, r/phd, r/phdproductivity, r/science",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "EEG study found that the autistic brain is characterized by higher levels of background electrical activity, often described as neural noise, which corresponds with greater difficulties in real-world communication among children with autism spectrum disorder.",
+          "url": "https://www.reddit.com/r/science/comments/1v7lggd/eeg_study_found_that_the_autistic_brain_is/",
+          "subreddit": "science",
+          "created_utc": "2026-07-27T00:48:09+00:00",
+          "thumbnail": "https://external-preview.redd.it/TaLQJ4wDTMcmXZzGs5ww23FAABeIiYp_gheDHjnWNt0.jpeg?width=640&crop=smart&auto=webp&s=4fd35258ecefca30f25c8ac36813dd0ef14224d1",
+          "media_type": "image"
+        },
+        {
+          "title": "Does everything that we consider to be \"alive\" - not just plants and animals, but all protists, fungus, bacteria, archaea, etc. - have DNA?",
+          "url": "https://www.reddit.com/r/askscience/comments/1v7bftb/does_everything_that_we_consider_to_be_alive_not/",
+          "subreddit": "askscience",
+          "created_utc": "2026-07-26T18:11:55+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "New peer-reviewed study finds leisure travellers report higher well-being, especially those who travel frequently, anticipate future trips, and face fewer barrier",
+          "url": "https://www.reddit.com/r/science/comments/1v79l7b/new_peerreviewed_study_finds_leisure_travellers/",
+          "subreddit": "science",
+          "created_utc": "2026-07-26T17:03:49+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Why do we sweat out salts?",
+          "url": "https://www.reddit.com/r/askscience/comments/1v78gpa/why_do_we_sweat_out_salts/",
+          "subreddit": "askscience",
+          "created_utc": "2026-07-26T16:22:35+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Congratulations to Professor Thomas Count Dracula!",
+          "url": "https://www.reddit.com/r/PhD/comments/1v77l6l/congratulations_to_professor_thomas_count_dracula/",
+          "subreddit": "PhD",
+          "created_utc": "2026-07-26T15:50:46+00:00",
+          "thumbnail": "https://preview.redd.it/h2i19f1ailfh1.jpg?width=140&height=133&auto=webp&s=49b9da0ef1a48f89791540ca7d5f1aa0446d3360",
+          "media_type": "gallery"
+        },
+        {
+          "title": "Persistent money struggles linked to faster brain ageing. The study found that people who experienced either persistent money struggles or persistent low income in early and middle adulthood performed less well in cognitive tests by the age of 53.",
+          "url": "https://www.reddit.com/r/science/comments/1v72m2a/persistent_money_struggles_linked_to_faster_brain/",
+          "subreddit": "science",
+          "created_utc": "2026-07-26T12:31:19+00:00",
+          "thumbnail": "https://external-preview.redd.it/UZmC7XDs7i3s6CXogMy1CsqTHbdE-4j9tfDNaVQwIhs.jpeg?width=320&crop=smart&auto=webp&s=756472327a300f010106426809eede479e281614",
+          "media_type": "image"
+        },
+        {
+          "title": "Dearest esteemed scholars…",
+          "url": "https://www.reddit.com/r/PhD/comments/1v72f7o/dearest_esteemed_scholars/",
+          "subreddit": "PhD",
+          "created_utc": "2026-07-26T12:22:18+00:00",
+          "thumbnail": "https://preview.redd.it/6x31eyo8hkfh1.jpeg?width=640&crop=smart&auto=webp&s=91236cd125fcdefc2532b010156188cc04916741",
+          "media_type": "image"
+        },
+        {
+          "title": "My paper got accepted after 3 years of hardwork",
+          "url": "https://www.reddit.com/r/PhD/comments/1v6gucb/my_paper_got_accepted_after_3_years_of_hardwork/",
+          "subreddit": "PhD",
+          "created_utc": "2026-07-25T19:02:19+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Why can’t a snake be both venomous and a constricting type?",
+          "url": "https://www.reddit.com/r/askscience/comments/1v6gh1s/why_cant_a_snake_be_both_venomous_and_a/",
+          "subreddit": "askscience",
+          "created_utc": "2026-07-25T18:48:13+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Three Millennia Ago, Humans May Have Spoken Thousands More Languages Than We Have Today, During a Linguistic 'Golden Age'",
+          "url": "https://www.reddit.com/r/Anthropology/comments/1v6fjb4/three_millennia_ago_humans_may_have_spoken/",
+          "subreddit": "Anthropology",
+          "created_utc": "2026-07-25T18:12:13+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        }
+      ]
+    },
+    {
+      "name": "🧠 Psychology",
+      "subreddits": [
+        "askpsychology",
+        "cogsci",
+        "consciousness",
+        "heavymind",
+        "jung",
+        "meditation",
+        "mindfulness",
+        "psychology",
+        "zenhabits"
+      ],
+      "subreddits_label": "r/askpsychology, r/cogsci, r/consciousness, r/heavymind, r/jung, r/meditation, r/mindfulness, r/psychology, r/zenhabits",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "Thanks Jung 😭",
+          "url": "https://www.reddit.com/r/Jung/comments/1v7n9mn/thanks_jung/",
+          "subreddit": "Jung",
+          "created_utc": "2026-07-27T02:11:31+00:00",
+          "thumbnail": "https://external-preview.redd.it/cm54ZWs4bjZsb2ZoMcFC6agCQKNTzyxKOFClo_4axDDi_L7sWweBbN5ipbEK.jpeg?width=640&crop=smart&auto=webp&s=940b04dba9952b77450ffafb090401ec867bbbdb",
+          "media_type": "video"
+        },
+        {
+          "title": "Anyone familiar with these currents I'm wading into?",
+          "url": "https://www.reddit.com/r/Jung/comments/1v7liiy/anyone_familiar_with_these_currents_im_wading_into/",
+          "subreddit": "Jung",
+          "created_utc": "2026-07-27T00:50:49+00:00",
+          "thumbnail": "https://preview.redd.it/cj0qpe9s6ofh1.jpeg?width=640&crop=smart&auto=webp&s=ca0274c0c52aa6164ac190e86d2e3d8bbb6afac3",
+          "media_type": "image"
+        },
+        {
+          "title": "Scientists reveal what is actually happening to your body when you let out a random sigh. Research shows that sighing helps regulate both breathing variability and physiological alertness when people are engaged in monotonous activities.",
+          "url": "https://www.reddit.com/r/psychology/comments/1v7k0po/scientists_reveal_what_is_actually_happening_to/",
+          "subreddit": "psychology",
+          "created_utc": "2026-07-26T23:44:45+00:00",
+          "thumbnail": "https://external-preview.redd.it/SQyVIZvnvIprVtxLzW-HlxVYJSYQDFsAyGUYKONLPIc.jpeg?width=640&crop=smart&auto=webp&s=a8d63eda9d7bb6ae7764e15c7eacaabfc5c23d9d",
+          "media_type": "image"
+        },
+        {
+          "title": "Your Own Nonexistence is Inconceivable!",
+          "url": "https://www.reddit.com/r/consciousness/comments/1v7hejg/your_own_nonexistence_is_inconceivable/",
+          "subreddit": "consciousness",
+          "created_utc": "2026-07-26T21:55:34+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Even if you’re in space, there’s room to feel grounded",
+          "url": "https://www.reddit.com/r/Mindfulness/comments/1v7gn5b/even_if_youre_in_space_theres_room_to_feel/",
+          "subreddit": "Mindfulness",
+          "created_utc": "2026-07-26T21:25:37+00:00",
+          "thumbnail": "https://preview.redd.it/19g41bd66nfh1.jpeg?width=640&crop=smart&auto=webp&s=175a4db43bc10b8b2207461d841f27e9e0cdb475",
+          "media_type": "image"
+        },
+        {
+          "title": "For Carl Jung's birthday, try his Word association method from 1910. This is a test I made and supports multiple languages. Completely free, no email required, takes 5 minutes!",
+          "url": "https://www.reddit.com/r/Jung/comments/1v7ap5i/for_carl_jungs_birthday_try_his_word_association/",
+          "subreddit": "Jung",
+          "created_utc": "2026-07-26T17:44:43+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Empathy heightened after mediation",
+          "url": "https://www.reddit.com/r/Meditation/comments/1v778t9/empathy_heightened_after_mediation/",
+          "subreddit": "Meditation",
+          "created_utc": "2026-07-26T15:38:03+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Drawing I made at a train station.",
+          "url": "https://www.reddit.com/r/Heavymind/comments/1v7467j/drawing_i_made_at_a_train_station/",
+          "subreddit": "Heavymind",
+          "created_utc": "2026-07-26T13:38:54+00:00",
+          "thumbnail": "https://preview.redd.it/35fjkamwukfh1.jpeg?width=640&crop=smart&auto=webp&s=0c4cac0f6e26d1c5afd8384656416ba02d4d1bc8",
+          "media_type": "image"
+        },
+        {
+          "title": "I think I just had an out of body experience?",
+          "url": "https://www.reddit.com/r/Meditation/comments/1v71khz/i_think_i_just_had_an_out_of_body_experience/",
+          "subreddit": "Meditation",
+          "created_utc": "2026-07-26T11:42:25+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "What if consciousness can never actually be proven?",
+          "url": "https://www.reddit.com/r/consciousness/comments/1v6ytof/what_if_consciousness_can_never_actually_be_proven/",
+          "subreddit": "consciousness",
+          "created_utc": "2026-07-26T09:16:38+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        }
+      ]
+    },
+    {
+      "name": "⛪ Philosophy & Religion",
+      "subreddits": [
+        "catholicism",
+        "christianity",
+        "ethics",
+        "islam",
+        "israel",
+        "jewish",
+        "judaism",
+        "optimistsunite",
+        "philosophymemes"
+      ],
+      "subreddits_label": "r/catholicism, r/christianity, r/ethics, r/islam, r/israel, r/jewish, r/judaism, r/optimistsunite, r/philosophymemes",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "Objective morality BTFO",
+          "url": "https://www.reddit.com/r/PhilosophyMemes/comments/1v7mp7l/objective_morality_btfo/",
+          "subreddit": "PhilosophyMemes",
+          "created_utc": "2026-07-27T01:45:34+00:00",
+          "thumbnail": "https://preview.redd.it/fp7fvmrcgofh1.png?width=640&crop=smart&auto=webp&s=aeaa9b00e2475f06f3d61413e17cdcf8e95ab58d",
+          "media_type": "image"
+        },
+        {
+          "title": "St. Anne, Mother of the Blessed Virgin Mary — Butler’s Lives of the Saints",
+          "url": "https://www.reddit.com/r/Catholicism/comments/1v7jfbw/st_anne_mother_of_the_blessed_virgin_mary_butlers/",
+          "subreddit": "Catholicism",
+          "created_utc": "2026-07-26T23:18:42+00:00",
+          "thumbnail": "https://preview.redd.it/y9nv9pqcqnfh1.jpeg?width=640&crop=smart&auto=webp&s=99d38e9286bdc5976c9ff857ed021922f5c7720c",
+          "media_type": "image"
+        },
+        {
+          "title": "God is the only one we need to listen to on how to respect women.",
+          "url": "https://www.reddit.com/r/Christianity/comments/1v796tk/god_is_the_only_one_we_need_to_listen_to_on_how/",
+          "subreddit": "Christianity",
+          "created_utc": "2026-07-26T16:49:32+00:00",
+          "thumbnail": null,
+          "media_type": "video"
+        },
+        {
+          "title": "Am Yisrael Chai",
+          "url": "https://www.reddit.com/r/Israel/comments/1v770qi/am_yisrael_chai/",
+          "subreddit": "Israel",
+          "created_utc": "2026-07-26T15:29:47+00:00",
+          "thumbnail": "https://preview.redd.it/vucbp60pelfh1.jpeg?width=640&crop=smart&auto=webp&s=f8d62ebe19ae80ceb055e91439307950d2390f3b",
+          "media_type": "image"
+        },
+        {
+          "title": "How the Mother of God Guided Me Through a Life-Threatening Train Accident",
+          "url": "https://www.reddit.com/r/Christianity/comments/1v74395/how_the_mother_of_god_guided_me_through_a/",
+          "subreddit": "Christianity",
+          "created_utc": "2026-07-26T13:35:29+00:00",
+          "thumbnail": null,
+          "media_type": "image"
+        },
+        {
+          "title": "Today fest Saints Joaquin and Ann parents of Mary and Jesus' grandparents.",
+          "url": "https://www.reddit.com/r/Catholicism/comments/1v73efx/today_fest_saints_joaquin_and_ann_parents_of_mary/",
+          "subreddit": "Catholicism",
+          "created_utc": "2026-07-26T13:05:56+00:00",
+          "thumbnail": "https://preview.redd.it/r3uxbb01pkfh1.jpeg?width=320&crop=smart&auto=webp&s=b9bde78b0239a4f3a35e351073dafd480b6d06c4",
+          "media_type": "image"
+        },
+        {
+          "title": "Drew out a dream i had with jesus!",
+          "url": "https://www.reddit.com/r/Christianity/comments/1v6w8ci/drew_out_a_dream_i_had_with_jesus/",
+          "subreddit": "Christianity",
+          "created_utc": "2026-07-26T06:51:07+00:00",
+          "thumbnail": null,
+          "media_type": "image"
+        },
+        {
+          "title": "New Rule: Graphs must have a source.",
+          "url": "https://www.reddit.com/r/OptimistsUnite/comments/1v6so77/new_rule_graphs_must_have_a_source/",
+          "subreddit": "OptimistsUnite",
+          "created_utc": "2026-07-26T03:44:26+00:00",
+          "thumbnail": "https://preview.redd.it/pqtp6aypwhfh1.png?width=640&crop=smart&auto=webp&s=9fb7f31eb9a80814f44917e42926392a4f9cb6c1",
+          "media_type": "image"
+        },
+        {
+          "title": "Lithium ion battery prices dropping",
+          "url": "https://www.reddit.com/r/OptimistsUnite/comments/1v6qqil/lithium_ion_battery_prices_dropping/",
+          "subreddit": "OptimistsUnite",
+          "created_utc": "2026-07-26T02:08:22+00:00",
+          "thumbnail": "https://preview.redd.it/8fcx8aopfhfh1.jpeg?width=640&crop=smart&auto=webp&s=cad925e356f64dc75d5b50f3d3a1efbfdf7acbe9",
+          "media_type": "image"
+        },
+        {
+          "title": "Jesse Jackson’s daughter reveals she has converted to Judaism",
+          "url": "https://www.reddit.com/r/Jewish/comments/1v6phrb/jesse_jacksons_daughter_reveals_she_has_converted/",
+          "subreddit": "Jewish",
+          "created_utc": "2026-07-26T01:08:56+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        }
+      ]
+    },
+    {
+      "name": "🌱 Life Improvement",
+      "subreddits": [
+        "adulting",
+        "advice",
+        "biohackers",
+        "daddit",
+        "declutter",
+        "digitalminimalism",
+        "getmotivated",
+        "howtonotgiveafuck",
+        "journaling",
+        "lifeprotips",
+        "relationship_advice",
+        "self",
+        "selfimprovement",
+        "simpleliving"
+      ],
+      "subreddits_label": "r/adulting, r/advice, r/biohackers, r/daddit, r/declutter, r/digitalminimalism, r/getmotivated, r/howtonotgiveafuck, r/journaling, r/lifeprotips, r/relationship_advice, r/self, r/selfimprovement, r/simpleliving",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "LPT: Android users who use Facebook, delete the official app and install a chrome shortcut in its place to save 5-8gb on your device",
+          "url": "https://www.reddit.com/r/LifeProTips/comments/1v7hf89/lpt_android_users_who_use_facebook_delete_the/",
+          "subreddit": "LifeProTips",
+          "created_utc": "2026-07-26T21:56:21+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Instagram is dead.",
+          "url": "https://www.reddit.com/r/digitalminimalism/comments/1v7cm6r/instagram_is_dead/",
+          "subreddit": "digitalminimalism",
+          "created_utc": "2026-07-26T18:54:58+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Therapy recap 💀",
+          "url": "https://www.reddit.com/r/howtonotgiveafuck/comments/1v7ced4/therapy_recap/",
+          "subreddit": "howtonotgiveafuck",
+          "created_utc": "2026-07-26T18:46:56+00:00",
+          "thumbnail": "https://preview.redd.it/exigqzisdmfh1.jpeg?width=640&crop=smart&auto=webp&s=a018a2403cda1c02a8a783acb1e9766304324a45",
+          "media_type": "image"
+        },
+        {
+          "title": "My 36F wife is pissed at me 41M for not giving freebies to people",
+          "url": "https://www.reddit.com/r/Advice/comments/1v7ajeu/my_36f_wife_is_pissed_at_me_41m_for_not_giving/",
+          "subreddit": "Advice",
+          "created_utc": "2026-07-26T17:38:57+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "M bf (27M) made a comment about my (22F) vagina",
+          "url": "https://www.reddit.com/r/relationship_advice/comments/1v78yq8/m_bf_27m_made_a_comment_about_my_22f_vagina/",
+          "subreddit": "relationship_advice",
+          "created_utc": "2026-07-26T16:41:18+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "My (43F) Husband (44) Demanded a paternity test for our teen son and became cold and distant towards him, while favoring our daughter. But now the test came back and he's begging for forgiveness but my son won't talk to him. Any Advice",
+          "url": "https://www.reddit.com/r/Advice/comments/1v78dk2/my_43f_husband_44_demanded_a_paternity_test_for/",
+          "subreddit": "Advice",
+          "created_utc": "2026-07-26T16:19:18+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "This guy Dads",
+          "url": "https://www.reddit.com/r/daddit/comments/1v74ft6/this_guy_dads/",
+          "subreddit": "daddit",
+          "created_utc": "2026-07-26T13:50:03+00:00",
+          "thumbnail": "https://external-preview.redd.it/r7SvHVfLu65rYeIa84B1FPd0nmcOCDUTt8rXHymzh2k.jpeg?width=640&crop=smart&auto=webp&s=8a3604b2a272912e3405db307589906ec106a764",
+          "media_type": "image"
+        },
+        {
+          "title": "Ouch",
+          "url": "https://www.reddit.com/r/howtonotgiveafuck/comments/1v700qz/ouch/",
+          "subreddit": "howtonotgiveafuck",
+          "created_utc": "2026-07-26T10:22:47+00:00",
+          "thumbnail": "https://preview.redd.it/wp1ge9nuvjfh1.jpeg?width=320&crop=smart&auto=webp&s=b50020cd39fe10be7809bebdcfd8b512e29df563",
+          "media_type": "image"
+        },
+        {
+          "title": "Just turned 23 today, started my day with a cookie and coffee.",
+          "url": "https://www.reddit.com/r/simpleliving/comments/1v6zcsh/just_turned_23_today_started_my_day_with_a_cookie/",
+          "subreddit": "simpleliving",
+          "created_utc": "2026-07-26T09:46:30+00:00",
+          "thumbnail": "https://preview.redd.it/gdy8ri1gpjfh1.jpeg?width=640&crop=smart&auto=webp&s=435392ba4207841ca2878f85ef9cc08eaae0be1c",
+          "media_type": "image"
+        },
+        {
+          "title": "One of my (33F) best friends (31F) of 20 years made a move on my boyfriend (36M). How would you handle this?",
+          "url": "https://www.reddit.com/r/relationship_advice/comments/1v6w7nw/one_of_my_33f_best_friends_31f_of_20_years_made_a/",
+          "subreddit": "relationship_advice",
+          "created_utc": "2026-07-26T06:50:04+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        }
+      ]
+    },
+    {
+      "name": "🏃 Health",
+      "subreddits": [
+        "eatcheapandhealthy",
+        "frugal",
+        "mealprepsunday",
+        "nutrition",
+        "personalfinance",
+        "supplements",
+        "walking",
+        "yoga"
+      ],
+      "subreddits_label": "r/eatcheapandhealthy, r/frugal, r/mealprepsunday, r/nutrition, r/personalfinance, r/supplements, r/walking, r/yoga",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "Morning walk (10k steps) in rainy Helsinki, Finland",
+          "url": "https://www.reddit.com/r/walking/comments/1v7tmz4/morning_walk_10k_steps_in_rainy_helsinki_finland/",
+          "subreddit": "walking",
+          "created_utc": "2026-07-27T07:44:04+00:00",
+          "thumbnail": "https://preview.redd.it/jmqf8r4i8qfh1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=121c86b8957a845d07bce1701f6f61ed6c483712",
+          "media_type": "gallery"
+        },
+        {
+          "title": "[COMP] Utkatasana",
+          "url": "https://www.reddit.com/r/yoga/comments/1v7mq1r/comp_utkatasana/",
+          "subreddit": "yoga",
+          "created_utc": "2026-07-27T01:46:40+00:00",
+          "thumbnail": "https://external-preview.redd.it/Mmo0cXRseXBnb2ZoMcv16i1x2mK5xXjxVEayCdsZdvE3yMmmCRgnZSqaP7s5.png?width=640&crop=smart&auto=webp&s=a051ff9e0ec3a80cad969d8102565bb0aa83038d",
+          "media_type": "video"
+        },
+        {
+          "title": "i'm a seventeen year old cook , and this is all the food i've made. long grain and wild rice, chicken and rice soup, beef stew. Chicken alfredo, chocolate chip cookies barbecue drumsticks , banana cake and apple pie. rotel and eggnog.",
+          "url": "https://www.reddit.com/r/Frugal/comments/1v7lznj/im_a_seventeen_year_old_cook_and_this_is_all_the/",
+          "subreddit": "Frugal",
+          "created_utc": "2026-07-27T01:12:44+00:00",
+          "thumbnail": "https://preview.redd.it/0fjdnifoaofh1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=d3a10b12b6708e99f85a9d3ecba2b7e83e58d1f6",
+          "media_type": "gallery"
+        },
+        {
+          "title": "Only walked 7k today in a rainy day",
+          "url": "https://www.reddit.com/r/walking/comments/1v7hlok/only_walked_7k_today_in_a_rainy_day/",
+          "subreddit": "walking",
+          "created_utc": "2026-07-26T22:03:23+00:00",
+          "thumbnail": "https://preview.redd.it/6w4ku1kwcnfh1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=a14e42792dd939d7b01f02ee7f22df68066fe16e",
+          "media_type": "gallery"
+        },
+        {
+          "title": "I have never exercised 36 years of my life, going to start with a small walk tom.",
+          "url": "https://www.reddit.com/r/walking/comments/1v7h1bn/i_have_never_exercised_36_years_of_my_life_going/",
+          "subreddit": "walking",
+          "created_utc": "2026-07-26T21:41:06+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "30yr mortgage 50% down…",
+          "url": "https://www.reddit.com/r/personalfinance/comments/1v7g3ma/30yr_mortgage_50_down/",
+          "subreddit": "personalfinance",
+          "created_utc": "2026-07-26T21:05:18+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Filed a chargeback, merchant reached out telling me to cancel",
+          "url": "https://www.reddit.com/r/personalfinance/comments/1v7f1xf/filed_a_chargeback_merchant_reached_out_telling/",
+          "subreddit": "personalfinance",
+          "created_utc": "2026-07-26T20:25:42+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Two years ago I made quite the frugal mistake and bought single ply TP, today I just opened my last roll.",
+          "url": "https://www.reddit.com/r/Frugal/comments/1v7dfqt/two_years_ago_i_made_quite_the_frugal_mistake_and/",
+          "subreddit": "Frugal",
+          "created_utc": "2026-07-26T19:24:56+00:00",
+          "thumbnail": "https://preview.redd.it/a1fg3w9nkmfh1.jpeg?width=640&crop=smart&auto=webp&s=744c6d1955b93b8a6942c4723c3e46d0285276ee",
+          "media_type": "image"
+        },
+        {
+          "title": "Vital tip in living frugal: learning to sew.",
+          "url": "https://www.reddit.com/r/Frugal/comments/1v7bufj/vital_tip_in_living_frugal_learning_to_sew/",
+          "subreddit": "Frugal",
+          "created_utc": "2026-07-26T18:26:47+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "What a mess I made today. 2hr meal prep, 2500kcal & 164g protein/day x 4 days",
+          "url": "https://www.reddit.com/r/MealPrepSunday/comments/1v7aj3h/what_a_mess_i_made_today_2hr_meal_prep_2500kcal/",
+          "subreddit": "MealPrepSunday",
+          "created_utc": "2026-07-26T17:38:37+00:00",
+          "thumbnail": "https://preview.redd.it/g2uliol91mfh1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=e3efc1e0e6226108edcc53eee6a5488e66370d8c",
+          "media_type": "gallery"
+        }
+      ]
+    },
+    {
+      "name": "🎮 Gaming",
+      "subreddits": [
+        "games",
+        "gaming",
+        "indiegaming",
+        "magictcg",
+        "mtg",
+        "nintendoswitch2",
+        "piratedgames",
+        "slaythespire"
+      ],
+      "subreddits_label": "r/games, r/gaming, r/indiegaming, r/magictcg, r/mtg, r/nintendoswitch2, r/piratedgames, r/slaythespire",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "Bullet Time as depicted (with sound FX!)",
+          "url": "https://www.reddit.com/r/slaythespire/comments/1v7uyo2/bullet_time_as_depicted_with_sound_fx/",
+          "subreddit": "slaythespire",
+          "created_utc": "2026-07-27T09:02:32+00:00",
+          "thumbnail": "https://external-preview.redd.it/NWlrcmc0MmhtcWZoMeGl-F8sRxUPn59MHHkbjy8-KhQYwVngOUBzo8DCEDcQ.png?width=640&crop=smart&auto=webp&s=da07f421dabbadc584a66b715afa62fbaa15a3a7",
+          "media_type": "video"
+        },
+        {
+          "title": "Sony's Physical Media Backlash Escalates as Fans Plan PS5 Blackout",
+          "url": "https://www.reddit.com/r/gaming/comments/1v7saim/sonys_physical_media_backlash_escalates_as_fans/",
+          "subreddit": "gaming",
+          "created_utc": "2026-07-27T06:27:27+00:00",
+          "thumbnail": "https://external-preview.redd.it/PRldciuuK5ojsNDlXzciF7rwfzF_PzFrc-0shmagOfE.jpeg?width=640&crop=smart&auto=webp&s=f0e36fb60bd84535512bcf396498a82f0f57d498",
+          "media_type": "image"
+        },
+        {
+          "title": "Slayin' the Spire with my best bud!! #BYRDUP 💚💪",
+          "url": "https://www.reddit.com/r/slaythespire/comments/1v7k5ho/slayin_the_spire_with_my_best_bud_byrdup/",
+          "subreddit": "slaythespire",
+          "created_utc": "2026-07-26T23:50:26+00:00",
+          "thumbnail": "https://preview.redd.it/ki7mm0xzvnfh1.jpeg?width=640&crop=smart&auto=webp&s=e859b54d7719b8274263c5d73c61981ef484db02",
+          "media_type": "image"
+        },
+        {
+          "title": "Alright, Neow. I didn’t know you were funny like that.",
+          "url": "https://www.reddit.com/r/slaythespire/comments/1v7gj49/alright_neow_i_didnt_know_you_were_funny_like_that/",
+          "subreddit": "slaythespire",
+          "created_utc": "2026-07-26T21:21:21+00:00",
+          "thumbnail": "https://preview.redd.it/b1tapere5nfh1.jpeg?width=640&crop=smart&auto=webp&s=6330c740a0bb60253c596f8bb45ad3f80dde793d",
+          "media_type": "image"
+        },
+        {
+          "title": "Peak gaming (Persona 3)",
+          "url": "https://www.reddit.com/r/gaming/comments/1v7e6x2/peak_gaming_persona_3/",
+          "subreddit": "gaming",
+          "created_utc": "2026-07-26T19:53:39+00:00",
+          "thumbnail": "https://preview.redd.it/jhrbedarpmfh1.png?width=640&crop=smart&auto=webp&s=abcaebfa41a0dd1526954b96e9e3ac58e63c5d88",
+          "media_type": "image"
+        },
+        {
+          "title": "Nintendo Legend Shigeru Miyamoto Says the Console Power Race Is Over",
+          "url": "https://www.reddit.com/r/gaming/comments/1v78n38/nintendo_legend_shigeru_miyamoto_says_the_console/",
+          "subreddit": "gaming",
+          "created_utc": "2026-07-26T16:29:21+00:00",
+          "thumbnail": "https://external-preview.redd.it/vZiz_XSm7jw99UNu5ELRUpLO6h22Va35-pU8xpZ9Xhc.jpeg?width=640&crop=smart&auto=webp&s=443a7d485adc448c1adbc984573f830cbba16e36",
+          "media_type": "image"
+        },
+        {
+          "title": "John Avon Giveaway - Mega Magic Playmat Bundle!",
+          "url": "https://www.reddit.com/r/magicTCG/comments/1v770p7/john_avon_giveaway_mega_magic_playmat_bundle/",
+          "subreddit": "magicTCG",
+          "created_utc": "2026-07-26T15:29:45+00:00",
+          "thumbnail": "https://preview.redd.it/1aqcffmoelfh1.jpeg?width=640&crop=smart&auto=webp&s=aafeda265d87200daada28b9c7752f7415050a89",
+          "media_type": "image"
+        },
+        {
+          "title": "IGN - Xbox Is Dismantling Its Future To Rebuild a Past It Can Never Recapture: Halo, Fallout and Gears can’t sustain Microsoft’s game business forever.",
+          "url": "https://www.reddit.com/r/Games/comments/1v721v9/ign_xbox_is_dismantling_its_future_to_rebuild_a/",
+          "subreddit": "Games",
+          "created_utc": "2026-07-26T12:05:12+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "The bright side of UB",
+          "url": "https://www.reddit.com/r/mtg/comments/1v6ps0q/the_bright_side_of_ub/",
+          "subreddit": "mtg",
+          "created_utc": "2026-07-26T01:22:31+00:00",
+          "thumbnail": null,
+          "media_type": "gallery"
+        },
+        {
+          "title": "Me suddenly remembering that some random guy threatened Voices38 about reverse engineering his cracks and reporting them to Denuvo.",
+          "url": "https://www.reddit.com/r/PiratedGames/comments/1v6h6yy/me_suddenly_remembering_that_some_random_guy/",
+          "subreddit": "PiratedGames",
+          "created_utc": "2026-07-25T19:15:42+00:00",
+          "thumbnail": "https://preview.redd.it/poxitug2effh1.gif?width=216&crop=smart&s=b112d8d86a7ab96789d17e40d35150d03d1ea661",
+          "media_type": "video"
+        }
+      ]
+    },
+    {
+      "name": "🍿 Movies & TV",
+      "subreddits": [
+        "bettercallsaul",
+        "cinema",
+        "letterboxd",
+        "moviecritic",
+        "moviedetails",
+        "movies",
+        "rickandmorty",
+        "television"
+      ],
+      "subreddits_label": "r/bettercallsaul, r/cinema, r/letterboxd, r/moviecritic, r/moviedetails, r/movies, r/rickandmorty, r/television",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "'Block the Paramount–Warner Bros merger before it guts UK film and TV': An open letter by Benedict Cumberbatch, Alan Cumming and Benedict Wong",
+          "url": "https://www.reddit.com/r/movies/comments/1v7vhg9/block_the_paramountwarner_bros_merger_before_it/",
+          "subreddit": "movies",
+          "created_utc": "2026-07-27T09:32:37+00:00",
+          "thumbnail": "https://external-preview.redd.it/PZRuJjXDVyszgTIXQVaX84JQ2arsLf1hdHPYFWtLRGE.jpeg?width=640&crop=smart&auto=webp&s=3bb9677975aa09b2521c6c5514a38198318a73f4",
+          "media_type": "image"
+        },
+        {
+          "title": "Promotional image of ''BABIES’, starring Seth Rogen and Anna Kendrick. Directed by Lauren Miller Rogen. The film follows a couple who struggle with whether to have kids or not until their newly-divorced friend moves into their home with her child.",
+          "url": "https://www.reddit.com/r/movies/comments/1v7oujs/promotional_image_of_babies_starring_seth_rogen/",
+          "subreddit": "movies",
+          "created_utc": "2026-07-27T03:27:03+00:00",
+          "thumbnail": "https://preview.redd.it/gzoy6sijyofh1.jpeg?width=640&crop=smart&auto=webp&s=40cb6a1d264d287f574cb1024f33867a0979a820",
+          "media_type": "image"
+        },
+        {
+          "title": "I made the Smiths' family tree.",
+          "url": "https://www.reddit.com/r/rickandmorty/comments/1v7n8u8/i_made_the_smiths_family_tree/",
+          "subreddit": "rickandmorty",
+          "created_utc": "2026-07-27T02:10:27+00:00",
+          "thumbnail": "https://preview.redd.it/57bilqqzkofh1.png?width=640&crop=smart&auto=webp&s=fafcd35d72f37dcbdefe935475d778c833a8cbab",
+          "media_type": "image"
+        },
+        {
+          "title": "Lena Headey looks back: ‘I told Harvey Weinstein where to go. A decade of possibilities disappeared’",
+          "url": "https://www.reddit.com/r/television/comments/1v7mlh0/lena_headey_looks_back_i_told_harvey_weinstein/",
+          "subreddit": "television",
+          "created_utc": "2026-07-27T01:40:44+00:00",
+          "thumbnail": "https://external-preview.redd.it/YKS0qXV7V5seoRLoso5qpGpQ2c-gkvypquGR6eJd4zM.jpeg?width=640&crop=smart&auto=webp&s=582c37e4d7b5489fa1d346bf646c3fad685db6c3",
+          "media_type": "image"
+        },
+        {
+          "title": "Thoughts on the black panther drama?",
+          "url": "https://www.reddit.com/r/moviecritic/comments/1v7eljk/thoughts_on_the_black_panther_drama/",
+          "subreddit": "moviecritic",
+          "created_utc": "2026-07-26T20:08:53+00:00",
+          "thumbnail": "https://preview.redd.it/svg46lmhsmfh1.jpeg?width=640&crop=smart&auto=webp&s=451478322218af9a4c950b5b020c62b8624ae58d",
+          "media_type": "image"
+        },
+        {
+          "title": "In Avengers: Infinity War (2018), right before the grenade thrown by the Guardians of the Galaxy explodes, we see Spiderman and Iron Man's masks come up for a split second to shield them from the explosion.",
+          "url": "https://www.reddit.com/r/MovieDetails/comments/1v79i8i/in_avengers_infinity_war_2018_right_before_the/",
+          "subreddit": "MovieDetails",
+          "created_utc": "2026-07-26T17:00:55+00:00",
+          "thumbnail": "https://preview.redd.it/i244qy7yulfh1.jpeg?width=640&crop=smart&auto=webp&s=8632755399028549b1682aec401d7bfb0de31b22",
+          "media_type": "image"
+        },
+        {
+          "title": "Jerry defends peeping at a 15 year old - Seinfeld",
+          "url": "https://www.reddit.com/r/television/comments/1v7668t/jerry_defends_peeping_at_a_15_year_old_seinfeld/",
+          "subreddit": "television",
+          "created_utc": "2026-07-26T14:57:51+00:00",
+          "thumbnail": "https://external-preview.redd.it/O1UlMNk5ivtinf6IjHddhkayTxKGkWG8BZ_mi5CI87Q.jpeg?width=320&crop=smart&auto=webp&s=6e34f16043d1c284c3d8644b2fd79fec95f79056",
+          "media_type": "video"
+        },
+        {
+          "title": "'Toy Story 5' Crosses $1B Globally",
+          "url": "https://www.reddit.com/r/movies/comments/1v75tsc/toy_story_5_crosses_1b_globally/",
+          "subreddit": "movies",
+          "created_utc": "2026-07-26T14:44:23+00:00",
+          "thumbnail": "https://external-preview.redd.it/tB8zmu0ICmttCP_hs98nTtjtnWIAzwyV9Ddxtd6RVI0.jpeg?width=640&crop=smart&auto=webp&s=be2d41d4cf1da834aa89c48a5a30311ab1b5a140",
+          "media_type": "image"
+        },
+        {
+          "title": "Watchmen (2009) should be regarded as one of the best superhero films of the 21st century. The writing, the acting, the cinematography, the story and character development. Everything is sensational, 10/10 film for me.",
+          "url": "https://www.reddit.com/r/moviecritic/comments/1v722xz/watchmen_2009_should_be_regarded_as_one_of_the/",
+          "subreddit": "moviecritic",
+          "created_utc": "2026-07-26T12:06:33+00:00",
+          "thumbnail": "https://preview.redd.it/3bkk7pgeekfh1.jpeg?width=640&crop=smart&auto=webp&s=33ad1061d25f16cfa7af8a0dbbb91f5da31c375f",
+          "media_type": "image"
+        },
+        {
+          "title": "I wonder why Rick stay old looking instead of being eternally 40 like Rick prime",
+          "url": "https://www.reddit.com/r/rickandmorty/comments/1v71mi7/i_wonder_why_rick_stay_old_looking_instead_of/",
+          "subreddit": "rickandmorty",
+          "created_utc": "2026-07-26T11:45:07+00:00",
+          "thumbnail": "https://preview.redd.it/gnnexkulakfh1.jpeg?width=640&crop=smart&auto=webp&s=dde0d276fa289af102822b7b95fde9e789ee7946",
+          "media_type": "image"
+        }
+      ]
+    },
+    {
+      "name": "📚 Books & Reading",
+      "subreddits": [
+        "annas_archive",
+        "books",
+        "booksuggestions",
+        "libri",
+        "obsidianmd"
+      ],
+      "subreddits_label": "r/annas_archive, r/books, r/booksuggestions, r/libri, r/obsidianmd",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "What Books did You Start or Finish Reading this Week?: July 27, 2026",
+          "url": "https://www.reddit.com/r/books/comments/1v7vynu/what_books_did_you_start_or_finish_reading_this/",
+          "subreddit": "books",
+          "created_utc": "2026-07-27T10:00:11+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "I finished Shuggie Bain, and I can't think straight now..",
+          "url": "https://www.reddit.com/r/books/comments/1v7s881/i_finished_shuggie_bain_and_i_cant_think_straight/",
+          "subreddit": "books",
+          "created_utc": "2026-07-27T06:23:37+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "How to journal, and is it worth doing?",
+          "url": "https://www.reddit.com/r/ObsidianMD/comments/1v7pn48/how_to_journal_and_is_it_worth_doing/",
+          "subreddit": "ObsidianMD",
+          "created_utc": "2026-07-27T04:06:06+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "color coding notes",
+          "url": "https://www.reddit.com/r/ObsidianMD/comments/1v7p1vp/color_coding_notes/",
+          "subreddit": "ObsidianMD",
+          "created_utc": "2026-07-27T03:37:14+00:00",
+          "thumbnail": "https://external-preview.redd.it/aHZzMzRqaGQwcGZoMXsae3TmWqW6mH-UER3GnpOCLQWpfNoBKjKRH4fIG524.png?width=640&crop=smart&auto=webp&s=fcd918b2e29a872952dab73dff7eec140991357b",
+          "media_type": "video"
+        },
+        {
+          "title": "Looking for nonfiction books that explore interesting or unusual topics",
+          "url": "https://www.reddit.com/r/booksuggestions/comments/1v7g0up/looking_for_nonfiction_books_that_explore/",
+          "subreddit": "booksuggestions",
+          "created_utc": "2026-07-26T21:02:20+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Does journaling actually help you notice recurring patterns?",
+          "url": "https://www.reddit.com/r/ObsidianMD/comments/1v78zyg/does_journaling_actually_help_you_notice/",
+          "subreddit": "ObsidianMD",
+          "created_utc": "2026-07-26T16:42:30+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "The Song of Achilles | Madeline Miller (10/10)",
+          "url": "https://www.reddit.com/r/books/comments/1v761rq/the_song_of_achilles_madeline_miller_1010/",
+          "subreddit": "books",
+          "created_utc": "2026-07-26T14:52:55+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "I libri devono fare paura?",
+          "url": "https://www.reddit.com/r/Libri/comments/1v70por/i_libri_devono_fare_paura/",
+          "subreddit": "Libri",
+          "created_utc": "2026-07-26T10:59:38+00:00",
+          "thumbnail": "https://preview.redd.it/0qpwcarh2kfh1.jpeg?width=640&crop=smart&auto=webp&s=7f12fd92764d1ffd4ec4c89fc452c7c34d20ccca",
+          "media_type": "image"
+        },
+        {
+          "title": "Convincing You to Read These Books With Just One Quote",
+          "url": "https://www.reddit.com/r/booksuggestions/comments/1v6pdtf/convincing_you_to_read_these_books_with_just_one/",
+          "subreddit": "booksuggestions",
+          "created_utc": "2026-07-26T01:03:45+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Using Anna's Spotify metadata dump, I built Pokémon Go for music",
+          "url": "https://www.reddit.com/r/Annas_Archive/comments/1v6e8hq/using_annas_spotify_metadata_dump_i_built_pokémon/",
+          "subreddit": "Annas_Archive",
+          "created_utc": "2026-07-25T17:22:50+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        }
+      ]
+    },
+    {
+      "name": "🎧 Music",
+      "subreddits": [
+        "justicemusic",
+        "letstalkmusic",
+        "music",
+        "weirdspotifyplaylists"
+      ],
+      "subreddits_label": "r/justicemusic, r/letstalkmusic, r/music, r/weirdspotifyplaylists",
+      "post_count": 9,
+      "posts": [
+        {
+          "title": "Post Malone's Edmonton Concert Cancelled After Storm Floods Commonwealth Stadium and Sends Fans Fleeing for Shelter",
+          "url": "https://www.reddit.com/r/Music/comments/1v7lfgw/post_malones_edmonton_concert_cancelled_after/",
+          "subreddit": "Music",
+          "created_utc": "2026-07-27T00:46:52+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "\"Weird Al\" Yankovic Eat It Japanese Official Artwork",
+          "url": "https://www.reddit.com/r/Music/comments/1v7lasu/weird_al_yankovic_eat_it_japanese_official_artwork/",
+          "subreddit": "Music",
+          "created_utc": "2026-07-27T00:40:59+00:00",
+          "thumbnail": null,
+          "media_type": "image"
+        },
+        {
+          "title": "Ol’ Dirty Bastard Has His Own New York City Street Now",
+          "url": "https://www.reddit.com/r/Music/comments/1v7kz7m/ol_dirty_bastard_has_his_own_new_york_city_street/",
+          "subreddit": "Music",
+          "created_utc": "2026-07-27T00:26:28+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Burger (updated)",
+          "url": "https://www.reddit.com/r/weirdspotifyplaylists/comments/1v63q6o/burger_updated/",
+          "subreddit": "weirdspotifyplaylists",
+          "created_utc": "2026-07-25T09:32:58+00:00",
+          "thumbnail": "https://preview.redd.it/o9bn5v24icfh1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=bdd86023dec1696da41699d09e2d6fe8a9364421",
+          "media_type": "gallery"
+        },
+        {
+          "title": "songs where the first few seconds (or more) are just bass guitar",
+          "url": "https://www.reddit.com/r/weirdspotifyplaylists/comments/1v5hp4t/songs_where_the_first_few_seconds_or_more_are/",
+          "subreddit": "weirdspotifyplaylists",
+          "created_utc": "2026-07-24T17:17:52+00:00",
+          "thumbnail": "https://preview.redd.it/plnqshg5o7fh1.jpeg?width=640&crop=smart&auto=webp&s=979af44f1e01216fc807953b1086906ce2fee6d9",
+          "media_type": "image"
+        },
+        {
+          "title": "How often do you listen to music in a language you do not understand?",
+          "url": "https://www.reddit.com/r/LetsTalkMusic/comments/1v4mu1b/how_often_do_you_listen_to_music_in_a_language/",
+          "subreddit": "LetsTalkMusic",
+          "created_utc": "2026-07-23T18:46:45+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Rare stress BTS video (credit: justice_archive on YT)",
+          "url": "https://www.reddit.com/r/JusticeMusic/comments/1v42pik/rare_stress_bts_video_credit_justice_archive_on_yt/",
+          "subreddit": "JusticeMusic",
+          "created_utc": "2026-07-23T03:53:16+00:00",
+          "thumbnail": "https://external-preview.redd.it/c213bWlhdG9qd2VoMYkN9DZQ1uIsgkf4VB5BccUUt7MRxDpP-rXp6Wgi8QRj.png?width=320&crop=smart&auto=webp&s=b5f01b14825dbacf06e0c938fe43b4ccb45ee865",
+          "media_type": "video"
+        },
+        {
+          "title": "Does anyone know where this version of Stress (WWW) comes from?",
+          "url": "https://www.reddit.com/r/JusticeMusic/comments/1v3q270/does_anyone_know_where_this_version_of_stress_www/",
+          "subreddit": "JusticeMusic",
+          "created_utc": "2026-07-22T19:17:08+00:00",
+          "thumbnail": "https://external-preview.redd.it/cmxidXRnc2t6dGVoMSExrzE1gvc4M_rOI_f1R5HupL3onkRneAQma0qPrifS.png?width=320&crop=smart&auto=webp&s=8298372e7a2300de487cbab70ed542b2aebb264a",
+          "media_type": "video"
+        },
+        {
+          "title": "New Album Confirmed?😱",
+          "url": "https://www.reddit.com/r/JusticeMusic/comments/1v3a9dh/new_album_confirmed/",
+          "subreddit": "JusticeMusic",
+          "created_utc": "2026-07-22T08:41:00+00:00",
+          "thumbnail": "https://preview.redd.it/ttvxa414uqeh1.jpeg?width=640&crop=smart&auto=webp&s=86d5ca36171adbaf99b87cd5c8cc71713539ce86",
+          "media_type": "image"
+        }
+      ]
+    },
+    {
+      "name": "🎒 Travel",
+      "subreddits": [
+        "backpacking",
+        "campingandhiking",
+        "digitalnomad",
+        "heronebag",
+        "hiking",
+        "overlanding",
+        "solotravel",
+        "travel",
+        "wildernessbackpacking"
+      ],
+      "subreddits_label": "r/backpacking, r/campingandhiking, r/digitalnomad, r/heronebag, r/hiking, r/overlanding, r/solotravel, r/travel, r/wildernessbackpacking",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "Bali run club shuts down after local residents allegedly blocked",
+          "url": "https://www.reddit.com/r/digitalnomad/comments/1v7tk7s/bali_run_club_shuts_down_after_local_residents/",
+          "subreddit": "digitalnomad",
+          "created_utc": "2026-07-27T07:39:16+00:00",
+          "thumbnail": "https://external-preview.redd.it/znmpDDN375mmhOFMf2e8wEL_qiJ-W3u6dv-yBdFXFCA.jpeg?width=640&crop=smart&auto=webp&s=1ff3388d0ff0bf6a6bc5aabeab5591f81d3ec319",
+          "media_type": "image"
+        },
+        {
+          "title": "Timberline Trail",
+          "url": "https://www.reddit.com/r/WildernessBackpacking/comments/1v7qang/timberline_trail/",
+          "subreddit": "WildernessBackpacking",
+          "created_utc": "2026-07-27T04:39:26+00:00",
+          "thumbnail": "https://preview.redd.it/asj1vu7kbpfh1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=b6937b873b20df34c2630f399b2f7c75abd060d0",
+          "media_type": "gallery"
+        },
+        {
+          "title": "Northern Vietnam, November 2025",
+          "url": "https://www.reddit.com/r/travel/comments/1v7qam1/northern_vietnam_november_2025/",
+          "subreddit": "travel",
+          "created_utc": "2026-07-27T04:39:23+00:00",
+          "thumbnail": "https://preview.redd.it/izh4xjkjbpfh1.jpg?width=140&height=105&auto=webp&s=ae62dc7d9a6d5622e0c216e2d708150bcedfe530",
+          "media_type": "gallery"
+        },
+        {
+          "title": "Grindelwald First Hike, Grindelwald, Switzerland",
+          "url": "https://www.reddit.com/r/hiking/comments/1v7orjo/grindelwald_first_hike_grindelwald_switzerland/",
+          "subreddit": "hiking",
+          "created_utc": "2026-07-27T03:22:52+00:00",
+          "thumbnail": "https://preview.redd.it/rakeo4xwxofh1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=3445b74e185ae2b2c4622f27122e9da4cc48738c",
+          "media_type": "gallery"
+        },
+        {
+          "title": "Passport stamps are slowly becoming a thing of the past",
+          "url": "https://www.reddit.com/r/digitalnomad/comments/1v7o7ez/passport_stamps_are_slowly_becoming_a_thing_of/",
+          "subreddit": "digitalnomad",
+          "created_utc": "2026-07-27T02:55:49+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "My Whitney Summit",
+          "url": "https://www.reddit.com/r/hiking/comments/1v7nt40/my_whitney_summit/",
+          "subreddit": "hiking",
+          "created_utc": "2026-07-27T02:36:47+00:00",
+          "thumbnail": "https://preview.redd.it/tmr9trqopofh1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=cfade477e552e78939b504ea1313a917f7d36b00",
+          "media_type": "gallery"
+        },
+        {
+          "title": "One week in Sicily, Italy",
+          "url": "https://www.reddit.com/r/travel/comments/1v7g43u/one_week_in_sicily_italy/",
+          "subreddit": "travel",
+          "created_utc": "2026-07-26T21:05:50+00:00",
+          "thumbnail": "https://preview.redd.it/p2ioki5l2nfh1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=68369d18ff90f631e0d6a627fb7e380dea4fe227",
+          "media_type": "gallery"
+        },
+        {
+          "title": "This sub sleeps on Rovers",
+          "url": "https://www.reddit.com/r/overlanding/comments/1v7dty7/this_sub_sleeps_on_rovers/",
+          "subreddit": "overlanding",
+          "created_utc": "2026-07-26T19:40:00+00:00",
+          "thumbnail": "https://preview.redd.it/ncg4m0mbnmfh1.jpg?width=140&height=105&auto=webp&s=019db7bfe95e5e51ae0d61c788eb6e01e864555e",
+          "media_type": "gallery"
+        },
+        {
+          "title": "Guanajuato, México",
+          "url": "https://www.reddit.com/r/travel/comments/1v7c88p/guanajuato_méxico/",
+          "subreddit": "travel",
+          "created_utc": "2026-07-26T18:40:43+00:00",
+          "thumbnail": "https://preview.redd.it/w9tp5xwocmfh1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=d0e9c557d99d2222845987e46793f44e80f01b3b",
+          "media_type": "gallery"
+        },
+        {
+          "title": "Mt. Assiniboine Provincial Park, BC, Canada",
+          "url": "https://www.reddit.com/r/hiking/comments/1v7bicz/mt_assiniboine_provincial_park_bc_canada/",
+          "subreddit": "hiking",
+          "created_utc": "2026-07-26T18:14:27+00:00",
+          "thumbnail": "https://preview.redd.it/kihdmgh18mfh1.jpg?width=140&height=105&auto=webp&s=b4533d2fc76bfccda3cdfb983e1e84216cebdaa2",
+          "media_type": "gallery"
+        }
+      ]
+    },
+    {
+      "name": "🗾 Japan",
+      "subreddits": [
+        "iwanttolearn",
+        "japan",
+        "japaneseresources",
+        "japanlife",
+        "language_exchange",
+        "learnjapanese",
+        "learnjapanesenovice",
+        "movingtojapan"
+      ],
+      "subreddits_label": "r/iwanttolearn, r/japan, r/japaneseresources, r/japanlife, r/language_exchange, r/learnjapanese, r/learnjapanesenovice, r/movingtojapan",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "Author Keigo Higashino Dies of Colon Cancer Aged 68",
+          "url": "https://www.reddit.com/r/japan/comments/1v7tvyi/author_keigo_higashino_dies_of_colon_cancer_aged/",
+          "subreddit": "japan",
+          "created_utc": "2026-07-27T07:59:12+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "IWTL how to become an exceptionally competent, knowledgeable, and well-rounded person.",
+          "url": "https://www.reddit.com/r/IWantToLearn/comments/1v7t7dc/iwtl_how_to_become_an_exceptionally_competent/",
+          "subreddit": "IWantToLearn",
+          "created_utc": "2026-07-27T07:18:37+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Part time job interview was just like 3min..",
+          "url": "https://www.reddit.com/r/japanlife/comments/1v7sp5l/part_time_job_interview_was_just_like_3min/",
+          "subreddit": "japanlife",
+          "created_utc": "2026-07-27T06:50:31+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "How is everyone adjusting their future in Japan?",
+          "url": "https://www.reddit.com/r/japanlife/comments/1v7kyse/how_is_everyone_adjusting_their_future_in_japan/",
+          "subreddit": "japanlife",
+          "created_utc": "2026-07-27T00:25:54+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Japan’s Asuka-Fujiwara sites added to UNESCO list",
+          "url": "https://www.reddit.com/r/japan/comments/1v7hr16/japans_asukafujiwara_sites_added_to_unesco_list/",
+          "subreddit": "japan",
+          "created_utc": "2026-07-26T22:09:19+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Started learning Hiragana. How's my handwriting?",
+          "url": "https://www.reddit.com/r/LearnJapaneseNovice/comments/1v7avvt/started_learning_hiragana_hows_my_handwriting/",
+          "subreddit": "LearnJapaneseNovice",
+          "created_utc": "2026-07-26T17:51:36+00:00",
+          "thumbnail": "https://preview.redd.it/juto6icz3mfh1.jpeg?width=640&crop=smart&auto=webp&s=acab51ac8507408470327677e04dc6edd17e652d",
+          "media_type": "image"
+        },
+        {
+          "title": "Opinions on Hirigana Handwriting",
+          "url": "https://www.reddit.com/r/LearnJapaneseNovice/comments/1v78m5n/opinions_on_hirigana_handwriting/",
+          "subreddit": "LearnJapaneseNovice",
+          "created_utc": "2026-07-26T16:28:22+00:00",
+          "thumbnail": "https://preview.redd.it/45ke8es4plfh1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=5fc46f172881409ff86f49293b2f8099f9a6bdfb",
+          "media_type": "gallery"
+        },
+        {
+          "title": "Can any1 help me learn Japanese? Rn learning hiragana",
+          "url": "https://www.reddit.com/r/LearnJapaneseNovice/comments/1v76fy5/can_any1_help_me_learn_japanese_rn_learning/",
+          "subreddit": "LearnJapaneseNovice",
+          "created_utc": "2026-07-26T15:07:48+00:00",
+          "thumbnail": "https://preview.redd.it/dflvxarralfh1.jpeg?width=640&crop=smart&auto=webp&s=56493669c3f19af1e57af93735dbee9082508e75",
+          "media_type": "image"
+        },
+        {
+          "title": "LEARN JAPANESE STARTER PACK PART 2",
+          "url": "https://www.reddit.com/r/LearnJapanese/comments/1v769de/learn_japanese_starter_pack_part_2/",
+          "subreddit": "LearnJapanese",
+          "created_utc": "2026-07-26T15:01:09+00:00",
+          "thumbnail": null,
+          "media_type": "gallery"
+        },
+        {
+          "title": "Question about Coco Curry House Spiciness levels",
+          "url": "https://www.reddit.com/r/japanlife/comments/1v730lh/question_about_coco_curry_house_spiciness_levels/",
+          "subreddit": "japanlife",
+          "created_utc": "2026-07-26T12:49:22+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        }
+      ]
+    },
+    {
+      "name": "❓ Ask & Discussion",
+      "subreddits": [
+        "ama",
+        "askhistorians",
+        "askmen",
+        "askreddit",
+        "asktheworld",
+        "explainlikeimfive",
+        "nostupidquestions",
+        "showerthoughts",
+        "truereddit",
+        "twoxchromosomes",
+        "unpopularopinion",
+        "youshouldknow"
+      ],
+      "subreddits_label": "r/ama, r/askhistorians, r/askmen, r/askreddit, r/asktheworld, r/explainlikeimfive, r/nostupidquestions, r/showerthoughts, r/truereddit, r/twoxchromosomes, r/unpopularopinion, r/youshouldknow",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "It is surprising how many people need glasses to see clearly given how important eyesight is to our species survival.",
+          "url": "https://www.reddit.com/r/Showerthoughts/comments/1v7syq2/it_is_surprising_how_many_people_need_glasses_to/",
+          "subreddit": "Showerthoughts",
+          "created_utc": "2026-07-27T07:05:02+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "What’s a product where the cheap knock-off version is somehow unironically better than the expensive original?",
+          "url": "https://www.reddit.com/r/AskReddit/comments/1v7o7i3/whats_a_product_where_the_cheap_knockoff_version/",
+          "subreddit": "AskReddit",
+          "created_utc": "2026-07-27T02:55:57+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "What’s the least attractive hobby?",
+          "url": "https://www.reddit.com/r/AskReddit/comments/1v7nb8w/whats_the_least_attractive_hobby/",
+          "subreddit": "AskReddit",
+          "created_utc": "2026-07-27T02:13:34+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "For anyone who has ever accidentally hooked up with someone they definitely shouldn't have in a tight-knit friend group, how badly did it blow up?",
+          "url": "https://www.reddit.com/r/AskReddit/comments/1v7mfbl/for_anyone_who_has_ever_accidentally_hooked_up/",
+          "subreddit": "AskReddit",
+          "created_utc": "2026-07-27T01:32:57+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "When grilling chicken, do I need to switch tongs at some point, because the ones I started with handled raw chicken?",
+          "url": "https://www.reddit.com/r/NoStupidQuestions/comments/1v7ioyg/when_grilling_chicken_do_i_need_to_switch_tongs/",
+          "subreddit": "NoStupidQuestions",
+          "created_utc": "2026-07-26T22:48:08+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "YSK: If Your Teeth Are Knocked Out, They Can Be Put Back*",
+          "url": "https://www.reddit.com/r/YouShouldKnow/comments/1v7hizc/ysk_if_your_teeth_are_knocked_out_they_can_be_put/",
+          "subreddit": "YouShouldKnow",
+          "created_utc": "2026-07-26T22:00:31+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Is there a way to stop getting a boner so easily around the girl I like ?",
+          "url": "https://www.reddit.com/r/NoStupidQuestions/comments/1v7cusp/is_there_a_way_to_stop_getting_a_boner_so_easily/",
+          "subreddit": "NoStupidQuestions",
+          "created_utc": "2026-07-26T19:03:37+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Fish have no fear of heights.",
+          "url": "https://www.reddit.com/r/Showerthoughts/comments/1v7bae3/fish_have_no_fear_of_heights/",
+          "subreddit": "Showerthoughts",
+          "created_utc": "2026-07-26T18:06:30+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "ELI5: Why do we wake up completely exhausted after sleeping for ten hours, but feel like a warrior after a random 20-minute car nap?",
+          "url": "https://www.reddit.com/r/explainlikeimfive/comments/1v79hcy/eli5_why_do_we_wake_up_completely_exhausted_after/",
+          "subreddit": "explainlikeimfive",
+          "created_utc": "2026-07-26T17:00:06+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "How people in medieval ages lived through boredom?",
+          "url": "https://www.reddit.com/r/NoStupidQuestions/comments/1v7809b/how_people_in_medieval_ages_lived_through_boredom/",
+          "subreddit": "NoStupidQuestions",
+          "created_utc": "2026-07-26T16:06:08+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        }
+      ]
+    },
+    {
+      "name": "🎉 Fun",
+      "subreddits": [
+        "2000snostalgia",
+        "90s",
+        "90s_kid",
+        "amitheasshole",
+        "assholedesign",
+        "bestofredditorupdates",
+        "genz",
+        "geography",
+        "hopeposting",
+        "millennials",
+        "nostalgia",
+        "oddlyspecific",
+        "savedyouaclick",
+        "tifu"
+      ],
+      "subreddits_label": "r/2000snostalgia, r/90s, r/90s_kid, r/amitheasshole, r/assholedesign, r/bestofredditorupdates, r/genz, r/geography, r/hopeposting, r/millennials, r/nostalgia, r/oddlyspecific, r/savedyouaclick, r/tifu",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "I replaced the bright white lightbulb over my stove with an orange one and I was INSTANTLY transported to those nights as a kid in the 90’s. IYKYK.",
+          "url": "https://www.reddit.com/r/90s/comments/1v7rdpe/i_replaced_the_bright_white_lightbulb_over_my/",
+          "subreddit": "90s",
+          "created_utc": "2026-07-27T05:36:31+00:00",
+          "thumbnail": "https://preview.redd.it/m6mit5fqlpfh1.jpeg?width=640&crop=smart&auto=webp&s=5cde994fd4556de8d21bb390cf78ace2c2e51444",
+          "media_type": "image"
+        },
+        {
+          "title": "Wife’s [29/F] “Frenemy” [30/F] sent me an email outlining my wife’s attempt to reconcile with her Ex [35/M] (and sleeping with him) as we were getting more serious. I’m at work and don't know how to respond to any of this",
+          "url": "https://www.reddit.com/r/BestofRedditorUpdates/comments/1v7piil/wifes_29f_frenemy_30f_sent_me_an_email_outlining/",
+          "subreddit": "BestofRedditorUpdates",
+          "created_utc": "2026-07-27T04:00:01+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "In school were you team 0.5 or 0.7??",
+          "url": "https://www.reddit.com/r/Millennials/comments/1v7nphn/in_school_were_you_team_05_or_07/",
+          "subreddit": "Millennials",
+          "created_utc": "2026-07-27T02:32:06+00:00",
+          "thumbnail": "https://preview.redd.it/2p6l06wuoofh1.jpeg?width=640&crop=smart&auto=webp&s=f7e6ccaf8b6ba427f6e17a793441d49e9a7e2db9",
+          "media_type": "image"
+        },
+        {
+          "title": "🙂‍↕️🙂‍↕️🙂‍↕️",
+          "url": "https://www.reddit.com/r/Millennials/comments/1v7njfm/_/",
+          "subreddit": "Millennials",
+          "created_utc": "2026-07-27T02:24:05+00:00",
+          "thumbnail": "https://preview.redd.it/clrhwm9fnofh1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=0b21d62af1624e308badcbfd3caaf6b80f03f26c",
+          "media_type": "gallery"
+        },
+        {
+          "title": "The white shark bites went so hard",
+          "url": "https://www.reddit.com/r/Millennials/comments/1v7hkoj/the_white_shark_bites_went_so_hard/",
+          "subreddit": "Millennials",
+          "created_utc": "2026-07-26T22:02:18+00:00",
+          "thumbnail": "https://preview.redd.it/gglslw1qcnfh1.jpeg?width=320&crop=smart&auto=webp&s=6760cb35a35d109da6baba7dde51f5e1fae4ad2c",
+          "media_type": "image"
+        },
+        {
+          "title": "AITA for refusing to write a recommendation for my former intern after what they did?",
+          "url": "https://www.reddit.com/r/AmItheAsshole/comments/1v7b1ek/aita_for_refusing_to_write_a_recommendation_for/",
+          "subreddit": "AmItheAsshole",
+          "created_utc": "2026-07-26T17:57:26+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "AITA for telling my nurse mom not to do “nurse stuff” during my wife’s labor?",
+          "url": "https://www.reddit.com/r/AmItheAsshole/comments/1v79g83/aita_for_telling_my_nurse_mom_not_to_do_nurse/",
+          "subreddit": "AmItheAsshole",
+          "created_utc": "2026-07-26T16:58:55+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Kids are creepy",
+          "url": "https://www.reddit.com/r/oddlyspecific/comments/1v77nyp/kids_are_creepy/",
+          "subreddit": "oddlyspecific",
+          "created_utc": "2026-07-26T15:53:34+00:00",
+          "thumbnail": "https://preview.redd.it/hs3qopsxilfh1.jpeg?width=320&crop=smart&auto=webp&s=09d43841097b4ff987530d421327fea69b9cc6ee",
+          "media_type": "image"
+        },
+        {
+          "title": "(New Update) My(f25) church is forgoing their tradition of honoring graduates to instead honor homeschooling moms. My sister(f18) is graduating this year and disappointed",
+          "url": "https://www.reddit.com/r/BestofRedditorUpdates/comments/1v71ckt/new_update_myf25_church_is_forgoing_their/",
+          "subreddit": "BestofRedditorUpdates",
+          "created_utc": "2026-07-26T11:31:33+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "This is what New York City looked like during the great blizzard of 1996",
+          "url": "https://www.reddit.com/r/90s/comments/1v6wfmt/this_is_what_new_york_city_looked_like_during_the/",
+          "subreddit": "90s",
+          "created_utc": "2026-07-26T07:01:58+00:00",
+          "thumbnail": "https://preview.redd.it/mf4cm0dzvifh1.png?width=640&crop=smart&auto=webp&s=a874413f64c39ba12ff3549102fe03107a6237b8",
+          "media_type": "image"
+        }
+      ]
+    },
+    {
+      "name": "🧩 Hobbies & Misc",
+      "subreddits": [
+        "todayilearned",
+        "upliftingnews",
+        "videos",
+        "whatisthisthing"
+      ],
+      "subreddits_label": "r/todayilearned, r/upliftingnews, r/videos, r/whatisthisthing",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "TIL In 1980 the Supreme Court awarded the Sioux nations $122 million for the Black Hills, a settlement the tribes have refused on the grounds that acceptance would extinguish their claim to the land, leaving the award to accrue interest in a federal account now worth over $1 billion.",
+          "url": "https://www.reddit.com/r/todayilearned/comments/1v7u4aw/til_in_1980_the_supreme_court_awarded_the_sioux/",
+          "subreddit": "todayilearned",
+          "created_utc": "2026-07-27T08:12:29+00:00",
+          "thumbnail": "https://external-preview.redd.it/tGwBjW_RBMp4XnVUHR20eEjaUsS3ya8NjrdSv7I7EEs.jpeg?width=640&crop=smart&auto=webp&s=650105db769f067add7838cebabe1e7dab305e80",
+          "media_type": "image"
+        },
+        {
+          "title": "TIL After President Kennedy was shot and arrived at Parkland Memorial Hospital, he was reported to still have a heartbeat, but no pulse or blood pressure",
+          "url": "https://www.reddit.com/r/todayilearned/comments/1v7sibb/til_after_president_kennedy_was_shot_and_arrived/",
+          "subreddit": "todayilearned",
+          "created_utc": "2026-07-27T06:39:44+00:00",
+          "thumbnail": "https://external-preview.redd.it/7f_rJXH_o3GJs_czAMIFgsOdeW0SIE5aFM0SaizK8-I.jpeg?width=640&crop=smart&auto=webp&s=51d3d3c5f8e5645e9ffe1c5da55d2bc0d573e114",
+          "media_type": "image"
+        },
+        {
+          "title": "Bernie Sanders calls for negotiated end to Iran war: \"We need $67 billion to build housing, to make sure that our people have healthcare, that we deal with middle class that is struggling. The war in Iran is unconstitutional. Should never have started. We need to sit down, negotiate, end this war.\"",
+          "url": "https://www.reddit.com/r/videos/comments/1v7phqf/bernie_sanders_calls_for_negotiated_end_to_iran/",
+          "subreddit": "videos",
+          "created_utc": "2026-07-27T03:58:59+00:00",
+          "thumbnail": "https://external-preview.redd.it/7vNBwIZBy1t38PXEHJNPuMPi2soqnS29Q_1HEDIwt8U.jpeg?width=320&crop=smart&auto=webp&s=72cc3a83901a88e9ba620839f21e5330e53147a9",
+          "media_type": "video"
+        },
+        {
+          "title": "TIL Mary Todd Lincoln continued to live in the White House for nearly six weeks after the assassination of her husband, President Abraham Lincoln.",
+          "url": "https://www.reddit.com/r/todayilearned/comments/1v7o5qo/til_mary_todd_lincoln_continued_to_live_in_the/",
+          "subreddit": "todayilearned",
+          "created_utc": "2026-07-27T02:53:31+00:00",
+          "thumbnail": "https://external-preview.redd.it/0XyRs772-9RpCw4b8EW5fPAPWPnKZxTSa6QXZ1qwWSM.jpeg?width=640&crop=smart&auto=webp&s=f46be479a49036a29458ee51528c678e70e0a224",
+          "media_type": "image"
+        },
+        {
+          "title": "Deranged Elon musk crumbles in interview",
+          "url": "https://www.reddit.com/r/videos/comments/1v7jrde/deranged_elon_musk_crumbles_in_interview/",
+          "subreddit": "videos",
+          "created_utc": "2026-07-26T23:33:34+00:00",
+          "thumbnail": "https://external-preview.redd.it/-xa8byk_ebW2SCcrUwEfFCwxrMww6cGEOIR_EpHx0lk.jpeg?width=320&crop=smart&auto=webp&s=cbdb0bc5991b4ca15510237ca20c9a66c2bb9275",
+          "media_type": "video"
+        },
+        {
+          "title": "Global hunger falls from 35 percent in 1970 to 7.8 percent",
+          "url": "https://www.reddit.com/r/UpliftingNews/comments/1v7f7gh/global_hunger_falls_from_35_percent_in_1970_to_78/",
+          "subreddit": "UpliftingNews",
+          "created_utc": "2026-07-26T20:31:33+00:00",
+          "thumbnail": "https://external-preview.redd.it/1Oxwd_J3W2hm0rVoPu1KDo48SmGn8Em29XJxJkxS00c.jpeg?width=640&crop=smart&auto=webp&s=81119ff9934073295509994bd5d3b795de57074f",
+          "media_type": "image"
+        },
+        {
+          "title": "Dems ‘want a FIGHTER’: Analyst on poll having Ocasio-Cortez on top of early 2028 Democratic ticket",
+          "url": "https://www.reddit.com/r/videos/comments/1v7dgrf/dems_want_a_fighter_analyst_on_poll_having/",
+          "subreddit": "videos",
+          "created_utc": "2026-07-26T19:26:00+00:00",
+          "thumbnail": "https://external-preview.redd.it/67GWQwM80-G9Rl5Lqdl0IVYmqIMLgz8JhXg-sc3GPtU.jpeg?width=320&crop=smart&auto=webp&s=1cf51dae927b6fe361dcee8742a33d145bd7bb2a",
+          "media_type": "video"
+        },
+        {
+          "title": "More than 3,000 people in Trinidad and Tobago regained their sight through a free cataract and pterygium surgery mission, with hundreds arriving daily and extra tents set up to meet the demand",
+          "url": "https://www.reddit.com/r/UpliftingNews/comments/1v7cvge/more_than_3000_people_in_trinidad_and_tobago/",
+          "subreddit": "UpliftingNews",
+          "created_utc": "2026-07-26T19:04:16+00:00",
+          "thumbnail": "https://external-preview.redd.it/QfhD8OUCudKlVmtgvg7luxlFrHvksvGcBvJi8sdEikQ.jpeg?width=640&crop=smart&auto=webp&s=801d9bf14df1b041923c122d0e8ab82a28591452",
+          "media_type": "image"
+        },
+        {
+          "title": "Portugal's last circus elephant, Julie, has arrived at Europe's first large scale elephant sanctuary and is already roaming free and enjoying her first mud bath",
+          "url": "https://www.reddit.com/r/UpliftingNews/comments/1v73aug/portugals_last_circus_elephant_julie_has_arrived/",
+          "subreddit": "UpliftingNews",
+          "created_utc": "2026-07-26T13:01:48+00:00",
+          "thumbnail": "https://external-preview.redd.it/_SS7TzcofIUjEcTIqBk6pKQAkJluSBrPX7fQJEuab4I.jpeg?width=640&crop=smart&auto=webp&s=61426c8a7ca8e5a80ab6712881e9cca396366808",
+          "media_type": "image"
+        },
+        {
+          "title": "Round heavy silver metal object (430g, 8.5cm diameter). Inner dial with numbers, outer dial with letters, both can be turned. Back can open to reveal inner mechanism. No brand, maker's mark or serial number. Not electronic. (airpods for scale).",
+          "url": "https://www.reddit.com/r/whatisthisthing/comments/1v71d9n/round_heavy_silver_metal_object_430g_85cm/",
+          "subreddit": "whatisthisthing",
+          "created_utc": "2026-07-26T11:32:32+00:00",
+          "thumbnail": "https://preview.redd.it/4w91uq887kfh1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=76813a539ffb0bec790e16d303dd4d8e4e6247c4",
+          "media_type": "gallery"
+        }
+      ]
+    }
+  ]
+}

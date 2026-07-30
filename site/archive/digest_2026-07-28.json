@@ -1,0 +1,754 @@
+{
+  "generated_at": "2026-07-28T23:36:16.964422+00:00",
+  "total_posts": 77,
+  "total_groups": 8,
+  "stats": {
+    "dropped_age": 180,
+    "dropped_duplicates": 13,
+    "dropped_keywords": {
+      "trump": 4
+    }
+  },
+  "groups": [
+    {
+      "name": "🤖 AI",
+      "subreddits": [
+        "artificialinteligence",
+        "chatgpt",
+        "claudeai",
+        "geminiai",
+        "openai",
+        "vibecoding"
+      ],
+      "subreddits_label": "r/chatgpt, r/claudeai, r/vibecoding, r/artificialinteligence, r/geminiai, r/openai",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "Differences Between Fable 5 and Opus 5 on MineBench.ai",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1v7i49g/differences_between_fable_5_and_opus_5_on/",
+          "subreddit": "ClaudeAI",
+          "created_utc": "2026-07-26T22:24:07+00:00",
+          "thumbnail": "https://preview.redd.it/wva19c9dfnfh1.gif?frame=1&width=140&height=140&crop=1:1,smart&auto=webp&s=ca6c4793c106bef790442289f2a946f4afd2b2ac",
+          "media_type": "gallery"
+        },
+        {
+          "title": "I built a procedural desert explorer with Claude Code (Opus 5) and Three.js",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1v7h5e3/i_built_a_procedural_desert_explorer_with_claude/",
+          "subreddit": "ClaudeAI",
+          "created_utc": "2026-07-26T21:45:29+00:00",
+          "thumbnail": "https://external-preview.redd.it/dmNjcTE3ams5bmZoMUF8V9P7Oy-a-LuRDdf0Sl-M2gtjBYOMj_NcPcLttagh.png?width=640&crop=smart&auto=webp&s=d255864262cb65ab6bff32966accb5bd08cf2199",
+          "media_type": "video"
+        },
+        {
+          "title": "ChatGPT saved me from sleeping at the airport...",
+          "url": "https://www.reddit.com/r/ChatGPT/comments/1v7h294/chatgpt_saved_me_from_sleeping_at_the_airport/",
+          "subreddit": "ChatGPT",
+          "created_utc": "2026-07-26T21:42:07+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Claude ran mock interviews for a job I badly wanted. The real one felt like a rerun. I got it.",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1v7fo9i/claude_ran_mock_interviews_for_a_job_i_badly/",
+          "subreddit": "ClaudeAI",
+          "created_utc": "2026-07-26T20:49:06+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "FreakyGPT",
+          "url": "https://www.reddit.com/r/ChatGPT/comments/1v6zsbr/freakygpt/",
+          "subreddit": "ChatGPT",
+          "created_utc": "2026-07-26T10:10:19+00:00",
+          "thumbnail": "https://preview.redd.it/7vbhxc4ptjfh1.jpeg?width=640&crop=smart&auto=webp&s=4d36a996ea73f5eced7f0b244c422666acaf2932",
+          "media_type": "image"
+        },
+        {
+          "title": "Developers vs Users in 26 seconds 😂",
+          "url": "https://www.reddit.com/r/vibecoding/comments/1v6yp1t/developers_vs_users_in_26_seconds/",
+          "subreddit": "vibecoding",
+          "created_utc": "2026-07-26T09:09:42+00:00",
+          "thumbnail": "https://external-preview.redd.it/bHgxZ2ZzNXZpamZoMUSOtXkUEdSHRQhlRmW3eTdLVwPuuqfKaSOJejiOEV3N.png?width=640&crop=smart&auto=webp&s=90cad00265a75c28340c4611c4f5f90feaac209f",
+          "media_type": "video"
+        },
+        {
+          "title": "Claaude security flaw leaks its customer's conversations on Google",
+          "url": "https://www.reddit.com/r/ChatGPT/comments/1v6w630/claaude_security_flaw_leaks_its_customers/",
+          "subreddit": "ChatGPT",
+          "created_utc": "2026-07-26T06:47:36+00:00",
+          "thumbnail": "https://preview.redd.it/oel3qdictifh1.jpeg?width=640&crop=smart&auto=webp&s=9284c09cd1e6bc0be319e61e879deeb6c3fb93f5",
+          "media_type": "image"
+        },
+        {
+          "title": "currentStateOfAiRelevancy",
+          "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1v6hbvf/currentstateofairelevancy/",
+          "subreddit": "ArtificialInteligence",
+          "created_utc": "2026-07-25T19:21:02+00:00",
+          "thumbnail": null,
+          "media_type": "image"
+        },
+        {
+          "title": "Vibecoders: is StackOverflow dead?",
+          "url": "https://www.reddit.com/r/vibecoding/comments/1v66rqz/vibecoders_is_stackoverflow_dead/",
+          "subreddit": "vibecoding",
+          "created_utc": "2026-07-25T12:13:08+00:00",
+          "thumbnail": "https://preview.redd.it/a2e1l46jadfh1.png?width=320&crop=smart&auto=webp&s=393cdd281743aa5a902c5ec5db7ae47bb92281b8",
+          "media_type": "image"
+        },
+        {
+          "title": "Opus 5 starts to make \"weight\" related references when this Youtuber tried to make a wedding website",
+          "url": "https://www.reddit.com/r/vibecoding/comments/1v61dif/opus_5_starts_to_make_weight_related_references/",
+          "subreddit": "vibecoding",
+          "created_utc": "2026-07-25T07:19:06+00:00",
+          "thumbnail": "https://external-preview.redd.it/aTlleXVnaDd1YmZoMRhn9NCxNtUkSUGmFaFkG5xEBd4_95qbpFj5rOm9YGHy.png?width=640&crop=smart&auto=webp&s=3e37fe5397576597effefa0541a6b87dcdda8b69",
+          "media_type": "video"
+        }
+      ]
+    },
+    {
+      "name": "💻 Programming",
+      "subreddits": [
+        "bioinformatics",
+        "coding",
+        "codinghelp",
+        "commandline",
+        "cscareerquestionseu",
+        "learnprogramming",
+        "n8n",
+        "programming",
+        "python",
+        "sideproject"
+      ],
+      "subreddits_label": "r/learnprogramming, r/sideproject, r/bioinformatics, r/commandline, r/n8n, r/python, r/coding, r/codinghelp, r/cscareerquestionseu, r/programming",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "Python automations are so much better than AI Agents and LLMs",
+          "url": "https://www.reddit.com/r/Python/comments/1v7tfx9/python_automations_are_so_much_better_than_ai/",
+          "subreddit": "Python",
+          "created_utc": "2026-07-27T07:32:18+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Growing problem of missing/unavailable/not-sharing RNA-seq datasets",
+          "url": "https://www.reddit.com/r/bioinformatics/comments/1v7rpi3/growing_problem_of_missingunavailablenotsharing/",
+          "subreddit": "bioinformatics",
+          "created_utc": "2026-07-27T05:54:37+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Junior dev feels like I'm progressing slowly",
+          "url": "https://www.reddit.com/r/learnprogramming/comments/1v7ojug/junior_dev_feels_like_im_progressing_slowly/",
+          "subreddit": "learnprogramming",
+          "created_utc": "2026-07-27T03:12:10+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "my python script that searches your files to find things for you",
+          "url": "https://www.reddit.com/r/learnprogramming/comments/1v7klwh/my_python_script_that_searches_your_files_to_find/",
+          "subreddit": "learnprogramming",
+          "created_utc": "2026-07-27T00:09:56+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "TiHole: I couldn't find a decent Pihole TUI so I made and open sourced one",
+          "url": "https://www.reddit.com/r/commandline/comments/1v7iy5l/tihole_i_couldnt_find_a_decent_pihole_tui_so_i/",
+          "subreddit": "commandline",
+          "created_utc": "2026-07-26T22:58:38+00:00",
+          "thumbnail": "https://preview.redd.it/pnmrggzbmnfh1.jpeg?width=640&crop=smart&auto=webp&s=a9258fb288e962b953b553943acc86c17ba5710f",
+          "media_type": "image"
+        },
+        {
+          "title": "I built a free tool that tracks stats and monthly trends across 100,000+ subreddits",
+          "url": "https://www.reddit.com/r/SideProject/comments/1v7cyw1/i_built_a_free_tool_that_tracks_stats_and_monthly/",
+          "subreddit": "SideProject",
+          "created_utc": "2026-07-26T19:07:43+00:00",
+          "thumbnail": "https://external-preview.redd.it/bXA2cWppZHhlbWZoMVvBT_2-r7E_jJZAv6wfv9GJVAjKtDS1EWV4X9aUwL2R.png?width=640&crop=smart&auto=webp&s=5f89e0a38518a43fb4387d476103722d61819fb4",
+          "media_type": "video"
+        },
+        {
+          "title": "What way did you learn Javascript?",
+          "url": "https://www.reddit.com/r/learnprogramming/comments/1v77tvq/what_way_did_you_learn_javascript/",
+          "subreddit": "learnprogramming",
+          "created_utc": "2026-07-26T15:59:50+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "What's the biggest reason side projects never get finished?",
+          "url": "https://www.reddit.com/r/SideProject/comments/1v767kj/whats_the_biggest_reason_side_projects_never_get/",
+          "subreddit": "SideProject",
+          "created_utc": "2026-07-26T14:59:14+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Is learning n8n still worth it if AI can already build automations?",
+          "url": "https://www.reddit.com/r/n8n/comments/1v74y2v/is_learning_n8n_still_worth_it_if_ai_can_already/",
+          "subreddit": "n8n",
+          "created_utc": "2026-07-26T14:10:22+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "How an accidental viral trend in Uzbekistan gave my side-project 1k+ downloads and its first paid user",
+          "url": "https://www.reddit.com/r/SideProject/comments/1v704ok/how_an_accidental_viral_trend_in_uzbekistan_gave/",
+          "subreddit": "SideProject",
+          "created_utc": "2026-07-26T10:28:43+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        }
+      ]
+    },
+    {
+      "name": "🔧 Tech",
+      "subreddits": [
+        "futurology",
+        "gadgets",
+        "technology"
+      ],
+      "subreddits_label": "r/futurology, r/technology, r/gadgets",
+      "post_count": 7,
+      "posts": [
+        {
+          "title": "Why does everything feel so joyless? Welcome to the age of decadence without pleasure",
+          "url": "https://www.reddit.com/r/technology/comments/1v7n74f/why_does_everything_feel_so_joyless_welcome_to/",
+          "subreddit": "technology",
+          "created_utc": "2026-07-27T02:08:11+00:00",
+          "thumbnail": "https://external-preview.redd.it/OzOoQknPYsu4T_W1yRE19kXVwJEIZ75ZU5A5ijeSaXU.jpeg?width=640&crop=smart&auto=webp&s=437abb7c55a27757b208491d3238b561e65be9e0",
+          "media_type": "image"
+        },
+        {
+          "title": "Massie Bill Would Bar Funding for Police Using Flock License Plate Readers",
+          "url": "https://www.reddit.com/r/technology/comments/1v7hw9x/massie_bill_would_bar_funding_for_police_using/",
+          "subreddit": "technology",
+          "created_utc": "2026-07-26T22:15:04+00:00",
+          "thumbnail": "https://external-preview.redd.it/oPxc1De3hSy7mmGrxJ0xMgNjUdR_3Wjvi0OsYWGtmss.jpeg?width=640&crop=smart&auto=webp&s=8895e987c50bfed2d8b2d1097a37a6742965933b",
+          "media_type": "image"
+        },
+        {
+          "title": "James Cameron tried to warn us: 'Skynet Day' is now shorthand for OpenAI's agent going rogue and hacking into a startup",
+          "url": "https://www.reddit.com/r/Futurology/comments/1v7gaen/james_cameron_tried_to_warn_us_skynet_day_is_now/",
+          "subreddit": "Futurology",
+          "created_utc": "2026-07-26T21:12:26+00:00",
+          "thumbnail": "https://external-preview.redd.it/dHMcbY0ZjT62fPHsPeasUzdRC2K_sB3AoHq2KPLIeEQ.jpeg?width=640&crop=smart&auto=webp&s=112441c76840a17ef7e8929e180bb232f83ac04a",
+          "media_type": "image"
+        },
+        {
+          "title": "US prosecutors charge Atlanta man after GrapheneOS phone wipes itself during airport search",
+          "url": "https://www.reddit.com/r/technology/comments/1v7emqr/us_prosecutors_charge_atlanta_man_after/",
+          "subreddit": "technology",
+          "created_utc": "2026-07-26T20:10:04+00:00",
+          "thumbnail": "https://external-preview.redd.it/A0mZoq9q7953mQhQg0TtvCbsmW_97nrF-xAeg6JNk6A.jpeg?width=640&crop=smart&auto=webp&s=41d83e7f1bda36ee5ad9c5326ec74f5440cf36ac",
+          "media_type": "image"
+        },
+        {
+          "title": "Spotify Deleted 75 Million AI-Generated Tracks – and It’s Not Done Yet",
+          "url": "https://www.reddit.com/r/Futurology/comments/1v72yxx/spotify_deleted_75_million_aigenerated_tracks_and/",
+          "subreddit": "Futurology",
+          "created_utc": "2026-07-26T12:47:24+00:00",
+          "thumbnail": "https://external-preview.redd.it/WFArBV29X8q6jNH7ccwqAeN_X4LmqsrTgULyXzLnm4A.jpeg?width=640&crop=smart&auto=webp&s=a5999935ea95c14821f6fc46027c5390ae6de598",
+          "media_type": "image"
+        },
+        {
+          "title": "America has 3.9 million abandoned oil and gas wells, and researchers found the heat inside could turn them into underground batteries for wind and solar",
+          "url": "https://www.reddit.com/r/Futurology/comments/1v6ivh0/america_has_39_million_abandoned_oil_and_gas/",
+          "subreddit": "Futurology",
+          "created_utc": "2026-07-25T20:22:03+00:00",
+          "thumbnail": "https://external-preview.redd.it/4FxftjJtg-v58kvGLYZ0ndhbnxNEslZEizCKcKRnvT4.jpeg?width=640&crop=smart&auto=webp&s=6e2f53c98fb19671872ec9550775a2df58e85e29",
+          "media_type": "image"
+        },
+        {
+          "title": "‘Really inappropriate’: teachers decry plan for humanoid robot in New York high school",
+          "url": "https://www.reddit.com/r/gadgets/comments/1v6b7q4/really_inappropriate_teachers_decry_plan_for/",
+          "subreddit": "gadgets",
+          "created_utc": "2026-07-25T15:24:20+00:00",
+          "thumbnail": "https://external-preview.redd.it/x_dkrCUpUzWBv09tsAE79Yp71ChJqcq_MzVfm-8zIfY.jpeg?width=640&crop=smart&auto=webp&s=d248c72b3eb73b43466d564a490e48fc4fab5ed9",
+          "media_type": "image"
+        }
+      ]
+    },
+    {
+      "name": "📊 Data",
+      "subreddits": [
+        "computervision",
+        "dataisbeautiful",
+        "infographics",
+        "mapporn"
+      ],
+      "subreddits_label": "r/dataisbeautiful, r/infographics, r/mapporn, r/computervision",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "How many Europeans own their homes",
+          "url": "https://www.reddit.com/r/MapPorn/comments/1v7xp7e/how_many_europeans_own_their_homes/",
+          "subreddit": "MapPorn",
+          "created_utc": "2026-07-27T11:30:27+00:00",
+          "thumbnail": "https://preview.redd.it/nwn0k4svcrfh1.png?width=640&crop=smart&auto=webp&s=3026cd8066946122635ae529703c18e6e249f250",
+          "media_type": "image"
+        },
+        {
+          "title": "[OC] The strength of every European football club using an Elo rating system",
+          "url": "https://www.reddit.com/r/dataisbeautiful/comments/1v7tku6/oc_the_strength_of_every_european_football_club/",
+          "subreddit": "dataisbeautiful",
+          "created_utc": "2026-07-27T07:40:17+00:00",
+          "thumbnail": "https://preview.redd.it/xzx8o39n7qfh1.png?width=640&crop=smart&auto=webp&s=bafb9a6ac7339a8d925627a4b914184b8e8a8896",
+          "media_type": "image"
+        },
+        {
+          "title": "The most widely practiced religion among the administrative divisions of Russia.",
+          "url": "https://www.reddit.com/r/MapPorn/comments/1v7nuri/the_most_widely_practiced_religion_among_the/",
+          "subreddit": "MapPorn",
+          "created_utc": "2026-07-27T02:38:58+00:00",
+          "thumbnail": "https://preview.redd.it/f1l9qehxpofh1.png?width=640&crop=smart&auto=webp&s=f2538de7a9dde46a233299bb2f814ee557cbbe30",
+          "media_type": "image"
+        },
+        {
+          "title": "The Name “John” in Different European Languages",
+          "url": "https://www.reddit.com/r/MapPorn/comments/1v7dsg6/the_name_john_in_different_european_languages/",
+          "subreddit": "MapPorn",
+          "created_utc": "2026-07-26T19:38:26+00:00",
+          "thumbnail": "https://preview.redd.it/jegxf0w1nmfh1.jpeg?width=640&crop=smart&auto=webp&s=9ae7b6954548f4c57e8d2666b5a96370d250345a",
+          "media_type": "image"
+        },
+        {
+          "title": "[OC] Every team at the 2026 World Cup by how they spent their distance: walking, cruising, or at high speed",
+          "url": "https://www.reddit.com/r/dataisbeautiful/comments/1v6s59b/oc_every_team_at_the_2026_world_cup_by_how_they/",
+          "subreddit": "dataisbeautiful",
+          "created_utc": "2026-07-26T03:17:52+00:00",
+          "thumbnail": "https://preview.redd.it/a8dmll16rhfh1.png?width=140&height=99&auto=webp&s=f7ba2179098bdb2e19c23aedf4bea0eba3621461",
+          "media_type": "gallery"
+        },
+        {
+          "title": "[OC] European Heatwave June 2026",
+          "url": "https://www.reddit.com/r/dataisbeautiful/comments/1v6l8r1/oc_european_heatwave_june_2026/",
+          "subreddit": "dataisbeautiful",
+          "created_utc": "2026-07-25T21:59:14+00:00",
+          "thumbnail": "https://external-preview.redd.it/5-P7r0TrrOqS19rT2atGwLRBtEEyr1tF7FqYPfjXELw.jpeg?width=640&crop=smart&auto=webp&s=3826c8ea89ae7df6e1f2caffdc6532a3fd612aff",
+          "media_type": "image"
+        },
+        {
+          "title": "How long each EU Candidate country has been waiting for Accession & Membership 🇪🇺",
+          "url": "https://www.reddit.com/r/Infographics/comments/1v4xnf7/how_long_each_eu_candidate_country_has_been/",
+          "subreddit": "Infographics",
+          "created_utc": "2026-07-24T01:52:50+00:00",
+          "thumbnail": "https://preview.redd.it/y1gekd9433fh1.jpeg?width=640&crop=smart&auto=webp&s=9beb2a8c12e465ac1f91db0ff5706ed25a242ad6",
+          "media_type": "image"
+        },
+        {
+          "title": "Global Attitudes Towards the U.S. and China 2026",
+          "url": "https://www.reddit.com/r/Infographics/comments/1v4uo7s/global_attitudes_towards_the_us_and_china_2026/",
+          "subreddit": "Infographics",
+          "created_utc": "2026-07-23T23:41:12+00:00",
+          "thumbnail": "https://preview.redd.it/cuu631tmf2fh1.jpeg?width=640&crop=smart&auto=webp&s=a00f41f70e717ecf752dd6ac01ca8914325c0b56",
+          "media_type": "image"
+        },
+        {
+          "title": "in Texas, 62% of operating and under-construction data-center capacity is located in areas facing high or extremely high water stress from Bloomberg Intelligence",
+          "url": "https://www.reddit.com/r/Infographics/comments/1v4rdpd/in_texas_62_of_operating_and_underconstruction/",
+          "subreddit": "Infographics",
+          "created_utc": "2026-07-23T21:29:46+00:00",
+          "thumbnail": "https://preview.redd.it/q8jf3s16s1fh1.jpeg?width=320&crop=smart&auto=webp&s=ac14eafdb5f9e20cf342c1889e543b370c5fbabf",
+          "media_type": "image"
+        },
+        {
+          "title": "China open-sourced a model that reconstructs any scene in 3D from a regular video, in real-time",
+          "url": "https://www.reddit.com/r/computervision/comments/1v45uno/china_opensourced_a_model_that_reconstructs_any/",
+          "subreddit": "computervision",
+          "created_utc": "2026-07-23T06:36:38+00:00",
+          "thumbnail": null,
+          "media_type": "video"
+        }
+      ]
+    },
+    {
+      "name": "💼 Business",
+      "subreddits": [
+        "appbusiness",
+        "big4",
+        "careerguidance",
+        "consulting",
+        "fluentinfinance",
+        "startup_ideas",
+        "startups",
+        "workfromhome"
+      ],
+      "subreddits_label": "r/careerguidance, r/fluentinfinance, r/big4, r/consulting, r/startups, r/appbusiness, r/startup_ideas, r/workfromhome",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "Someone in KPMG shared this. Is this how cruel Managers are?",
+          "url": "https://www.reddit.com/r/consulting/comments/1v7zp6u/someone_in_kpmg_shared_this_is_this_how_cruel/",
+          "subreddit": "consulting",
+          "created_utc": "2026-07-27T12:59:12+00:00",
+          "thumbnail": "https://preview.redd.it/swxxfngqsrfh1.jpeg?width=640&crop=smart&auto=webp&s=942f382572efeda7a6cf1fcafde517f3c301f211",
+          "media_type": "image"
+        },
+        {
+          "title": "Highest pay to stress ratio careers?",
+          "url": "https://www.reddit.com/r/careerguidance/comments/1v7olrw/highest_pay_to_stress_ratio_careers/",
+          "subreddit": "careerguidance",
+          "created_utc": "2026-07-27T03:14:51+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Losing a $500k home you’ve owned for 30 years because you couldn’t pay $4k in property taxes shouldn’t be legal",
+          "url": "https://www.reddit.com/r/FluentInFinance/comments/1v71dnc/losing_a_500k_home_youve_owned_for_30_years/",
+          "subreddit": "FluentInFinance",
+          "created_utc": "2026-07-26T11:33:04+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Title: Did anyone else accidentally get pigeonholed into a niche they never actually chose?",
+          "url": "https://www.reddit.com/r/careerguidance/comments/1v6xove/title_did_anyone_else_accidentally_get/",
+          "subreddit": "careerguidance",
+          "created_utc": "2026-07-26T08:12:51+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "A promotion was forced upon me that I do not want, how do I get out of this situation?",
+          "url": "https://www.reddit.com/r/careerguidance/comments/1v6vhjr/a_promotion_was_forced_upon_me_that_i_do_not_want/",
+          "subreddit": "careerguidance",
+          "created_utc": "2026-07-26T06:09:41+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Is YC losing prestige with all of the AI Wrappers it invests in? I will not promote",
+          "url": "https://www.reddit.com/r/startups/comments/1v6qf5i/is_yc_losing_prestige_with_all_of_the_ai_wrappers/",
+          "subreddit": "startups",
+          "created_utc": "2026-07-26T01:53:11+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "Why is there a higher percentage of single women compared to married men in Big 4 upper management",
+          "url": "https://www.reddit.com/r/Big4/comments/1v6q4ag/why_is_there_a_higher_percentage_of_single_women/",
+          "subreddit": "Big4",
+          "created_utc": "2026-07-26T01:38:55+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "$100,000 a year is the new $39,000.",
+          "url": "https://www.reddit.com/r/FluentInFinance/comments/1v6o46s/100000_a_year_is_the_new_39000/",
+          "subreddit": "FluentInFinance",
+          "created_utc": "2026-07-26T00:04:46+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "It’s absolutely wild that the U.S. prints trillions of dollars out of thin air, dilutes the value of every dollar you earn, and most people have no clue.",
+          "url": "https://www.reddit.com/r/FluentInFinance/comments/1v6ma4o/its_absolutely_wild_that_the_us_prints_trillions/",
+          "subreddit": "FluentInFinance",
+          "created_utc": "2026-07-25T22:43:09+00:00",
+          "thumbnail": "https://external-preview.redd.it/cnZjMXBmaDNmZ2ZoMaFYuSV55qGS118qLu1q7f6UORh3YWtUR9RsVn32aN3A.png?width=640&crop=smart&auto=webp&s=59138438522ada0639696cc3a739f48e53eb26f9",
+          "media_type": "video"
+        },
+        {
+          "title": "I’m finally free",
+          "url": "https://www.reddit.com/r/Big4/comments/1v6efmx/im_finally_free/",
+          "subreddit": "Big4",
+          "created_utc": "2026-07-25T17:30:30+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        }
+      ]
+    },
+    {
+      "name": "🍕 Italy",
+      "subreddits": [
+        "italia",
+        "italiacareeradvice",
+        "italiapersonalfinance",
+        "italy",
+        "torino",
+        "viaggiita"
+      ],
+      "subreddits_label": "r/italia, r/italy, r/italiapersonalfinance, r/viaggiita, r/italiacareeradvice, r/torino",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "Revoca della nomina a CT della Nazionale italiana per Andrea Pirlo a causa dei suoi legami con la Russia: “Mi sono state attribuite convinzioni che non ho mai espresso”",
+          "url": "https://www.reddit.com/r/italy/comments/1v7xmmr/revoca_della_nomina_a_ct_della_nazionale_italiana/",
+          "subreddit": "italy",
+          "created_utc": "2026-07-27T11:26:54+00:00",
+          "thumbnail": "https://preview.redd.it/n25z3ps9crfh1.jpeg?width=640&crop=smart&auto=webp&s=26742fca7c0a531f3522126c3bda85edc6680265",
+          "media_type": "image"
+        },
+        {
+          "title": "Paolo Coletti mi ha regalato 7957 euro e io gli ho lasciato solo qualche like",
+          "url": "https://www.reddit.com/r/ItaliaPersonalFinance/comments/1v7x49z/paolo_coletti_mi_ha_regalato_7957_euro_e_io_gli/",
+          "subreddit": "ItaliaPersonalFinance",
+          "created_utc": "2026-07-27T11:01:31+00:00",
+          "thumbnail": "https://preview.redd.it/gsao88stzqfh1.png?width=140&height=25&auto=webp&s=fbebaa96eba1a496a86cfd1225268aeb331bee49",
+          "media_type": "image"
+        },
+        {
+          "title": "Vi siete mai chiesti cosa c' è nello zaino di un senzatetto?",
+          "url": "https://www.reddit.com/r/Italia/comments/1v7txto/vi_siete_mai_chiesti_cosa_c_è_nello_zaino_di_un/",
+          "subreddit": "Italia",
+          "created_utc": "2026-07-27T08:02:00+00:00",
+          "thumbnail": "https://preview.redd.it/52wgjfcpbqfh1.jpeg?width=640&crop=smart&auto=webp&s=1b0daaf54f91688ae29a1d70457852767d878cc7",
+          "media_type": "image"
+        },
+        {
+          "title": "Val Brembana, i turisti contro i campanacci delle mucche: «Non si dorme». Il sindaco: «Non posso metterle in modalità silenzioso»",
+          "url": "https://www.reddit.com/r/Italia/comments/1v7pmtn/val_brembana_i_turisti_contro_i_campanacci_delle/",
+          "subreddit": "Italia",
+          "created_utc": "2026-07-27T04:05:39+00:00",
+          "thumbnail": "https://external-preview.redd.it/8ACgLlG9wMsSTDyYDQnTnG6CKb2-hTRYiryrX97Wr9I.jpeg?width=640&crop=smart&auto=webp&s=fd775b1e006041ca08fbb611af6b66fc99a3bace",
+          "media_type": "image"
+        },
+        {
+          "title": "Brindisi, maxi truffa alle banche: tra i 145 indagati c'è Nicola Didonna, capogruppo in consiglio comunale a Brindisi, di Futuro Nazionale. E`accusato di truffa, malversazione di erogazione pubbliche e indebita percezione pubblica",
+          "url": "https://www.reddit.com/r/italy/comments/1v7pizm/brindisi_maxi_truffa_alle_banche_tra_i_145/",
+          "subreddit": "italy",
+          "created_utc": "2026-07-27T04:00:37+00:00",
+          "thumbnail": "https://external-preview.redd.it/FChN9Ic62mGnI8BmI3CVU0orPvDfwFmDl3jt8fjcTGw.jpeg?width=640&crop=smart&auto=webp&s=1f541b08e6fe076ceeaad433764f4ba8f82ebcce",
+          "media_type": "image"
+        },
+        {
+          "title": "Fornero: “La mia riforma salvò i conti ma mancò il tempo di spiegarla”",
+          "url": "https://www.reddit.com/r/italy/comments/1v7hbai/fornero_la_mia_riforma_salvò_i_conti_ma_mancò_il/",
+          "subreddit": "italy",
+          "created_utc": "2026-07-26T21:52:03+00:00",
+          "thumbnail": "https://external-preview.redd.it/Nfa_cXh5ACWpGQGSTtflJ-biukJwUF6IGz6Rlpo3th0.jpeg?width=640&crop=smart&auto=webp&s=7e9bb3ae3b9e06303c4f39315b71f1d1b8e04c37",
+          "media_type": "image"
+        },
+        {
+          "title": "L’ascensore sociale del Conte Mazzanti Vien dal Mare",
+          "url": "https://www.reddit.com/r/Italia/comments/1v7cgxr/lascensore_sociale_del_conte_mazzanti_vien_dal/",
+          "subreddit": "Italia",
+          "created_utc": "2026-07-26T18:49:38+00:00",
+          "thumbnail": "https://preview.redd.it/w4h3knhcemfh1.jpeg?width=640&crop=smart&auto=webp&s=33d83ff0ff4f7e4d5b92b367bce57a6d82640b34",
+          "media_type": "image"
+        },
+        {
+          "title": "Insegnanti e studenti italiani sono stati portati via dalla polizia in Thailandia e si sono scusati con la signora thailandese che li aveva rimproverati per aver fatto baccano.",
+          "url": "https://www.reddit.com/r/ViaggiITA/comments/1v6wepz/insegnanti_e_studenti_italiani_sono_stati_portati/",
+          "subreddit": "ViaggiITA",
+          "created_utc": "2026-07-26T07:00:45+00:00",
+          "thumbnail": "https://external-preview.redd.it/bGlkdXVsNnZ2aWZoMd7rHjA3UB59bc94hF-6FCcuTjdpuBvXVuIKWZBw_Gmu.png?width=640&crop=smart&auto=webp&s=f227e24be97381ec8d72921ccd787536ac77f5de",
+          "media_type": "video"
+        },
+        {
+          "title": "[Consiglio] La mia ragazza mi ha chiesto di scegliere tra lei e il PAC. Non sto scherzando.",
+          "url": "https://www.reddit.com/r/ItaliaPersonalFinance/comments/1v6h6jz/consiglio_la_mia_ragazza_mi_ha_chiesto_di/",
+          "subreddit": "ItaliaPersonalFinance",
+          "created_utc": "2026-07-25T19:15:14+00:00",
+          "thumbnail": null,
+          "media_type": "text"
+        },
+        {
+          "title": "I thailandesi stanno aspettando davanti all'hotel dove alloggiano gli studenti italiani. Hanno anche rimproverato gli studenti.",
+          "url": "https://www.reddit.com/r/ViaggiITA/comments/1v62vkj/i_thailandesi_stanno_aspettando_davanti_allhotel/",
+          "subreddit": "ViaggiITA",
+          "created_utc": "2026-07-25T08:45:40+00:00",
+          "thumbnail": "https://external-preview.redd.it/dWQzdWhna2s5Y2ZoMQuYbBxJBHhiuFvEY4DrdtQSO88kMi3r2GuRBCmdFCjF.png?width=320&crop=smart&auto=webp&s=c21af3d7d3526aad12c3ff56b47c767b5d49a2b8",
+          "media_type": "video"
+        }
+      ]
+    },
+    {
+      "name": "🇪🇺 Europe",
+      "subreddits": [
+        "belgium",
+        "budapest",
+        "europe",
+        "finland",
+        "france",
+        "ireland"
+      ],
+      "subreddits_label": "r/europe, r/france, r/ireland, r/finland, r/belgium, r/budapest",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "Politico Owner and biggest media company in Germany Axel Springer Gives Prize to Far Right Billionaire Peter Thiel",
+          "url": "https://www.reddit.com/r/europe/comments/1v7xe9v/politico_owner_and_biggest_media_company_in/",
+          "subreddit": "europe",
+          "created_utc": "2026-07-27T11:15:18+00:00",
+          "thumbnail": "https://external-preview.redd.it/QhXc1MjC1O0UAPVwAJzqXkD8dDmDQl85UDs6yIw1qn0.jpeg?width=640&crop=smart&auto=webp&s=7ce5d7cf50c2b7596861ad20feed48ec3270bbf0",
+          "media_type": "image"
+        },
+        {
+          "title": "Quelques unes récentes de la presse française",
+          "url": "https://www.reddit.com/r/france/comments/1v7tolq/quelques_unes_récentes_de_la_presse_française/",
+          "subreddit": "france",
+          "created_utc": "2026-07-27T07:46:42+00:00",
+          "thumbnail": "https://preview.redd.it/ohr6exfy8qfh1.jpeg?width=640&crop=smart&auto=webp&s=608df9ca763cb905db5ed50516909b7604d548b8",
+          "media_type": "image"
+        },
+        {
+          "title": "EUROPE'S ANSWER TO SHAHED: Poland Unveils Production Line for Long-Range Hornet Attack Drone",
+          "url": "https://www.reddit.com/r/europe/comments/1v7rx7f/europes_answer_to_shahed_poland_unveils/",
+          "subreddit": "europe",
+          "created_utc": "2026-07-27T06:06:24+00:00",
+          "thumbnail": "https://external-preview.redd.it/k439x3JZb8CJxw_6N3fGhCOVm83sqMc9FsVgTdyYZoI.jpeg?width=640&crop=smart&auto=webp&s=93eadf9a22c0a904a9f14901853df46c088ffd73",
+          "media_type": "image"
+        },
+        {
+          "title": "Scenes in Castlebar tonight",
+          "url": "https://www.reddit.com/r/ireland/comments/1v7kc7y/scenes_in_castlebar_tonight/",
+          "subreddit": "ireland",
+          "created_utc": "2026-07-26T23:58:47+00:00",
+          "thumbnail": "https://preview.redd.it/au2iwbmhxnfh1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=d50a78478f3e8187d91d53ba64d8432f845d44fb",
+          "media_type": "gallery"
+        },
+        {
+          "title": "Joe Biden congratulates Mayo on All-Ireland victory",
+          "url": "https://www.reddit.com/r/ireland/comments/1v7clm9/joe_biden_congratulates_mayo_on_allireland_victory/",
+          "subreddit": "ireland",
+          "created_utc": "2026-07-26T18:54:23+00:00",
+          "thumbnail": "https://preview.redd.it/v644g8f6fmfh1.png?width=640&crop=smart&auto=webp&s=ab93140403fc6f30a47b77ca2223ba4d75790b7c",
+          "media_type": "image"
+        },
+        {
+          "title": "The only Mayo man going to work tomorrow..",
+          "url": "https://www.reddit.com/r/ireland/comments/1v7b9h9/the_only_mayo_man_going_to_work_tomorrow/",
+          "subreddit": "ireland",
+          "created_utc": "2026-07-26T18:05:31+00:00",
+          "thumbnail": "https://preview.redd.it/pn76n77h6mfh1.jpeg?width=320&crop=smart&auto=webp&s=12acc045a894f9d18ce4b8ff739742dd4858f88e",
+          "media_type": "image"
+        },
+        {
+          "title": "UNESCO adds France’s D-Day landing beaches, Greece’s Mount Olympus to World Heritage List",
+          "url": "https://www.reddit.com/r/europe/comments/1v7ayrc/unesco_adds_frances_dday_landing_beaches_greeces/",
+          "subreddit": "europe",
+          "created_utc": "2026-07-26T17:54:37+00:00",
+          "thumbnail": "https://external-preview.redd.it/cSa5-J6BC-0--EsBFnNCjQnxTtnApTJ-s2G008CiIdY.jpeg?width=640&crop=smart&auto=webp&s=3e5f2d9a98310fa6f4f0eba4d802ab696e07c703",
+          "media_type": "image"
+        },
+        {
+          "title": "Près de Lacanau, 24/07/2026, photo de Maximilien Lamy (AFP)",
+          "url": "https://www.reddit.com/r/france/comments/1v71gbk/près_de_lacanau_24072026_photo_de_maximilien_lamy/",
+          "subreddit": "france",
+          "created_utc": "2026-07-26T11:36:45+00:00",
+          "thumbnail": "https://preview.redd.it/zjqfe4749kfh1.jpeg?width=640&crop=smart&auto=webp&s=bd0e9d4961e5e35986e965a68d19f00c8ecf7014",
+          "media_type": "image"
+        },
+        {
+          "title": "Qualité de l'air ce matin en France. Mes amis Bordelais, mettez des masques. L'odeur est présente ici à Béziers.",
+          "url": "https://www.reddit.com/r/france/comments/1v6xnsw/qualité_de_lair_ce_matin_en_france_mes_amis/",
+          "subreddit": "france",
+          "created_utc": "2026-07-26T08:11:13+00:00",
+          "thumbnail": "https://preview.redd.it/uhpouv3g8jfh1.png?width=640&crop=smart&auto=webp&s=b7e8c86e2b62da6b08cb1dfa66202e0887d4cafa",
+          "media_type": "image"
+        },
+        {
+          "title": "Got married a few weeks back at the cathedral in Helsinki.",
+          "url": "https://www.reddit.com/r/Finland/comments/1v6sgyd/got_married_a_few_weeks_back_at_the_cathedral_in/",
+          "subreddit": "Finland",
+          "created_utc": "2026-07-26T03:34:14+00:00",
+          "thumbnail": "https://preview.redd.it/porzb361vhfh1.jpeg?width=640&crop=smart&auto=webp&s=214b6b8a09be0fc9c34cc07f9f185572aa9f50e8",
+          "media_type": "image"
+        }
+      ]
+    },
+    {
+      "name": "🎮 Gaming",
+      "subreddits": [
+        "gamedev",
+        "games",
+        "gaming",
+        "hearthstone",
+        "indiegaming",
+        "magictcg",
+        "mtg",
+        "nintendoswitch2",
+        "slaythespire"
+      ],
+      "subreddits_label": "r/gaming, r/slaythespire, r/magictcg, r/mtg, r/gamedev, r/games, r/hearthstone, r/indiegaming, r/nintendoswitch2",
+      "post_count": 10,
+      "posts": [
+        {
+          "title": "The Huge Xbox Outage That Has Been Going On For Over 16 Hours Is Not Only Stopping Users From Playing Their Digital Downloaded Games, Its Also Stopping Them From Playing Their Physical Discs",
+          "url": "https://www.reddit.com/r/gaming/comments/1v8bzu0/the_huge_xbox_outage_that_has_been_going_on_for/",
+          "subreddit": "gaming",
+          "created_utc": "2026-07-27T20:20:15+00:00",
+          "thumbnail": "https://external-preview.redd.it/g_ScBKO76hUhav9pXqauWImDgDvpNjrddFLUw-tJfdo.jpeg?width=640&crop=smart&auto=webp&s=fe1d12d58980a9ddde7838b2500355e0f7400cea",
+          "media_type": "image"
+        },
+        {
+          "title": "[HOB] Wizard's Staff (via Making Magic)",
+          "url": "https://www.reddit.com/r/magicTCG/comments/1v830v9/hob_wizards_staff_via_making_magic/",
+          "subreddit": "magicTCG",
+          "created_utc": "2026-07-27T15:05:41+00:00",
+          "thumbnail": "https://preview.redd.it/zq5vo1t6fsfh1.jpeg?width=640&crop=smart&auto=webp&s=45e94a641fec7bf140075163134384c1d7d999f9",
+          "media_type": "image"
+        },
+        {
+          "title": "[HOB] Inside Information",
+          "url": "https://www.reddit.com/r/magicTCG/comments/1v82x1u/hob_inside_information/",
+          "subreddit": "magicTCG",
+          "created_utc": "2026-07-27T15:01:54+00:00",
+          "thumbnail": "https://preview.redd.it/utmwjcfjesfh1.jpeg?width=640&crop=smart&auto=webp&s=6683f837a54267baa85f052f1c51b832acd07ddd",
+          "media_type": "image"
+        },
+        {
+          "title": "The Pokémon Company Announces Facial Recognition System to Help Kill Scalping at Japanese Card Stores, Mandatory From Elementary School Age",
+          "url": "https://www.reddit.com/r/gaming/comments/1v807i3/the_pokémon_company_announces_facial_recognition/",
+          "subreddit": "gaming",
+          "created_utc": "2026-07-27T13:19:18+00:00",
+          "thumbnail": "https://external-preview.redd.it/M3yZA_aEeBfB_gOMnOsRG-_SKlhtYhsL3GKF03ga6v4.jpeg?width=640&crop=smart&auto=webp&s=d490473c4a4a7de498e7487eb5d75b9761d8b9f8",
+          "media_type": "image"
+        },
+        {
+          "title": "Rockstar Co-Founder Dan Houser Says if People Want Physical Game Releases Then Companies Should Provide It",
+          "url": "https://www.reddit.com/r/gaming/comments/1v7vl7g/rockstar_cofounder_dan_houser_says_if_people_want/",
+          "subreddit": "gaming",
+          "created_utc": "2026-07-27T09:38:44+00:00",
+          "thumbnail": "https://external-preview.redd.it/p1JVqv5MZ0fAEODmx7xzAk-hKJ56s9N81dcuxBFQJ1U.jpeg?width=640&crop=smart&auto=webp&s=e36637047aa03db8bc05d4108307ceb2928bdee8",
+          "media_type": "image"
+        },
+        {
+          "title": "Bullet Time as depicted (with sound FX!)",
+          "url": "https://www.reddit.com/r/slaythespire/comments/1v7uyo2/bullet_time_as_depicted_with_sound_fx/",
+          "subreddit": "slaythespire",
+          "created_utc": "2026-07-27T09:02:32+00:00",
+          "thumbnail": "https://external-preview.redd.it/NWlrcmc0MmhtcWZoMeGl-F8sRxUPn59MHHkbjy8-KhQYwVngOUBzo8DCEDcQ.png?width=640&crop=smart&auto=webp&s=da07f421dabbadc584a66b715afa62fbaa15a3a7",
+          "media_type": "video"
+        },
+        {
+          "title": "How is this allowed in commander?? This seems broken",
+          "url": "https://www.reddit.com/r/mtg/comments/1v7ncer/how_is_this_allowed_in_commander_this_seems_broken/",
+          "subreddit": "mtg",
+          "created_utc": "2026-07-27T02:15:04+00:00",
+          "thumbnail": null,
+          "media_type": "image"
+        },
+        {
+          "title": "Slayin' the Spire with my best bud!! #BYRDUP 💚💪",
+          "url": "https://www.reddit.com/r/slaythespire/comments/1v7k5ho/slayin_the_spire_with_my_best_bud_byrdup/",
+          "subreddit": "slaythespire",
+          "created_utc": "2026-07-26T23:50:26+00:00",
+          "thumbnail": "https://preview.redd.it/ki7mm0xzvnfh1.jpeg?width=640&crop=smart&auto=webp&s=e859b54d7719b8274263c5d73c61981ef484db02",
+          "media_type": "image"
+        },
+        {
+          "title": "Alright, Neow. I didn’t know you were funny like that.",
+          "url": "https://www.reddit.com/r/slaythespire/comments/1v7gj49/alright_neow_i_didnt_know_you_were_funny_like_that/",
+          "subreddit": "slaythespire",
+          "created_utc": "2026-07-26T21:21:21+00:00",
+          "thumbnail": "https://preview.redd.it/b1tapere5nfh1.jpeg?width=640&crop=smart&auto=webp&s=6330c740a0bb60253c596f8bb45ad3f80dde793d",
+          "media_type": "image"
+        },
+        {
+          "title": "Won the Grand Prize",
+          "url": "https://www.reddit.com/r/mtg/comments/1v7eynt/won_the_grand_prize/",
+          "subreddit": "mtg",
+          "created_utc": "2026-07-26T20:22:15+00:00",
+          "thumbnail": null,
+          "media_type": "image"
+        }
+      ]
+    }
+  ]
+}
