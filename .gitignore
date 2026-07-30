@@ -20,5 +20,5 @@ venv/
 .DS_Store
 Thumbs.db
 
-# Generated
-site/digest.json
+# Agents
+.agents/

@@ -48,6 +48,115 @@
   --safe-right: env(safe-area-inset-right, 0px);
 }
 
+/* ── Progress Bar ──────────────────────────────────────────────── */
+.progress-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 28px;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.progress-bar__fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, rgba(255, 69, 0, 0.15) 0%, rgba(255, 69, 0, 0.25) 100%);
+  border-right: 2px solid var(--accent);
+  transition: width 0.5s var(--ease-out);
+}
+
+.progress-bar__label {
+  position: relative;
+  z-index: 1;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.03em;
+  user-select: none;
+  transition: color var(--duration-normal);
+}
+
+.progress-bar.is-complete .progress-bar__fill {
+  border-right: none;
+  background: linear-gradient(90deg, rgba(74, 222, 128, 0.12) 0%, rgba(74, 222, 128, 0.22) 100%);
+}
+
+.progress-bar.is-complete .progress-bar__label {
+  color: var(--accent-green);
+}
+
+/* ── Swipe Gesture on Post Items ───────────────────────────────── */
+.post-item {
+  overflow: hidden;
+}
+
+.post-item__swipe-bg {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.post-item__swipe-bg.is-visible {
+  opacity: 1;
+}
+
+.post-item__swipe-bg--read {
+  justify-content: flex-start;
+  padding-left: 18px;
+  background: linear-gradient(90deg, rgba(74, 222, 128, 0.15) 0%, transparent 60%);
+}
+
+.post-item__swipe-bg--unread {
+  justify-content: flex-end;
+  padding-right: 18px;
+  background: linear-gradient(270deg, rgba(255, 69, 0, 0.15) 0%, transparent 60%);
+}
+
+.post-item__swipe-icon {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.post-item__swipe-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  transition: transform 0.3s var(--ease-out);
+  touch-action: pan-y;
+  will-change: transform;
+}
+
+.post-item__swipe-wrapper.is-swiping {
+  transition: none;
+}
+
+@keyframes swipeConfirm {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.97); }
+  100% { transform: scale(1); }
+}
+
+.post-item.swipe-confirmed {
+  animation: swipeConfirm 0.3s var(--ease-out);
+}
+
 /* ── Reset & Base ──────────────────────────────────────────────── */
 *,
 *::before,
@@ -336,9 +445,7 @@ body {
 }
 
 .post-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
+  display: block;
   padding: 12px;
   border-radius: var(--radius-sm);
   position: relative;
@@ -865,17 +972,24 @@ body.hide-read .post-item.is-read {
 .modal {
   position: fixed;
   inset: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   z-index: 1000;
   background: transparent;
   border: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--duration-normal) var(--ease-out);
+}
+.modal::backdrop {
+  display: none;
 }
 .modal[open] {
   opacity: 1;
@@ -897,7 +1011,8 @@ body.hide-read .post-item.is-read {
   border-radius: var(--radius-lg);
   width: 90%;
   max-width: 500px;
-  max-height: 85vh;
+  max-height: 80vh;
+  margin: auto;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -907,6 +1022,15 @@ body.hide-read .post-item.is-read {
 }
 .modal[open] .modal__content {
   transform: translateY(0);
+}
+
+/* Mobile: stats modal takes more space */
+@media (max-width: 480px) {
+  .stats__content {
+    width: 94%;
+    max-height: 85vh;
+    border-radius: var(--radius-md);
+  }
 }
 .modal__header {
   display: flex;

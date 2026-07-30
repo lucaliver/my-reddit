@@ -2,6 +2,14 @@
 
 A serverless, automated Reddit digest built with Python and Vanilla JS. It fetches posts from configured subreddits via RSS, filters/groups them and generates a static JSON payload consumed by a responsive front-end. Designed to bypass Reddit's strict JSON API Cloudflare blocks by securely parsing RSS content payloads.
 
+## Live Demo
+
+👉 **[lucaliver.github.io/my-reddit](https://lucaliver.github.io/my-reddit)**
+
+<!-- Add screenshots/GIFs here -->
+<!-- ![Grouped View](docs/grouped-view.png) -->
+<!-- ![Feed View](docs/feed-view.png) -->
+
 ## Features
 
 - **Automated Pipeline:** GitHub Actions runs a Python script weekly (or on demand) to fetch, filter and compile posts.
@@ -13,11 +21,9 @@ A serverless, automated Reddit digest built with Python and Vanilla JS. It fetch
 - **Dual View UI:**
   - **Grouped View:** Classic clustered view with a smart expand/collapse toggle.
   - **Feed View:** A flat, chronological scrolling feed (Reddit style) featuring a horizontal group filter carousel.
+- **Reading Progress:** A sticky progress bar at the top tracks how many posts you've read as a percentage.
+- **Swipe Gestures:** Swipe right to mark a post as read, swipe left to mark it as unread (mobile).
 - **Local State Tracking:** Uses `localStorage` to track read posts and update unread counts seamlessly across views.
-
-## Live Demo
-
-👉 **[lucaliver.github.io/my-reddit](https://lucaliver.github.io/my-reddit)**
 
 ## Architecture
 
@@ -25,6 +31,7 @@ A serverless, automated Reddit digest built with Python and Vanilla JS. It fetch
 my-reddit/
 ├── main.py                  # Pipeline orchestrator
 ├── config.py                # Environment-driven configuration
+├── groups.json              # Your subreddit groups (customize this!)
 ├── requirements.txt         # Dependencies (requests, python-dotenv)
 ├── src/
 │   ├── reddit_client.py     # RSS fetching & HTML extraction (thumbnails/excerpts)
@@ -39,6 +46,61 @@ my-reddit/
     └── weekly_digest.yml    # CI/CD automation
 ```
 
+## Fork & Customize
+
+Want your own personalized Reddit digest? Here's how:
+
+### 1. Fork the repository
+
+Click the **Fork** button on GitHub, then clone your fork:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/my-reddit.git
+cd my-reddit
+```
+
+### 2. Configure your subreddits
+
+Edit `groups.json` to define your own groups. See [`groups.example.json`](groups.example.json) for the format:
+
+```json
+{
+    "🤖 AI": ["ChatGPT", "OpenAI", "MachineLearning"],
+    "💻 Programming": ["programming", "learnprogramming", "webdev"],
+    "🎮 Gaming": ["gaming", "gamedev", "IndieGaming"]
+}
+```
+
+Each key is a group name (with an optional emoji prefix), and the value is an array of subreddit names without the `r/` prefix.
+
+### 3. Set up environment (optional)
+
+Copy the example environment file and customize:
+
+```bash
+cp .env.example .env
+```
+
+See the [Configuration](#configuration) section below for all available options.
+
+### 4. Run locally
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python3 main.py
+python3 -m http.server 8000 --directory site --bind 0.0.0.0
+```
+
+### 5. Deploy to GitHub Pages
+
+1. Navigate to **Settings → Pages** and set the Source to **GitHub Actions**.
+2. Optionally, configure repository variables under **Settings → Secrets and variables → Actions** to override defaults (`SUBREDDITS`, `SUBREDDIT_GROUPS`, etc.).
+3. The workflow runs every Sunday at 18:00 CEST or can be triggered manually from the **Actions** tab.
+
+That's it — your personal digest will be live at `https://YOUR_USERNAME.github.io/my-reddit`.
+
 ## Configuration
 
 Control the pipeline behavior using environment variables (or `.env` locally).
@@ -46,7 +108,7 @@ Control the pipeline behavior using environment variables (or `.env` locally).
 | Variable                  | Default       | Description                                                         |
 | ------------------------- | ------------- | ------------------------------------------------------------------- |
 | `SUBREDDITS`              | `[]`          | JSON array of individual subreddits.                                |
-| `SUBREDDIT_GROUPS`        | _(config.py)_ | JSON mapping of group names to subreddit lists.                     |
+| `SUBREDDIT_GROUPS`        | _(groups.json)_ | JSON mapping of group names to subreddit lists.                  |
 | `FEED_SORT`               | `top`         | RSS sorting (`hot`, `new`, `top`). Reddit handles sorting natively. |
 | `FETCH_LIMIT`             | `100`         | Max posts per RSS request batch.                                    |
 | `MIN_AGE_HOURS`           | `12`          | Discard posts younger than this threshold.                          |
@@ -56,33 +118,6 @@ Control the pipeline behavior using environment variables (or `.env` locally).
 | `BLOCKED_KEYWORDS`        | `["trump"]`   | JSON array of keywords to ban from post titles.                     |
 | `OUTPUT_DIR`              | `site`        | Destination directory for the generated `digest.json`.              |
 
-## Local Development
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/lucaliver/my-reddit.git
-cd my-reddit
-
-# 2. Setup Virtual Environment
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-
-# 3. (Optional) Override defaults from config.py via a .env file
-
-# 4. Execute the pipeline
-python3 main.py
-
-# 5. Serve the static frontend locally
-python3 -m http.server 8000 --directory site --bind 0.0.0.0
-```
-
-## Deployment (GitHub Pages)
-
-1. Navigate to **Settings → Pages** and set the Source to **GitHub Actions**.
-2. Configure repository variables under **Settings → Secrets and variables → Actions** to override defaults (`SUBREDDITS`, `SUBREDDIT_GROUPS`, etc).
-3. The workflow runs every Sunday at 18:00 CEST or can be triggered manually from the **Actions** tab.
-
 ## License
 
-Personal project — feel free to fork, customize and deploy.
+[MIT](LICENSE) — feel free to fork, customize and deploy.

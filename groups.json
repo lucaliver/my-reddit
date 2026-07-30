@@ -17,9 +17,30 @@
         "mcp",
         "VibeCodeDevs",
         "vibecoding",
-        "vibeprinting",
+        "vibeprinting"
+    ],
+    "\ud83c\udf93 IMLEX": [
         "learnmachinelearning",
-        "MachineLearning"
+        "MachineLearning",
+        "deeplearning",
+        "pytorch",
+        "Python",
+        "datascience",
+        "computervision",
+        "Optics",
+        "photonics",
+        "AR_MR_XR",
+        "LanguageTechnology",
+        "robotics",
+        "3Dprinting",
+        "gradadmissions",
+        "PhD",
+        "PhDAdmissions",
+        "PhdProductivity",
+        "AskAcademia",
+        "GradSchool",
+        "LaTeX",
+        "ObsidianMD"
     ],
     "\ud83d\udcbb Programming": [
         "coding",
@@ -27,11 +48,9 @@
         "commandline",
         "computerscience",
         "bioinformatics",
-        "cscareerquestionsEU",
         "howdidtheycodeit",
         "learnprogramming",
         "programming",
-        "Python",
         "SideProject",
         "n8n"
     ],
@@ -51,22 +70,18 @@
         "augmentedreality",
         "automation",
         "futurology",
-        "robotics",
-        "macapps"
+        "macapps",
+        "degoogle",
+        "Design",
+        "google",
+        "GoogleOne",
+        "Apple"
     ],
-    "\ud83d\udcca Data": [
-        "datascience",
-        "dataisbeautiful",
-        "charts",
-        "computervision",
-        "Infographics",
-        "MapPorn",
-        "visualization"
-    ],
-    "\ud83d\udcbc Business": [
+    "\ud83d\udcbc Business & Career": [
         "AppBusiness",
         "Business_Ideas",
         "careerguidance",
+        "cscareerquestionsEU",
         "consulting",
         "Big4",
         "FluentInFinance",
@@ -79,13 +94,14 @@
         "Startup_Ideas",
         "startups",
         "TheFounders",
-        "workfromhome"
+        "workfromhome",
+        "ItaliaCareerAdvice",
+        "ItaliaPersonalFinance",
+        "personalfinance"
     ],
     "\ud83c\udf55 Italy": [
         "askitaly",
         "Italia",
-        "ItaliaCareerAdvice",
-        "ItaliaPersonalFinance",
         "italy",
         "ItalyInformatica",
         "marche",
@@ -114,19 +130,25 @@
         "ErasmusMundus",
         "IWantOut"
     ],
-    "\ud83d\udd2c Science & Academia": [
+    "\ud83d\udd2c Knowledge": [
         "askscience",
         "AskEngineers",
         "AskSocialScience",
         "Anthropology",
         "academia",
         "AcademicPsychology",
-        "gradadmissions",
-        "PhD",
-        "PhDAdmissions",
-        "PhdProductivity",
         "research",
-        "science"
+        "science",
+        "dataisbeautiful",
+        "charts",
+        "Infographics",
+        "MapPorn",
+        "IWantToLearn",
+        "visualization",
+        "todayilearned",
+        "UpliftingNews",
+        "WatchandLearn",
+        "wikipedia"
     ],
     "\ud83e\udde0 Psychology": [
         "askpsychology",
@@ -172,12 +194,9 @@
         "longevity",
         "self",
         "relationship_advice",
-        "PlannerAddicts"
-    ],
-    "\ud83c\udfc3 Health": [
+        "PlannerAddicts",
         "EatCheapAndHealthy",
         "Frugal",
-        "personalfinance",
         "MealPrepSunday",
         "nutrition",
         "Supplements",
@@ -230,14 +249,11 @@
         "betterCallSaul",
         "rickandmorty"
     ],
-    "\ud83d\udcda Books & Reading": [
+    "\ud83d\udcda Books & Music": [
         "books",
         "booksuggestions",
         "Libri",
-        "ObsidianMD",
-        "StoryGraph"
-    ],
-    "\ud83c\udfa7 Music": [
+        "StoryGraph",
         "AlanParsonsProject",
         "Alternativerock",
         "indie_rock",
@@ -245,8 +261,7 @@
         "LetsTalkMusic",
         "listentothis",
         "Music",
-        "playlists",
-        "weirdspotifyplaylists"
+        "playlists"
     ],
     "\ud83c\udf92 Travel": [
         "backpacking",
@@ -269,8 +284,7 @@
         "movingtojapan",
         "language_exchange",
         "LearnJapanese",
-        "LearnJapaneseNovice",
-        "IWantToLearn"
+        "LearnJapaneseNovice"
     ],
     "\u2753 Ask & Discussion": [
         "ask",
@@ -299,7 +313,7 @@
         "Showerthoughts",
         "AMA"
     ],
-    "\ud83c\udf89 Fun": [
+    "\ud83e\udde9 Misc & Fun": [
         "2000sNostalgia",
         "90s",
         "90s_kid",
@@ -323,9 +337,7 @@
         "Foodforthought",
         "geography",
         "hopeposting",
-        "Lightbulb"
-    ],
-    "\ud83e\udde9 Hobbies & Misc": [
+        "Lightbulb",
         "15minutefood",
         "cookingforbeginners",
         "capsulewardrobe",
@@ -338,10 +350,6 @@
         "thatnightfeeling",
         "Anki",
         "Defcon",
-        "degoogle",
-        "Design",
-        "google",
-        "GoogleOne",
         "HowToMen",
         "mealtimevideos",
         "MotivationalQuotes",
@@ -352,10 +360,6 @@
         "subredditoftheday",
         "trendingsubreddits",
         "tipofmytongue",
-        "todayilearned",
-        "UpliftingNews",
-        "WatchandLearn",
-        "whatisthisthing",
-        "wikipedia"
+        "whatisthisthing"
     ]
 }

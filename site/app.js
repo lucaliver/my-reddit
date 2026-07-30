@@ -16,6 +16,11 @@
   const toolbarEl    = document.getElementById("toolbar");
   const btnToggleAll = document.getElementById("btn-toggle-all");
   const topBar       = document.getElementById("top-bar");
+
+  // Progress bar
+  const progressBar      = document.getElementById("progress-bar");
+  const progressBarFill  = document.getElementById("progress-bar-fill");
+  const progressBarLabel = document.getElementById("progress-bar-label");
   const viewControls = document.getElementById("view-controls");
   const siteFooter   = document.querySelector(".site-footer");
 
@@ -188,12 +193,7 @@
 
   function renderStats(data) {
     statsBar.innerHTML = `
-      <div style="display: flex; gap: 12px; align-items: center;">
-        <span class="stat-text">
-          <span class="stat-text__value" id="global-unread-count">0</span> unread
-        </span>
-        <button class="toolbar__btn" id="btn-show-stats" style="margin: 0;">Stats 📊</button>
-      </div>
+      <button class="toolbar__btn" id="btn-show-stats" style="margin: 0;">Stats 📊</button>
     `;
     const btn = document.getElementById("btn-show-stats");
     if (btn) btn.addEventListener("click", showStatsModal);
@@ -221,21 +221,29 @@
 
     return `
       <li class="post-item${read ? " is-read" : ""}" data-url="${url}">
-        <span class="post-item__index">${index}</span>
-        <div class="post-item__content">
-          <a class="post-item__title" href="${url}" target="_blank" rel="noopener">
-            ${title}
-          </a>
-          ${previewHtml}
-          <div class="post-item__meta">
-            <span class="post-item__sub">r/${sub}</span>
-            ${age
-              ? `<span class="post-item__separator">·</span>
-                 <span>${age}</span>`
-              : ""}
-          </div>
+        <div class="post-item__swipe-bg post-item__swipe-bg--read">
+          <span class="post-item__swipe-icon">✓ Read</span>
         </div>
-        <button class="post-item__check" aria-label="Toggle read status" title="Mark as read">✓</button>
+        <div class="post-item__swipe-bg post-item__swipe-bg--unread">
+          <span class="post-item__swipe-icon">✗ Unread</span>
+        </div>
+        <div class="post-item__swipe-wrapper">
+          <span class="post-item__index">${index}</span>
+          <div class="post-item__content">
+            <a class="post-item__title" href="${url}" target="_blank" rel="noopener">
+              ${title}
+            </a>
+            ${previewHtml}
+            <div class="post-item__meta">
+              <span class="post-item__sub">r/${sub}</span>
+              ${age
+                ? `<span class="post-item__separator">·</span>
+                   <span>${age}</span>`
+                : ""}
+            </div>
+          </div>
+          <button class="post-item__check" aria-label="Toggle read status" title="Mark as read">✓</button>
+        </div>
       </li>
     `;
   }
@@ -418,6 +426,26 @@
     });
   }
 
+  function updateProgressBar() {
+    if (!digestData || !digestData.groups) return;
+    const readSet = getReadSet();
+    let totalPosts = 0;
+    let readPosts = 0;
+    digestData.groups.forEach(g => {
+      g.posts.forEach(p => {
+        totalPosts++;
+        if (readSet.has(p.url)) readPosts++;
+      });
+    });
+    const pct = totalPosts === 0 ? 0 : Math.round((readPosts / totalPosts) * 100);
+    if (progressBarFill) progressBarFill.style.width = pct + "%";
+    if (progressBarLabel) progressBarLabel.textContent = `${pct}% read — ${readPosts}/${totalPosts}`;
+    if (progressBar) {
+      if (pct === 100) progressBar.classList.add("is-complete");
+      else progressBar.classList.remove("is-complete");
+    }
+  }
+
   function updateUnreadCounts() {
     let globalUnread = 0;
     
@@ -445,10 +473,7 @@
       globalUnread = document.querySelectorAll(".post-item:not(.is-read)").length;
     }
 
-    const globalCountEl = document.getElementById("global-unread-count");
-    if (globalCountEl) {
-      globalCountEl.textContent = globalUnread;
-    }
+    updateProgressBar();
   }
 
   function renderError(message) {
@@ -567,6 +592,108 @@
         
         updateUnreadCounts();
       });
+    });
+
+    // ── Swipe gesture to toggle read/unread ──────────────────────
+    document.querySelectorAll(".post-item").forEach((postItem) => {
+      const wrapper = postItem.querySelector(".post-item__swipe-wrapper");
+      const bgRead = postItem.querySelector(".post-item__swipe-bg--read");
+      const bgUnread = postItem.querySelector(".post-item__swipe-bg--unread");
+      if (!wrapper) return;
+
+      let startX = 0;
+      let startY = 0;
+      let currentX = 0;
+      let isSwiping = false;
+      let isVertical = false;
+      let directionLocked = false;
+      const THRESHOLD = 60;
+
+      wrapper.addEventListener("touchstart", (e) => {
+        const touch = e.touches[0];
+        startX = touch.clientX;
+        startY = touch.clientY;
+        currentX = 0;
+        isSwiping = false;
+        isVertical = false;
+        directionLocked = false;
+        wrapper.classList.remove("is-swiping");
+      }, { passive: true });
+
+      wrapper.addEventListener("touchmove", (e) => {
+        const touch = e.touches[0];
+        const dx = touch.clientX - startX;
+        const dy = touch.clientY - startY;
+
+        // Lock direction on first significant move
+        if (!directionLocked && (Math.abs(dx) > 8 || Math.abs(dy) > 8)) {
+          directionLocked = true;
+          isVertical = Math.abs(dy) > Math.abs(dx);
+        }
+
+        if (isVertical) return;
+
+        // Horizontal swipe detected
+        e.preventDefault();
+        isSwiping = true;
+        wrapper.classList.add("is-swiping");
+
+        // Apply resistance at edges
+        currentX = dx * 0.6;
+        wrapper.style.transform = `translateX(${currentX}px)`;
+
+        // Show appropriate background
+        const isCurrentlyRead = postItem.classList.contains("is-read");
+        if (dx > 20 && !isCurrentlyRead) {
+          bgRead.classList.add("is-visible");
+          bgUnread.classList.remove("is-visible");
+        } else if (dx < -20 && isCurrentlyRead) {
+          bgUnread.classList.add("is-visible");
+          bgRead.classList.remove("is-visible");
+        } else {
+          bgRead.classList.remove("is-visible");
+          bgUnread.classList.remove("is-visible");
+        }
+      }, { passive: false });
+
+      wrapper.addEventListener("touchend", () => {
+        wrapper.classList.remove("is-swiping");
+        wrapper.style.transform = "";
+        bgRead.classList.remove("is-visible");
+        bgUnread.classList.remove("is-visible");
+
+        if (!isSwiping) return;
+
+        const url = postItem.dataset.url;
+        const isCurrentlyRead = postItem.classList.contains("is-read");
+
+        // Swipe right → mark as read (if unread)
+        if (currentX > THRESHOLD && !isCurrentlyRead) {
+          markAsRead(url);
+          postItem.classList.add("is-read");
+          postItem.classList.add("swipe-confirmed");
+          try { if (navigator.vibrate) navigator.vibrate(15); } catch(err){}
+          setTimeout(() => postItem.classList.remove("swipe-confirmed"), 300);
+          updateUnreadCounts();
+        }
+        // Swipe left → mark as unread (if read)
+        else if (currentX < -THRESHOLD && isCurrentlyRead) {
+          unmarkAsRead(url);
+          postItem.classList.remove("is-read");
+          postItem.classList.add("swipe-confirmed");
+          try { if (navigator.vibrate) navigator.vibrate(15); } catch(err){}
+          setTimeout(() => postItem.classList.remove("swipe-confirmed"), 300);
+          updateUnreadCounts();
+        }
+      }, { passive: true });
+
+      // Cancel on touch leaving element
+      wrapper.addEventListener("touchcancel", () => {
+        wrapper.classList.remove("is-swiping");
+        wrapper.style.transform = "";
+        bgRead.classList.remove("is-visible");
+        bgUnread.classList.remove("is-visible");
+      }, { passive: true });
     });
   }
 
