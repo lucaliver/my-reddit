@@ -32,7 +32,6 @@
         "AR_MR_XR",
         "LanguageTechnology",
         "robotics",
-        "3Dprinting",
         "gradadmissions",
         "PhD",
         "PhDAdmissions",
@@ -40,7 +39,9 @@
         "AskAcademia",
         "GradSchool",
         "LaTeX",
-        "ObsidianMD"
+        "ObsidianMD",
+        "virtualreality",
+        "augmentedreality"
     ],
     "\ud83d\udcbb Programming": [
         "coding",
@@ -66,8 +67,6 @@
         "Windows11",
         "MacOS",
         "samsung",
-        "virtualreality",
-        "augmentedreality",
         "automation",
         "futurology",
         "macapps",
